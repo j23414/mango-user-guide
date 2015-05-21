@@ -13,5 +13,5 @@ graph(nt,lt) g={("A")[]("B")[]("C")};
 
 I need to figure out how to add equations
 
-$\frac{1}{2}$
+\$\frac{1}{2}\$
 
