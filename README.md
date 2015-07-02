@@ -9,5 +9,4 @@ link[float weight] lt;
 graph(nt,lt) g={("A")[]("B")[]("C")};
 ```
 
-$\frac{1}{2}$
 
