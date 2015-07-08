@@ -26,7 +26,7 @@ desc lt;
 **Visual attributes** of nodes and links are denoted by an underscore prefix. These represent 3D coordinates (_x,_y,_z), color(_r,_g,_b), text and other visual attributes. The user should not define visual attributes as they are already included in the type definition.
 
 ```
-node(stringname,float_x)nt; //Will throw a syntax error
+node(string name,float _x) nt; //Will throw a syntax error
 ```
 
 Defining a Graph in GEL with the following commands:
@@ -47,3 +47,4 @@ node(stringname)in_nt;
 link[floatweight]in_lt;
 graph(in_nt,in_lt)the40=import("the40.csv");
 ```
+
