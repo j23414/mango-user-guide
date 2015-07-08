@@ -9,5 +9,4 @@ $$
 a = 4 && runner=five\\
 a = 4 && runner=five
 \end{align}
-
-\underline{Hello}$$
+$$
