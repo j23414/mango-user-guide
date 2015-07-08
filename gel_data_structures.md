@@ -33,15 +33,13 @@ desc;          /* this will print all data objects */
 
 Look at data panel...
 
-## Basic Math
-
-Gel contains basic mathematical expressions such as addition, subtraction, multiplication and divisiion with order of operations. Run the following commands;
+Gel contains **basic mathematical expressions** such as addition, subtraction, multiplication and divisiion with order of operations. Run the following commands;
 
 ```
 print 1 + 2;
 print 3.5 - 4;
 print 4 * 5;
-print 4/3;     /* division of two ints gets rounded */
+print 4/3;     /* division of two int's gets rounded */
 print 4.0/3;   /* division of float and int returns float */
 print 5 + 4 * 6;
 print (5 + 4) * 6;
@@ -55,7 +53,30 @@ d = 1/2; desc d;   /* d = 0   */
 d = 1.0/2; desc d; /* d = 0.5 */
 ```
 
-## Converting between data primitives
+Conversions from **double** or **float** to an **integer** results in rounded values. 
+
+```
+/* float converted to an int is rounded to nearest int */
+f=3.2; i=f; desc i,f;  /* round down */
+f=3.5; i=f; desc i,f;  /* round up  */
+f=3.8; i=f; desc i,f;  /* round up  */
+
+/* double converted to an int is rounded to nearest int */
+d=4/3.0; i=d; desc i, d;
+d=5/3.0; i=d; desc i, d;
+```
+
+Generate random numbers using the **rand()** command. Run each command a few times in a row, using the **up-arrow key** to recall the last command. 
+
+```
+
+print"rand(-5,5)=",rand(-5,5);  /*randomdoublebetween-5and5*/
+print"rand(0,10)=",rand(0,10);  /*randomdoublebetween0and10*/
+print"rand()=",rand();          /*randomdoublebetween0and1 */
+d=rand(0,10); desc d;           /*assignsrandomdoubletodoubled*/
+f=rand(0,10); desc f;           /*assignsrandomdoubletofloat */
+i=rand(0,10); desc i;           /*roundstherandomnumbertoint */
+```
 
 
 
