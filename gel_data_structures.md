@@ -69,14 +69,21 @@ d=5/3.0; i=d; desc i, d;
 Generate random numbers using the **rand()** command. Run each command a few times in a row, using the **up-arrow key** to recall the last command. 
 
 ```
-
-print"rand(-5,5)=",rand(-5,5);  /*randomdoublebetween-5and5*/
-print"rand(0,10)=",rand(0,10);  /*randomdoublebetween0and10*/
-print"rand()=",rand();          /*randomdoublebetween0and1 */
-d=rand(0,10); desc d;           /*assignsrandomdoubletodoubled*/
-f=rand(0,10); desc f;           /*assignsrandomdoubletofloat */
-i=rand(0,10); desc i;           /*roundstherandomnumbertoint */
+print"rand(-5,5)=",rand(-5,5);  /*random double between -5 and 5*/
+print"rand(0,10)=",rand(0,10);  /*random double between 0 and 10*/
+print"rand()=",rand();          /*random double between 0 and 1 */
+d=rand(0,10); desc d;           /*assigns random double to doubled*/
+f=rand(0,10); desc f;           /*assigns random double to float */
+i=rand(0,10); desc i;           /*rounds the random number to int */
 ```
 
+Conversions from **numbers to strings** will result in a string version of the number, not the character encoding.
 
+```
+strings=4;         /*resultsinthestring“4”*/
+desc s;
+s=4+5;     desc s; /*theresultisstoredins*/
+s="4+5";   desc s; /*thestring“4+5”isstoredins*/
+f=4;s=f+5; desc s; /*resultofexpressionisstoredins*/
+```
 
