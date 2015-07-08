@@ -81,6 +81,6 @@ Reload graphs
 
 ```
 clear;           //clears all graph data
-run “state.txt”; //reload saved graph data
+run "state.txt"; //reload saved graph data
 ```
 
