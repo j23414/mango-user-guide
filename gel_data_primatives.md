@@ -31,3 +31,4 @@ desc "hi";     /* this will throw an error */
 desc;          /* this will print all data objects */
 ```
 
+Go under the Data pane, and expand some of the objects
