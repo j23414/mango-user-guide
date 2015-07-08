@@ -33,7 +33,7 @@ desc;          /* this will print all data objects */
 
 Look at data panel...
 
-Gel contains **basic mathematical expressions** such as addition, subtraction, multiplication and divisiion with order of operations. Run the following commands;
+Gel contains **basic mathematical expressions** such as addition, subtraction, multiplication and division with order of operations. Run the following commands;
 
 ```
 print 1 + 2;
@@ -102,8 +102,8 @@ strings=”4.1pigs”;doubled=s;descd,s;/*doubled=4.1anddrops“pigs”*/
 **Strings can be concatenated** together using "+" and ".".
 
 ```
-stringa=”Hello“;stringb=”World”;
-strings=a+b;descs; /*bothresultinstring“HelloWorld”*/
-strings=a.b;descs;
+string a="Hello "; string b="World";
+string s=a+b; desc s; /*both result in string “Hello World”*/
+string s=a.b; desc s;
 ```
 
