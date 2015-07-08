@@ -49,9 +49,12 @@ print (5 + 4) * 6;
 When passing an expression to **float** and **double**, you must specify **at least one decimal place** or results will be converted to an int. Multiple commands can be executed on the same line, as long as they are separated by a semicolon.
 
 ```
-f = 3/2; desc f;
-f = 3/2.0; desc f;
-d = 1/2; desc d;
-d = 1.0/2; desc d;
+f = 3/2; desc f;   /* f = 1   */
+f = 3/2.0; desc f; /* f = 1.5 */
+d = 1/2; desc d;   /* d = 0   */
+d = 1.0/2; desc d; /* d = 0.5 */
 ```
+
+## Converting between data primatives
+
 
