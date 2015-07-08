@@ -7,7 +7,7 @@ Open **Mango** and you should be presented with the following screen. The window
 * Console:
 * Editor
 
-There are **4 data primatives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands (ignoring comments between ```/* ...*/```
+There are **4 data primitives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands (ignoring comments between ```/* ...*/```
 
 ```
 int i = 0; 
@@ -55,6 +55,7 @@ d = 1/2; desc d;   /* d = 0   */
 d = 1.0/2; desc d; /* d = 0.5 */
 ```
 
-## Converting between data primatives
+## Converting between data primitives
+
 
 
