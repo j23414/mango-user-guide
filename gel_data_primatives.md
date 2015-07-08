@@ -31,4 +31,27 @@ desc "hi";     /* this will throw an error */
 desc;          /* this will print all data objects */
 ```
 
-Go under the Data pane, and expand some of the objects
+Look at data panel...
+
+## Basic Math
+
+Gel contains basic mathematical expressions such as addition, subtraction, multiplication and divisiion with order of operations. Run the following commands;
+
+```
+print 1 + 2;
+print 3.5 - 4;
+print 4 * 5;
+print 4/3;     /* division of two ints gets rounded */
+print 4.0/3;   /* division of float and int returns float */
+print 5 + 4 * 6;
+print (5 + 4) * 6;
+```
+When passing an expression to **float** and **double**, you must specify **at least one decimal place** or results will be converted to an int. Multiple commands can be executed on the same line, as long as they are separated by a semicolon.
+
+```
+f = 3/2; desc f;
+f = 3/2.0; desc f;
+d = 1/2; desc d;
+d = 1.0/2; desc d;
+```
+
