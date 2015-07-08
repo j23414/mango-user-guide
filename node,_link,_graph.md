@@ -77,7 +77,10 @@ export("simplenew.tsv","tsv",simple); //saves simple as a tab delimited file
 save "state.txt"; //saves all graphs as GEL commands
 ```
 
-11. Reload graphs
-clear; //clearsallgraphdata
-run“state.txt”; //reloadsavedgraphdata
+Reload graphs
+
+```
+clear;           //clears all graph data
+run “state.txt”; //reload saved graph data
+```
 
