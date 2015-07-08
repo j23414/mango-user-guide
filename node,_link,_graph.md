@@ -28,3 +28,13 @@ desc lt;
 ```
 node(stringname,float_x)nt; //Will throw a syntax error
 ```
+
+Defining a Graph in GEL with the following commands:
+
+```
+node(string name) nt;
+link[float weight,int count]lt;
+graph(nt,lt)simple={("node1")[0.1,1]("node2")[0.2,2]("node3"),
+node1[0.3,3]node3};
+desc simple; //show node and link types
+dump simple; //show graph contents
