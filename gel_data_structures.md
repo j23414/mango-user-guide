@@ -87,3 +87,23 @@ s="4+5";   desc s; /*the string "4+5" is stored in s*/
 f=4;s=f+5; desc s; /*result of expression is stored in s*/
 ```
 
+Gel will attempt to convert a **string to numeric** values but if it fails, the numerical
+value will be 0.
+
+```
+strings="4"; int i=s; desc i,s; /*int i=4*/
+strings=" 4"; int i=s;desc i,s; /*int i= 4 despite spaces*/
+strings="a4"; int i=s;desc i,s; /*int i=0 because it can’t converts*/
+strings="4pigs"; int i=s; desc i,s; /*int i=4 and drops "pigs"*/
+/*similarbehaviorinfloatanddouble*/
+strings=”4.1pigs”;doubled=s;descd,s;/*doubled=4.1anddrops“pigs”*/
+```
+
+**Strings can be concatenated** together using "+" and ".".
+
+```
+stringa=”Hello“;stringb=”World”;
+strings=a+b;descs; /*bothresultinstring“HelloWorld”*/
+strings=a.b;descs;
+```
+
