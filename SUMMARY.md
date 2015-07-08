@@ -4,5 +4,6 @@
 * [First Chapter](chapter1.md)
 * [GEL Data Structures](gel_data_structures.md)
    * [int, double, float, string](int,_double,_float,_string.md)
+   * node, link, graph
 * [Graph Mathematics](graph_mathematics.md)
 
