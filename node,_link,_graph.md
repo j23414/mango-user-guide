@@ -38,3 +38,12 @@ graph(nt,lt)simple={("node1")[0.1,1]("node2")[0.2,2]("node3"),
 node1[0.3,3]node3};
 desc simple; //show node and link types
 dump simple; //show graph contents
+```
+
+Importing a Graph from a file with the following commands:
+
+```
+node(stringname)in_nt;
+link[floatweight]in_lt;
+graph(in_nt,in_lt)the40=import("the40.csv");
+```
