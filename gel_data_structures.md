@@ -80,10 +80,10 @@ i=rand(0,10); desc i;           /*rounds the random number to int */
 Conversions from **numbers to strings** will result in a string version of the number, not the character encoding.
 
 ```
-strings=4;         /*resultsinthestring“4”*/
+strings=4;         /*results in the string "4"*/
 desc s;
-s=4+5;     desc s; /*theresultisstoredins*/
-s="4+5";   desc s; /*thestring“4+5”isstoredins*/
-f=4;s=f+5; desc s; /*resultofexpressionisstoredins*/
+s=4+5;     desc s; /*the result is stored in s*/
+s="4+5";   desc s; /*the string "4+5" is stored in s*/
+f=4;s=f+5; desc s; /*result of expression is stored in s*/
 ```
 
