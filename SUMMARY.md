@@ -6,5 +6,5 @@
    * [int, double, float, string](int,_double,_float,_string.md)
    * [node, link, graph](node,_link,_graph.md)
 * [Graph Mathematics](graph_mathematics.md)
-* Airline Fights
+* [Airline Fights](airline_fights.md)
 
