@@ -13,4 +13,5 @@ The **Console** (bottom right) is where you can type and execute GEL commands. A
 setwd();
 ```
 
-**setwd** pops a window to allow you to select the current working directory. 
+**setwd** pops a window to allow you to select the current working directory. This directory may contain your graph or GEL script files. Navigate and select the **DemoFiles** folder that came with Mango installation.
+
