@@ -1,4 +1,6 @@
-There are **4 data primatives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands (ignoring comments between ```/* ...*/```
+# 4 Data Primitives
+
+There are **4 data primitives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands (ignoring comments between ```/* ...*/```
 
 ```
 int i = 0; 
