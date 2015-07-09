@@ -7,5 +7,5 @@
    * [node, link, graph](node,_link,_graph.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Airline Fights](airline_fights.md)
-* QuickStart
+* [QuickStart](quickstart.md)
 
