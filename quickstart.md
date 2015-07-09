@@ -3,7 +3,13 @@
 Install **Mango** by going to http://www.complex.iastate.edu/download/Mango and registering a free account. You will receive an email shortly with your new password. Use your email and new password to log into the download area and select the installation file for your operating system. 
 
 ## Quick Start Demo
-Open **Mango** and you should be presented with the following screen.
+
+Open **Mango** and you should be presented with the following screen. The window is divided into four sections. 
+
+* Data: displays a list of all data objects in Mango 
+* Canvas: displays the graph visualizations
+* Console: accepts gel commands and runs them in real time
+* Editor: area to edit gel scripts and run them line by line
 
 ![](start.png)
 
