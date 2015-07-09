@@ -12,3 +12,5 @@ The **Console** (bottom right) is where you can type and execute GEL commands. A
 ```
 setwd();
 ```
+
+**setwd** pops a window to allow you to select the current working directory. 
