@@ -22,3 +22,8 @@ Now we're going to load 4 graph files. Go to **File/Open** and select "loadnet.t
 ![](loadnet.png)
 
 Click within the loadnet.txt, and place the cursor at the first line. Then press **Alt-Enter** if you're on Mac or **Ctrl-Enter** if you're on Windows or Linux to execute one line. Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
+
+![](load.png)
+
+In the **Data** panel (left), four graph objects are listed inside **Graph**. Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once. 
+
