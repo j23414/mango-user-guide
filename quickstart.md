@@ -13,7 +13,7 @@ Open **Mango** and you should be presented with the following screen.
 setwd();
 ```
 
-**setwd** pops a window to allow you to select the current working directory. This directory may contain your graph or GEL script files. Navigate and select the **DemoFiles** folder that came with Mango installation.
+2. **setwd** pops a window to allow you to select the current working directory. This directory may contain your graph or GEL script files. Navigate and select the **DemoFiles** folder that came with Mango installation.
 
 ![](setwd.png)
 
