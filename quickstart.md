@@ -20,3 +20,5 @@ setwd();
 Now we're going to load 4 graph files. Go to **File/Open** and select "loadnet.txt". The file should be loaded into the **Editor** panel.
 
 ![](loadnet.png)
+
+Click within the loadnet.txt, and place the cursor at the first line. Then press Alt-Enter if you're on Mac or Ctrl-Enter if you're on Windows or Linux to execute one line. Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
