@@ -1,4 +1,4 @@
-# GEL Data Primatives
+# GEL Data Structures
 
 Open **Mango** and you should be presented with the following screen. The window is divided into four sections. 
 
