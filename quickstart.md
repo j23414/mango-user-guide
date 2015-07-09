@@ -17,3 +17,4 @@ setwd();
 
 ![](setwd.png)
 
+Now we're going to load 4 graph files. Go to **File/Open** and select "loadnet.txt".
