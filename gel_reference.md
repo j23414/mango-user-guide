@@ -125,3 +125,10 @@ delimiter: character(s) that separate fields in a line
 Note: do not use the import/export functions to save your data. Instead, use the save and run/exec commands to save your data in the native Gel language format.
 
 import a graph from a delimited file into Mango.
+
+```
+node(string name) nt;
+link[]lt;
+graph(nt,lt) net = import("net.csv",",");
+graph(nt,lt) net = import("net.tsv", "\t");
+```
