@@ -154,3 +154,13 @@ layout("circle");
 layout("random");
 layout("cube");
 ```
+
+**link**
+
+compound data type declaration, necessary for defining the graph type
+
+```
+link [float weight, double value, ...] undirected; // defined an undirected link type
+link <float weight, double value, ...> directed; // defined a directed link type
+```
+
