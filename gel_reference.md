@@ -132,3 +132,25 @@ link[]lt;
 graph(nt,lt) net = import("net.csv",",");
 graph(nt,lt) net = import("net.tsv", "\t");
 ```
+
+**int**
+
+integers, one of the four primitive data types
+
+```
+int i = 0;
+i=40;
+```
+
+**layout**
+
+preset graph layouts, applied to the currently viewed and selected graph in the canvas area.
+
+layout(type)
+type: either "random", "cube", or "circle"
+
+```
+layout("circle");
+layout("random");
+layout("cube");
+```
