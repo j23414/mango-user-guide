@@ -247,3 +247,39 @@ save the named data objects to be loaded back into Mango later. If no data objec
 ```
 save "data.txt", var1, graph2,node3, link4;
 ```
+
+**select**
+
+Either nodes or links can be the selection target. In the where clause a boolean condition can be specified for the selection. Special in and out value are defined: in node selection, in and out denote the in-degree and out-degree of each node being considered for selection. In link selection in and out denote the nodes connected by each link under consideration, whose attributes can be accessed as in.count or out.name
+
+```
+subgraph = select node from graph_abc where count>10 && in>2;
+subgraph = select link from graph_abc where weight>5.0 && in.count>2;
+```
+
+**setwd**
+
+pops a window to set the working directory, can also return the string of the working directory
+
+```
+setwd();
+string wk = setwd();
+print setwd();
+```
+
+**string**
+
+string and characters, one of the four primitive data types
+
+```
+string s = "hello world";
+string c = "c";
+```
+
+**sin**
+
+trigonometric sin function given the angle in radians
+
+```
+double s = sin(3.14);
+```
