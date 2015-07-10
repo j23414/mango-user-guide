@@ -196,5 +196,46 @@ node(string name) nt;
 node(string id) nt;
 node(string id, int age) nt;
 ```
+ 
+**print**
 
+only scalar expressions can be given to the print command
 
+```
+print "The number of nodes in graph A is ", nodes(A);
+print "Sum of nodes in graph A and B is ", nodes(A)+nodes(B);
+```
+
+**rand**
+
+generates a random number between a min and max value. By default, min value equals 0.0 and max value is 1.0.
+
+```
+double min = -5;
+double max = 7;
+double v = rand(min,max);
+```
+
+**random**
+
+graph = random(int nodes, double percent, int loop, int seed)
+
+nodes: number of nodes in the random graph
+percent: percent of connected links among nodes
+loop: 0 no loop back to the same node; 1 otherwise
+seed: seed to random number generator; 0 automatic
+
+```
+node(string name) nt;
+link[] lt;
+graph(nt,lt) ran = random(10);  // 10 nodes with 50% connectivity
+ran = random(10,0.25);             // 10 nodes with 25% connectivity  
+```
+
+**run**
+
+run the gel script file and then the next command (if any)
+
+```
+run "command.txt";
+```
