@@ -162,5 +162,39 @@ compound data type declaration, necessary for defining the graph type
 ```
 link [float weight, double value, ...] undirected; // defined an undirected link type
 link <float weight, double value, ...> directed; // defined a directed link type
+
+link[] lt;
+link[weight] lt;
+link<float transferspeed> lt;
 ```
+
+**list**
+
+list the named data objects. If no data objects are given, list all data objects in memory.
+
+```
+list var1, graph2, node3, link4;
+```
+
+**log**
+
+natural log of a value
+
+```
+double d = 315.3;
+double logd = log(d);
+```
+
+**node**
+
+compound data type declaration, necessary for defining the graph type. 
+
+node(string name, int count, ...) nodetype;
+
+```
+node(string name) nt;
+node(string id) nt;
+node(string id, int age) nt;
+```
+
 
