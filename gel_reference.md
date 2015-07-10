@@ -239,3 +239,11 @@ run the gel script file and then the next command (if any)
 ```
 run "command.txt";
 ```
+
+**save**
+
+save the named data objects to be loaded back into Mango later. If no data objects are given, all data objects in memory are saved to the given filename. Saved file is a Gel script that can be loaded back using the run or exec commands.
+
+```
+save "data.txt", var1, graph2,node3, link4;
+```
