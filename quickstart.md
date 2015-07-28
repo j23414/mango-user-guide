@@ -31,5 +31,11 @@ Click within the loadnet.txt, and place the cursor at the first line. Then press
 
 ![](load.png)
 
-In the **Data** panel (left), four graph objects are listed inside **Graph**. Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once. 
+In the **Data** panel (left), four graph objects are listed inside **Graph**. Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once.
+
+The **Graph Canvas** (right center) area responds to mouse and keyboard events. **Left click and drag** across the graph. This will rotate the graph visualization. 
+
+Use the **Roller Ball** on your mouse (or two finger swipe on a trackpad) to zoom in and out of the graph. 
+
+Making sure one of the graphs is selected
 
