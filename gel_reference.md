@@ -294,10 +294,10 @@ double v = tan(315.5);
 
 **verb**
 
-set Gel verbose level <br \>
-n=0 Gel reports critical errors that stops it <br \>
-n=1 Gel reports data redefinitions or deletions <br \>
-n=2 Gel echo typed commands (default level) <br \>
+set Gel verbose level 
+n=0 Gel reports critical errors that stops it 
+n=1 Gel reports data redefinitions or deletions 
+n=2 Gel echo typed commands (default level) 
 n=3 Gel echos scalar computation results <br \>
 n=4 Gel echos resulted graph node and link types <br \>
 n=5 Gel echos resulted graph complete information
