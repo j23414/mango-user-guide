@@ -37,5 +37,7 @@ The **Graph Canvas** (right center) area responds to mouse and keyboard events. 
 
 Use the **Roller Ball** on your mouse (or two finger swipe on a trackpad) to zoom in and out of the graph. 
 
-Making sure one of the graphs is selected
+Making sure one of the graphs is selected (the tab label will be bolded) use the **arrow keys** on your keyboard to move the graph left, right, up and down. 
+
+Next, **Right click** on one of the displayed graphs. The graph should start to move where connected nodes moving closer together and disconnected nodes moving farther apart. This is the **force-directed layout** algorithm. 
 
