@@ -39,5 +39,26 @@ Use the **Roller Ball** on your mouse (or two finger swipe on a trackpad) to zoo
 
 Making sure one of the graphs is selected (the tab label will be bolded) use the **arrow keys** on your keyboard to move the graph left, right, up and down. 
 
-Next, **Right click** on one of the displayed graphs. The graph should start to move where connected nodes moving closer together and disconnected nodes moving farther apart. This is the **force-directed layout** algorithm. 
+Next, **Right click** on one of the displayed graphs. The graph should start to move where connected nodes moving closer together and disconnected nodes moving farther apart. This is the **force-directed layout** algorithm proposed by Eades. Right click again to stop the animating layout.
 
+To explore some other graph layouts, select one of the graphs and type the following GEL commands into the **Console**. Try rotating, zooming, and running the force-directed layout after each command.
+
+```
+layout("circle");
+layout("cube");
+layout("random");
+```
+
+Close all tabs except graph **cpn**. Run the following command:
+
+```
+layout("cube");
+```
+Right click to start the force-directed layout.
+
+Turn on node labels by typing either of the following:
+
+```
+text("node");
+foreach node in cpn set _text=name;
+```
