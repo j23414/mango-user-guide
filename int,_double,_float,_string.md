@@ -1,6 +1,6 @@
 # 4 Data Primitives
 
-There are **4 data primitives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands (ignoring comments between ```/* ...*/```
+There are **4 data primitives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands into Gel console, pressing Enter/Return after each semicolon. 
 
 ```
 int i = 0; 
@@ -8,6 +8,9 @@ float f = 1.1;
 double d = 2.2 / 3.3;
 string s = "Hello World";
 ```
+Notice how each data primitive is displayed in the Data pane listing type and value. 
+
+![](img02.png)
 
 Use the **print** and **desc** commands to display the values of data objects in the **Console** panel. Their behaviors are subtly different.
 
