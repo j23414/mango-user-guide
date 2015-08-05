@@ -1,5 +1,9 @@
 # Graph Data
 
+A graph is defined as a set of nodes and edges. Think of the nodes as the circles in the graph. The edges connect pairs of circles. In a social network, the nodes usually represent individuals. Links represent some type of "relationship" between pairs of individuals, usually friendship. 
+
+Continuing with the social graph example, what type of information might each node contain? Since the node represents an individual, let's call him "Bob", it can contain any information about that individual. Bob might have an age, height, birthdate, favorite color, and home address, just to name a few. 
+
 Defining graphs in GEL requires first defining a **nodetype** and **linktype**. Enter the following GEL commands into the GEL console (bottom right) to define different nodetypes.
 
 ```
