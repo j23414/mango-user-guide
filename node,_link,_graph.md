@@ -84,3 +84,15 @@ clear;           //clears all graph data
 run "state.txt"; //reload saved graph data
 ```
 
+You can access specific attributes in a graph using the following:
+```
+node(string name) nt;
+link[float weight] lt;
+graph(nt,lt) g = {("node1")[1.0]("node2")};
+
+g.node."node1"._x=10;
+g.link."node1":"node2".weight=10;
+```
+
+
+
