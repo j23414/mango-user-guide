@@ -61,3 +61,12 @@ link[] lt;
 graph(nt,lt) net=import("net.txt");
 ```
 
+Run the gel script and the object "net" shows up under Graphs in the Data panel. Double click "net" and a new tab shows up in the Graph Canvases area.
+
+![](img09.png)
+
+You only see one node because by default, all xyz coordinates are set to zero. Type and run the following command.
+
+```
+layout(net,"circle");
+```
