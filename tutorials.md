@@ -6,4 +6,11 @@ Open **Mango** and go to **File/New** or hit **Ctrl+N** to create a gel script. 
 
 ![](img03.png)
 
-A new file should show up in the editor pane with a tab labeled "gel.txt". 
+A new file should show up in the editor pane with a tab labeled "gel.txt". Type the following four lines into the gel.txt. 
+
+```
+int i=1;
+float f=2.2;
+double d=3.3;
+string s="Hello World";
+```
