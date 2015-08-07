@@ -14,3 +14,4 @@ float f=2.2;
 double d=3.3;
 string s="Hello World";
 ```
+When you start editing gel.txt, an astrix symbol appears next the to the name in the tab. This means you have unsaved changes. Hit Ctrl+S to save file. 
