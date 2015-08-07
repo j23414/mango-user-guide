@@ -12,8 +12,9 @@ Open **Mango** and you should be presented with the following screen. The window
 
 * **Data**: displays a list of all data objects in Mango 
 * **Canvas**: displays the graph visualizations
-* **Console**: accepts gel commands and runs them in real time
 * **Editor**: area to edit gel scripts and run them line by line
+* **Console**: accepts gel commands and runs them in real time
+
 
 ![](start.png)
 
@@ -45,18 +46,18 @@ Making sure one of the graphs is selected (the tab label will be bolded) use the
 
 Next, **Right click** on one of the displayed graphs. The graph should start to move where connected nodes moving closer together and disconnected nodes moving farther apart. This is the **force-directed layout** algorithm proposed by Eades. Right click again to stop the animating layout.
 
-To explore some other graph layouts, select one of the graphs and type the following GEL commands into the **Console**. Try rotating, zooming, and running the force-directed layout after each command.
+To explore some other graph layouts, close all tabs except graph **cpn** and type the following GEL commands into the **Console**. Try rotating, zooming, and running the force-directed layout after each command.
 
 ```
-layout("circle");
-layout("cube");
-layout("random");
+layout(cpn, "circle");
+layout(cpn, "cube");
+layout(cpn, "random");
 ```
 
-Close all tabs except graph **cpn**. Run the following command:
+Run the following command:
 
 ```
-layout("cube");
+layout(cpn, "cube");
 ```
 Right click to start the force-directed layout.
 
