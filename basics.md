@@ -39,3 +39,17 @@ Create a Network File and Load it
 Go to **File/New** and create "net.txt". This file will store a small network. 
 
 ![](img07.png)
+
+Network files can be imported as csv or other delimited text files. These can be exported from excel. The network files usually include a list of nodes, a hypen on it's own line, and a list of edges. cCopy and past the following into your net.txt file. 
+
+```
+a
+b
+c
+d
+-
+a,b
+a,c
+c,d
+a,d
+```
