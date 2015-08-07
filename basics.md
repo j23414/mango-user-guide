@@ -21,4 +21,12 @@ When you start editing gel.txt, an asterisk symbol appears next the to the name 
 
 ![](img04.png)
 
-Click inside of the gel.txt and place the cursor on the first line. Then press **Ctrl+Enter** 
+Click inside of the gel.txt and place the cursor on the first line. Then press **Ctrl+Enter** and notice how it shows up under **Values** in the **Data** pane, listing data type and contents. 
+
+![](img05.png)
+
+You can either continue to press **Ctrl+Enter** to load the other data types or you can type the following command into the **Console** to run the entire file.
+
+```
+run "gel.txt";
+```
