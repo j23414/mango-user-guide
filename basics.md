@@ -60,3 +60,4 @@ node(string name) nt;
 link[] lt;
 graph(nt,lt) net=import("net.txt");
 ```
+
