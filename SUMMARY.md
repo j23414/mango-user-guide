@@ -10,4 +10,5 @@
 * [Airline Fights](airline_fights.md)
 * [GEL Reference](gel_reference.md)
 * [Tutorials](tutorials.md)
+   * Basics
 
