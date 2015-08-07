@@ -2,6 +2,8 @@ Basics Walk-Through Tutorial
 ================
 This tutorial will walk you through creating a gel file and some basic network files from scratch. All you will need is a downloaded version of Mango.
 
+Create a Gel File and the 4 Data Primitives
+----
 Open **Mango** and go to **File/New** or hit **Ctrl+N** to create a gel script. Create a new folder on your Desktop called **Basic** and name the new gel script "gel.txt". 
 
 ![](img03.png)
@@ -30,3 +32,10 @@ You can either continue to press **Ctrl+Enter** to load the other data types or 
 ```
 run "gel.txt";
 ```
+![](img06.png)
+
+Create a Network File and Load it
+----
+Go to **File/New** and create net.txt. This file will store a small network. 
+
+
