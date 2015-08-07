@@ -17,7 +17,7 @@ string s="Hello World";
 
 These are the four basic data types in Gel. 
 
-When you start editing gel.txt, an \* symbol appears next the to the name in the tab. This means you have unsaved changes. Hit **Ctrl+S** to save file and notice how the \* goes away. 
+When you start editing gel.txt, an asterisk symbol appears next the to the name in the tab. This means you have unsaved changes. Hit **Ctrl+S** to save file and notice how the asterisk goes away. 
 
 ![](img04.png)
 
