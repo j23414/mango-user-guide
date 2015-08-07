@@ -69,4 +69,7 @@ You only see one node because by default, all xyz coordinates are set to zero. T
 
 ```
 layout(net,"circle");
+foreach node in net set _r=0, _g=0.9, _b=1;
 ```
+
+![](img10.png)
