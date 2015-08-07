@@ -1,4 +1,4 @@
-Basic Tutorial
+Basics Walk-Through Tutorial
 ================
 This tutorial will walk you through creating a gel file and some basic network files from scratch. All you will need is a downloaded version of Mango.
 
