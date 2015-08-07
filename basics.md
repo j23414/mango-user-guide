@@ -36,6 +36,6 @@ run "gel.txt";
 
 Create a Network File and Load it
 ----
-Go to **File/New** and create net.txt. This file will store a small network. 
+Go to **File/New** and create "net.txt". This file will store a small network. 
 
-
+![](img07.png)
