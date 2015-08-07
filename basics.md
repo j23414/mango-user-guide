@@ -1,6 +1,6 @@
-Basics Walk-Through Tutorial
+Walking Through the Mango Grove
 ================
-This tutorial will walk you through creating a gel file and some basic network files from scratch. All you will need is a downloaded version of Mango.
+This tutorial will walk you through creating a gel file and some basic network files from scratch. All you need is a running version of Mango since all code and text-based data will be in this tutorial.
 
 Create a Gel File and the 4 Data Primitives
 ----
