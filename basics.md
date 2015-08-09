@@ -128,3 +128,22 @@ foreach node in net set _text=name;
 
 ![](img10.png)
 
+Loading multiple networks
+---
+net2.txt
+```
+# name,price
+a,100
+b,200
+c,300
+d,400
+-
+# to,from,time
+b,c,2011
+c,d,2010
+a,b,2009
+```
+
+Save or Export the Network
+----
+
