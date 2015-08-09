@@ -12,6 +12,20 @@ Notice how each data primitive is displayed in the Data pane listing type and va
 
 ![](img02.png)
 
+**Watch Out!**
+
+floats and doubles must have at least one number before the decimal point.
+
+```
+/* will throw errors */
+float f = .1;
+double d = .2;
+
+/* must be */
+float f = 0.1;
+double d = 0.2;
+```
+
 Use the **print** and **desc** commands to display the values of data objects in the **Console** panel. Their behaviors are subtly different.
 
 ```
