@@ -62,7 +62,7 @@ graph(nt,lt) net=import("net.txt");
 ```
 
 Run the gel script and the object "net" shows up under Graphs in the Data panel. Two other objects are created: nt, and lt. Click and expand the two. 
-Notice nt has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. 
+Notice **nt** has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. 
 
 Double click "net" and a new tab shows up in the Graph Canvases area.
 
