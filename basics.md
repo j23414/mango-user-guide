@@ -70,10 +70,10 @@ Notice **nt** has string name with a bunch of other things listed with an unders
 Change your net.txt file to look like the following:
 
 ```
-a,10
-b,20
-c,30
-d,40
+a,10,red
+b,20,red
+c,30,blue
+d,40,blue
 -
 a,b,0.1
 a,c,0.5
