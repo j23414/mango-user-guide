@@ -88,7 +88,7 @@ To change the layout let's try:
 foreach node in net set _x=rand(-5,5),_y=rand(-5,5),_z=rand(-5,5);
 ```
 
-Run a few times. 
+Run a few times. Any of the attributes can be changed using the **foreach node** or **foreach link** command.
 
 Gel provides a few preset layouts. These are all in the **layout** function. The first argument is the graph. The second argument is layout type "circle","random",or "cube". 
 
