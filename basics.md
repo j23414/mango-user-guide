@@ -151,6 +151,8 @@ node(string name, string price) nt2;
 link[int time] lt2;
 graph(nt2,lt2) net2=import("net2.txt");
 ```
+
+
 Save or Export the Network
 ----
 
