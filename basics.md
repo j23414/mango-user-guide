@@ -90,6 +90,8 @@ graph(nt,lt) net=import("net.txt");
 ```
 Expand the nt and lt. Expand graph and notice the nodetype and linktype. This is how you store a graph with different graph attributes. 
 
+Visualize the loaded network
+---
 Double click "net" and a new tab shows up in the Graph Canvases area.
 
 ![](img09.png)
