@@ -169,6 +169,7 @@ save "state.txt";
 clear;
 run "state.txt";
 ```
+Open state.txt to see gel commands. This is basically a gel script.
 
 Export if you want to send graph data to another application.
 
