@@ -152,7 +152,14 @@ link[int time] lt2;
 graph(nt2,lt2) net2=import("net2.txt");
 ```
 
+Combine them
 
+```
+node(nt,nt2) nt3;
+link[lt,lt2] lt3;
+graph(nt3,lt3) sum = net;
+sum.+=net2;
+```
 Save or Export the Network
 ----
 
