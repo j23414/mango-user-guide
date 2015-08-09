@@ -151,9 +151,9 @@ layout(type)
 type: either "random", "cube", or "circle"
 
 ```
-layout("circle");
-layout("random");
-layout("cube");
+layout(g,"circle");
+layout(g,"random");
+layout(g,"cube");
 ```
 
 **link**
