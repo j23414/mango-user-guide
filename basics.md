@@ -71,10 +71,15 @@ Double click "net" and a new tab shows up in the Graph Canvases area.
 
 ![](img09.png)
 
-You only see one node because by default, all xyz coordinates are set to zero. Before we change them, try out the following command:
+You only see one node because by default, all xyz coordinates are set to zero. Before we change them, run the following command five times:
 
 ```
 print rand();
+```
+This will give a random float from 0 to 1. You can give two arguments for min and max values.
+
+```
+print rand(-5,5);
 ```
 
 Type and run the following command.
