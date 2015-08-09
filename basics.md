@@ -61,7 +61,10 @@ link[] lt;
 graph(nt,lt) net=import("net.txt");
 ```
 
-Run the gel script and the object "net" shows up under Graphs in the Data panel. Double click "net" and a new tab shows up in the Graph Canvases area.
+Run the gel script and the object "net" shows up under Graphs in the Data panel. Two other objects are created: nt, and lt. Click and expand the two. 
+Notice nt has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. 
+
+Double click "net" and a new tab shows up in the Graph Canvases area.
 
 ![](img09.png)
 
@@ -75,3 +78,5 @@ foreach node in net set _text=name;
 ```
 
 ![](img10.png)
+
+The **layout** function has a few preset xyz coordinate calculations for each of the nodes. Type "help layout;" to find out more. 
