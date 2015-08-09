@@ -82,7 +82,11 @@ This will give a random float from 0 to 1. You can give two arguments for min an
 print rand(-5,5);
 ```
 
-Type and run the following command.
+To change the layout let's try:
+
+```
+foreach node in net set _x=rand(-5,5),_y=rand(-5,5),_z=rand(-5,5);
+```
 
 ```
 layout(net,"circle");
