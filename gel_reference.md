@@ -3,10 +3,11 @@
 **center**
 
 Resets x,y,z values so the center of the graph is within the viewing window.
-Centers the currently displayed and selected graph.
+Center the given graph. If the name of one of the nodes is supplied, it will center the visualization on that node.
 
 ```
-center();
+center(graph); 
+center(graph,"jack");
 ```
 
 **clear**
