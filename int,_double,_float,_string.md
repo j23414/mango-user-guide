@@ -1,6 +1,12 @@
 # 4 Data Primitives
 
-There are **4 data primitives** in GEL: **integers**, **doubles**, **floats**, and **strings**. Type the following commands into Gel console, pressing Enter/Return after each semicolon. 
+GEL has **4 data primitives**
+1. **integers**
+2. **doubles**
+3. **floats**
+4. **strings**. 
+ 
+Type the following commands into Gel console, pressing Enter/Return after each semicolon. 
 
 ```
 int i = 0; 
