@@ -40,8 +40,8 @@ Go to **File/New** and create "net.txt". This file will store a small network.
 
 ![](img07.png)
 
-Network files can be imported as csv or other delimited text files. These can be exported from excel. The network files usually include a list of nodes, a hypen on it's own line, and a list of edges. Copy and paste the following text blocks into your net.txt and gel.txt files.
-**In net.txt**
+Network files can be imported as csv or other delimited text files. These can be exported from excel. The network files usually include a list of nodes, a hypen on it's own line, and a list of edges. Copy and paste the following text blocks into your net.txt and gel.txt files. In
+**net.txt**
 ```
 a
 b
@@ -65,7 +65,7 @@ Run the gel script and the object "net" shows up under Graphs in the Data panel.
 
 ![](img11.png)
 
-Notice **nt** has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. Expand **lt** and take a look at the attributes. These are usually associated with the 3D layout or visualization of the network. 
+Notice **nt** has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. These are usually associated with the 3D layout or visualization of the network. Expand **lt** and take a look at the attributes. 
 
 Double click "net" and a new tab shows up in the Graph Canvases area.
 
