@@ -163,3 +163,16 @@ sum.+=net2;
 Save or Export the Network
 ----
 
+Save if you want to store graphs and data objects to be loaded into Mango again later.
+```
+save "state.txt";
+clear;
+run "state.txt";
+```
+
+Export if you want to send graph data to another application.
+
+```
+export("sum.csv","csv",sum);
+```
+
