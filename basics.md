@@ -61,7 +61,9 @@ link[] lt;
 graph(nt,lt) net=import("net.txt");
 ```
 
-Run the gel script and the object "net" shows up under Graphs in the Data panel. Two other objects are created: nt, and lt. Click and expand the two.
+Run the gel script and the object "net" shows up under Graphs in the Data panel. The "4|4" means net has 4 nodes and 4 links. Two other objects are created: nt, and lt. Click and expand the two.
+
+![](img11.png)
 
 Notice **nt** has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. Expand **lt** and take a look at the attributes. These are usually associated with the 3D layout or visualization of the network. 
 
