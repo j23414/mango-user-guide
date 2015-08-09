@@ -81,6 +81,13 @@ c,d,0.8
 a,d,0.2
 ```
 
+Change your gel.txt to load new type of network file.
+
+```
+node(string name,int count,string type) nt;
+link[float weight] lt;
+graph(nt,lt) net=import("net.txt");
+```
 
 Double click "net" and a new tab shows up in the Graph Canvases area.
 
