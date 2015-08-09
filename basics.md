@@ -67,6 +67,21 @@ Run the gel script and the object "net" shows up under Graphs in the Data panel.
 
 Notice **nt** has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. These are usually associated with the 3D layout or visualization of the network. Expand **lt** and take a look at the attributes. 
 
+Change your net.txt file to look like the following:
+
+```
+a,10
+b,20
+c,30
+d,40
+-
+a,b,3.3
+a,c,7.9
+c,d,6.0
+a,d,1.2
+```
+
+
 Double click "net" and a new tab shows up in the Graph Canvases area.
 
 ![](img09.png)
@@ -103,4 +118,3 @@ foreach node in net set _text=name;
 
 ![](img10.png)
 
-The **layout** function has a few preset xyz coordinate calculations for each of the nodes. Type "help layout;" to find out more. 
