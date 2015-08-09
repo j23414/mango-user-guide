@@ -2,8 +2,7 @@
 
 **center**
 
-Resets x,y,z values so the center of the graph is within the viewing window.
-Center the given graph. If the name of one of the nodes is given, it will center the visualization on that node.
+Centers a given graph. This will change xyz values so the middle of the graph is at coordinates 0,0,0. If a node name is given, the entire graph will be shifted over so that node is at 0,0,0. 
 
 ```
 center(graph); 
