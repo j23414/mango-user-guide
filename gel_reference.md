@@ -11,7 +11,7 @@ center(graph,"jack");
 
 **clear**
 
-clear all data and graph objects from Mango
+Clears/removes all data and graph objects from Mango.
 
 ```
 clear;
