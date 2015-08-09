@@ -145,7 +145,7 @@ i=40;
 
 **layout**
 
-preset graph layouts, applied to the currently viewed and selected graph in the canvas area.
+preset graph layouts, applied to the given graph **g**
 
 layout(type)
 type: either "random", "cube", or "circle"
