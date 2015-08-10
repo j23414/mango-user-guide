@@ -7,7 +7,7 @@ foreach
 ---
 The general form of the foreach statement is as follows
 
-**foreach** \\<node|link\>  
+**foreach** \\<node\|link\>  
 
 select 
 ---
