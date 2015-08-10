@@ -196,7 +196,7 @@ double d = 4/3;   /* d = 1.000 */
 double d = 4.0/3; /* d = 1.333... */ 
 ```
 
-Integers can be assigned to a float or double variable with no real change. 
+**Integers** can be assigned to a float or double variable with no real change. 
 ```
 float f = 3;   /* f = 3.0000 */
 double d = 4;  /* d = 4.0000 */
