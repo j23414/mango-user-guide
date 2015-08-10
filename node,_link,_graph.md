@@ -8,9 +8,15 @@ Defining graphs in GEL requires first defining a **nodetype** and **linktype**. 
 
 ```
 node(string name) nt;            // most basic nodetype
-node(string name, int count) nt; // also contains node attribute count
-node(string id, int count=3) nt; // contains a default value for count
+node(string name, int count) nt2; // also contains node attribute count
+node(string id, int count=3) nt3; // contains a default value for count
 ```
+
+Notice how each one is shown in the Data panel. Expand each one to see the list of attributes.
+
+![](img22.png)
+
+From the figure, the ones in purple are user defined attributes. The ones in blue, with an underscore prefix, are system defined attributes. 
 
 In the same way, you can define a **linktype** with its associated link attributes.
 
