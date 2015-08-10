@@ -10,6 +10,8 @@ Since links connect pairs of nodes, links are identified by the pair of node nam
 
 The major strength of Mango is that it can also deal with graph attributes. Nodes and links may have a set of attributes associated with them. For example, in a social network, an individual named "Bob" may have an age, birth date, home address, height and weight. 
 
+![](img21.png)
+
 
 
 
