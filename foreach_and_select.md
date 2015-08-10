@@ -5,11 +5,9 @@ GEL's method of propagating values through a network relies on foreach and selec
 
 foreach 
 ---
-The general form of the foreach statement is as follows
+The general form of the foreach statement is as follows:
 
 **foreach** *node* | *link* **in** *graphname* **where** *condition* **set** *expression* **;**
-
-
 
 select 
 ---
