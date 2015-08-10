@@ -201,3 +201,9 @@ double d = 4.0/3; /* d = 1.333... */
 float f = 3;   /* f = 3.0000 */
 double d = 4;  /* d = 4.0000 */
 ```
+
+Gel will attempt to convert **strings** if assigned to a float or double.
+
+```
+float f = "3.4"; /* f = 3.4 */
+```
