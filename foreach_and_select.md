@@ -7,7 +7,8 @@ foreach
 ---
 The general form of the foreach statement is as follows
 
-**foreach** \\<node\|link\>  
+**foreach** *node* | *link* **in** *graphname* **where** *condition* **set** *expression* **;**
+
 
 select 
 ---
