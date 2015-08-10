@@ -292,6 +292,15 @@ trigonometric tan function given the angle in radians
 double v = tan(315.5);
 ```
 
+**time**
+
+The time out value when waiting for a loop to finish.
+
+```
+time;      /* check what the current time out value is */
+time 2000; /* set to 2000 ms */
+```
+
 **verb**
 
 set Gel verbose level 
@@ -307,3 +316,11 @@ verb 3; // set verbose level to 3
 verb;  //check current verbose level
 ```
 
+**while**
+
+Gel has looping constructs
+
+```
+int i=10;
+while(i<10) i++;
+```
