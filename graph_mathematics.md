@@ -1,12 +1,22 @@
 # Graph Mathematics
 
-This is a description of graph mathematics. 
+One of the strengths of Gel is it's set of graph mathematics. This allows you to combine and compare multiple heterogeneous graphs in a typed command.
 
-$$G=\{V,E\}$$ where $$V=\{v_1,v_2,v_3,...,v_n\}$$
+What might you want to do with two graphs? You may want to combine them together. Therefore we have graph addition. 
 
-$$
-\begin{align}
-a = 4 && runner=five\\
-a = 4 && runner=five
-\end{align}
-$$
+```
+graph(nt,lt) A;
+graph(nt,lt) B;
+
+graph(nt,lt) C = A-A;
+```
+What do you expect to happen? Try the code. Your results should be similar to those below.
+
+Notice how *A-A* resulted in graph *A* with no links. That is because '-' and '+' results in subtraction and addition of links. To subtract and add nodes put a dot '.' in front of the operators. 
+
+```
+graph(nt,lt) C = A.-A;
+```
+
+This results in the empty graph.
+
