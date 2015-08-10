@@ -11,5 +11,5 @@
    * [Basics](basics.md)
 * [Airline Fights](airline_fights.md)
 * [GEL Reference](gel_reference.md)
-* foreach and select
+* [foreach and select](foreach_and_select.md)
 
