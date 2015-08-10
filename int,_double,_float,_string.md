@@ -174,7 +174,7 @@ f=2.3;
 d=3.3/4.4;
 ```
 
-**Warning:** Values must have at least one number to the left of the decimal place.
+During assignment, values must have at least one number to the left of the decimal place.
 
 ```
 /* does not work */
