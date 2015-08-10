@@ -202,8 +202,16 @@ float f = 3;   /* f = 3.0000 */
 double d = 4;  /* d = 4.0000 */
 ```
 
-Gel will attempt to convert **strings** if assigned to a float or double.
+Gel will attempt to convert **strings** if assigned to a float or double. If conversion is not possible, then the assigned value is 0.
 
 ```
-float f = "3.4"; /* f = 3.4 */
+float f = "3.4";   /* f = 3.4 */
+float f = "hello"; /* f = 0.0 */
 ```
+
+If the string contains a number as a prefix, the number will be stored while the rest of the string will be ignored. The same is NOT true if the number is at the end of the string.
+```
+float f = "3 pigs"; /* f = 3.0 */
+float f = "run 4";  /* f = 0   */
+```
+
