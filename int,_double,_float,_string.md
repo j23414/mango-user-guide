@@ -4,7 +4,7 @@ GEL has **4 data primitives**
 1. **integers**
 2. **doubles**
 3. **floats**
-4. **strings**. 
+4. **strings** 
  
 Type the following commands into Gel console, pressing Enter/Return after each semicolon. 
 
@@ -217,10 +217,21 @@ float f = "run 4";  /* f = 0   */
 
 Strings
 ---
-Strings are any type of text that contain letters, numbers and symbols. For example "c", "4 sale", and "Hello World"; Strings must be surrounded by double quotation marks. Gel does not recognize single quotation marks for anything. Strings are defined using the keyword **string** and the variable name.
+Strings are any type of text that contain letters, numbers and symbols. For example "c", "4 sale", and "Hello World"; Strings are defined using the keyword **string** and the variable name.
 
 ```
 string s = "hello world";
 string name = "Bob";
 ```
+
+Strings must be surrounded by double quotation marks. Gel does not recognize single quotes. 
+
+```
+/* will not work */
+string s = 'hello world';
+
+/* will work */
+string s = "hello world";
+```
+
 
