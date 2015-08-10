@@ -22,6 +22,7 @@ In the same way, you can define a **linktype** with its associated link attribut
 
 ```
 link[] lt;
+link<> lt;
 link[float weight, string type="undirected"] lt;
 link<float weight, string type="directed"> lt;
 ```
