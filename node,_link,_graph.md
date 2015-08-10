@@ -126,6 +126,7 @@ Nodes can have default values
 node(string name, int age=20, float weight=120, string birthdate="January 1, 1990") person;
 ```
 
+You can combine 
 
 Link Type
 ---
