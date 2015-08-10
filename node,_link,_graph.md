@@ -105,5 +105,12 @@ g.node."node1"._x=10;
 g.link."node1":"node2".weight=10;
 ```
 
+Node type
+---
+Gel is different from many other graph analysis scripts in that it takes into account node and link attributes. However this means you have to define a node type or a link type. Since nodes are identified by unique strings, the basic node type is defined with one string attribute. Node is defined with the keyword **node**, list of attributes in parenthesis, and node type name. 
+
+```
+node(stirng name) nt;
+```
 
 
