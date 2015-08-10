@@ -189,10 +189,15 @@ double d = 0.5;
 When assigning mathematical expressions to a float or a double, rounding might occur. This happens if none of the numbers have at least one number to the right of the decimal place.
 
 ```
-float f = 4/3;   /* f = 1 */
+float f = 4/3;   /* f = 1.000 */
 float f = 4.0/3; /* f = 1.333... */ 
 
-double d = 4/3;   /* d = 1 */
+double d = 4/3;   /* d = 1.000 */
 double d = 4.0/3; /* d = 1.333... */ 
 ```
 
+Integers can be assigned to a float or double variable with no real change. 
+```
+float f = 3;   /* f = 3.0000 */
+double d = 4;  /* d = 4.0000 */
+```
