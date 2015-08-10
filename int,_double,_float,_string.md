@@ -141,7 +141,7 @@ int i = 2.3;  /* i = 2 */
 int i = 2.5;  /* i = 3 */
 int i = 2.8;  /* i = 3 */
 ```
-When assigned to an integer variable, Gel will attempt to convert a **string** to a numeric value. If the string is a number such as "30", the number 30 will be stored as an int. If the string cannot be converted into a number, then zero will be stored in the int.
+When assigned to an integer variable, Gel will attempt to convert a **string** to a numeric value. If the string is a number such as "30", the number 30 will be stored as an int. If the string cannot be converted into a number, then zero will be stored in the int. If the string contains a number as a prefix, the number will be stored as an int while the rest of the string will be ignored.
 
 ```
 int i = "30";     /* i = 30 */
