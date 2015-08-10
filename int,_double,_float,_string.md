@@ -152,7 +152,7 @@ The same rounding rules apply from **floats** and **doubles**.
 int i = "3.3";    /* i = 3 */
 int i = "3.8";    /* i = 4, due to rounding up */
 ```
-If the string contains a number as a prefix, the number will be stored as an int while the rest of the string will be ignored. The same is not true for suffixed numbers.
+If the string contains a number as a prefix, the number will be stored as an int while the rest of the string will be ignored. The same is not true if the number is at the end of the string.
 ```
 int i = "3 pigs"; /* i = 3 */
 int i = "run 4";  /* i = 0 */
