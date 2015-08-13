@@ -2,9 +2,9 @@
 
 A Suppose you have two graphs called A and B. 
 
-One of the strengths of Gel is it's set of graph mathematics. This allows you to combine and compare multiple heterogeneous graphs in a typed command.
+One of the strengths of Gel is it's set of graph mathematics. This allows you to combine and compare many heterogeneous graphs in a typed command.
 
-What might you want to do with two graphs? You may want to combine them together. Therefore we have graph addition. 
+What might you want to do with two graphs? You may want to combine them together. Thus we have graph addition. 
 
 ```
 graph(nt,lt) A;
