@@ -1,6 +1,6 @@
 
 # The data, aka "drinking from a fire hydrant"
-There is no limit to the amount of data available online in this day and age. But here is a listing of what data sets are available to get you started.
+The number of size of online databases continue to grow. This is a listing of some public network repositories to get you started.
 
 
 SNAP
