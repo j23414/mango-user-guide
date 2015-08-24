@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [QuickStart](quickstart.md)
 * [GEL Data Structures](gel_data_structures.md)
+   * Floats and Doubles
    * [int, double, float, string](int,_double,_float,_string.md)
    * [node, link, graph](node,_link,_graph.md)
    * [Integers](integers.md)
