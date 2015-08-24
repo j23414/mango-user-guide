@@ -9,6 +9,12 @@ The general form of the foreach statement is as follows:
 
 **foreach** *node* | *link* **in** *graph* **where** *condition* **set** *expression* **;**
 
+```
+foreach node in airports set _x=long,_y=lat;
+foreach link in flights set _r=rand();
+foreach node in airports where (in+out)>10 set _text=name;
+```
+
 select 
 ---
 
