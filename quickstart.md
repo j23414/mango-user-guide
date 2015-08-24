@@ -71,9 +71,10 @@ Right click to start the force-directed layout.
 
 ![](img27.png)
 
-Turn on node labels by typing either of the following:
+Turn on node labels by typing the following:
 
 ```
-text("node");
 foreach node in cpn set _text=name;
 ```
+
+
