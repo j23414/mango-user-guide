@@ -7,7 +7,11 @@ foreach
 ---
 The general form of the foreach statement is as follows:
 
-**foreach** *node* | *link* **in** *graphname* **where** *condition* **set** *expression* **;**
+**foreach** *node* | *link* **in** *graph* **where** *condition* **set** *expression* **;**
 
 select 
 ---
+
+The general form of the select statement is as follows:
+
+**select** *node* | *link* **from** *graph* **where** *condition* **set** *expression*;
