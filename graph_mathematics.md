@@ -1,10 +1,8 @@
 # Graph Mathematics
 
-A Suppose you have two graphs called A and B. 
+One of the strengths of Gel is its set of graph mathematics. Graph mathematics allow you to combine and compare many heterogeneous graphs. Each graph is treated as a unit that can be added, subtracted, or otherwise combined with each other. Gel takes care of the complications of graph attribute conflicts and merging. 
 
-One of the strengths of Gel is it's set of graph mathematics. This allows you to combine and compare many heterogeneous graphs in a typed command.
-
-What might you want to do with two graphs? You may want to combine them together. Thus we have graph addition. 
+What might you want to do with two graphs? You may want to combine them together. 
 
 ```
 graph(nt,lt) A;
