@@ -52,5 +52,6 @@ float f = "hello"; /* f = 0.0 */
 If the string contains a number as a prefix, the number will be stored while the rest of the string will be ignored. The same is NOT true if the number is at the end of the string.
 ```
 float f = "3 pigs"; /* f = 3.0 */
+float f = "3.5 pigs"; /* f = 3.5 */
 float f = "run 4";  /* f = 0   */
 ```
