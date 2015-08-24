@@ -7,7 +7,7 @@
    * [Integers](integers.md)
    * [Floats and Doubles](floats_and_doubles.md)
    * [node, link, graph](node,_link,_graph.md)
-   * Strings
+   * [Strings](strings.md)
 * [foreach and select](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Tutorials](tutorials.md)
