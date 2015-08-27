@@ -12,7 +12,7 @@ From **graph theory**, a graph is defined as a set of nodes and links.
 
 * **Links:** represent relationships between a pair of entities and are identified by the pair of nodes it connects. 
 
-For example the following simple graph is represented by the set of nodes **\{a, b, c, d\}** and the set of links **\{ab, bc, ac, ad\}**
+For example, the following graph is represented by the set of nodes **\{a, b, c, d\}** and the set of links **\{ab, bc, ac, ad\}**
 
 <center>
 ![](g01net.png)
