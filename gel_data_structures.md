@@ -30,6 +30,7 @@ Since links connect pairs of nodes, links are identified by the pair of node nam
 The major strength of Mango is that it can also deal with graph attributes. Nodes and links may have a set of attributes associated with them. For example, in a social network, an individual named "Bob" may have an age, birth date, home address, height and weight. 
 -->
 
+Nodes and links on a graph can have annotations. The following defines a graph in Gel with a nodetype a and a linktype b. 
 ![](img21.png)
 
 
