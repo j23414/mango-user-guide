@@ -17,6 +17,11 @@ For example, the following graph is represented by the set of nodes **\{a, b, c,
 <center>
 ![](g01net.png)
 
+Since the graph is only defined as the node and connections, the graph can have multiple visualizations.
+
+<center>
+![](g01net.png) ![](g02net.png)
+
 A graph is defined as a set of nodes and edges. A set of people and their friend network. Or a set of towns and the interconnected highway system. Therefore, when designing a graph data type, we must have a way to identify nodes and links.  Nodes can be identified by unique names. Gel uses string ids, unlike other programs which uses a unique number id. This reduces the mapping from name to number that is required when comparing nodes in multiple graphs. 
 
 Since links connect pairs of nodes, links are identified by the pair of node names. 
