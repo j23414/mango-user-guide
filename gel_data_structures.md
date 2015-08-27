@@ -14,9 +14,9 @@ From **graph theory**, a graph is defined as a set of nodes and links.
 
 For example the following simple graph is represented by the set of nodes **\{a, b, c, d\}** and the set of links **\{ab, bc, ac, ad\}**
 
-\center{
-![](g01net.png)}
-
+<center>
+![](g01net.png)
+</center>
 
 A graph is defined as a set of nodes and edges. A set of people and their friend network. Or a set of towns and the interconnected highway system. Therefore, when designing a graph data type, we must have a way to identify nodes and links.  Nodes can be identified by unique names. Gel uses string ids, unlike other programs which uses a unique number id. This reduces the mapping from name to number that is required when comparing nodes in multiple graphs. 
 
