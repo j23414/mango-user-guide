@@ -16,5 +16,5 @@
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
 * [Databases](databases.md)
-   * KEGG
+   * [KEGG](kegg.md)
 
