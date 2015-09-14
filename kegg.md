@@ -24,3 +24,12 @@ Each will be KEGG pathway will be loaded as a separate network.
 Double click the pathway and notice how it retains the original xy coordinates from KEGG.
 
 ![](http://rest.kegg.jp/get/hsa00010/image)
+
+Open the KEGG dialog window again, and this time check the box next to **Merge Fetched Pathways** and hit the **Fetch Pathway Networks** button. 
+
+![](img37.png)
+
+All selected pathways are merged into one network where each pathway has a different _z value.
+
+![](img38.png)
+
