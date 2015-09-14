@@ -15,5 +15,5 @@
 * [Airline Fights](airline_fights.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
-* Databases
+* [Databases](databases.md)
 
