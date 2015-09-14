@@ -13,6 +13,8 @@ A dialog window will pop and attempt to connect to KEGG database. A list of the 
 
 Select an organism from the list so it's highlighted and then click the **Fetch Pathway List** button. 
 
+You may also type into the search box and press **Enter/Return** to search for a particular organism.
+
 <div style="width:400px">
 ![](img34.png)
 
