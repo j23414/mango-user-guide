@@ -10,3 +10,7 @@ A dialog window will pop and attempt to connect to KEGG database. It will take a
 ![](img33.png)
 
 Select an organism from the list so it's highlighted and then click the **Fetch Pathway List** button. 
+
+![](img34.png)
+
+Select one (click) or multiple (ctrl+click, or shift+click) pathways and hit the **Fetch Pathway Networks** button.
