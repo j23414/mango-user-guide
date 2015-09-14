@@ -16,3 +16,11 @@ Select an organism from the list so it's highlighted and then click the **Fetch 
 Select one pathway (click) or multiple pathways (ctrl+click, or shift+click) and hit the **Fetch Pathway Networks** button.
 
 ![](img36.png)
+
+Each will be KEGG pathway will be loaded as a separate network.
+
+![](img35.png)
+
+Double click the pathway and notice how it retains the original xy coordinates from KEGG.
+
+![](http://rest.kegg.jp/get/hsa00010/image)
