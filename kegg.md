@@ -13,4 +13,6 @@ Select an organism from the list so it's highlighted and then click the **Fetch 
 
 ![](img34.png)
 
-Select one (click) or multiple (ctrl+click, or shift+click) pathways and hit the **Fetch Pathway Networks** button.
+Select one pathway (click) or multiple pathways (ctrl+click, or shift+click) and hit the **Fetch Pathway Networks** button.
+
+![](img36.png)
