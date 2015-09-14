@@ -18,7 +18,7 @@ Select an organism from the list so it's highlighted and then click the **Fetch 
 
 Select one pathway (click) or multiple pathways (ctrl+click, or shift+click) and hit the **Fetch Pathway Networks** button.
 
-<div style="width:400px">
+<div style="width:500px">
 ![](img36.png)
 
 Each will be KEGG pathway will be loaded as a separate network.
