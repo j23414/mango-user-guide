@@ -13,8 +13,8 @@
 * [Tutorials](tutorials.md)
    * [Basics](basics.md)
 * [Airline Fights](airline_fights.md)
-* [Network Databases](chapter1.md)
-* [GEL Reference](gel_reference.md)
 * [Databases](databases.md)
    * [KEGG](kegg.md)
+* [Network Databases](chapter1.md)
+* [GEL Reference](gel_reference.md)
 
