@@ -38,6 +38,6 @@ Open the KEGG dialog window again, and this time check the box next to **Merge F
 
 All selected pathways are merged into one network where each pathway has a different _z value.
 
-<div style="width:400px">
+<div style="width:500px">
 ![](img38.png)
 
