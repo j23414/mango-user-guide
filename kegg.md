@@ -5,7 +5,7 @@ Open **Mango** and click on **Databases/KEGG** in the menu.
 <!--<center> -->
 ![](img32.png)
 
-A dialog window will pop and attempt to connect to KEGG database. It will take around a minute for a list of organisms to be shown in the first list. 
+A dialog window will pop and attempt to connect to KEGG database. A list of the current organisms on KEGG will be fetched. This may take up to a minute depending on your internet speed. 
 
 <div style="width:400px">
 ![](img33.png)
