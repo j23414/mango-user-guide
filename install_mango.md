@@ -7,5 +7,3 @@ Install **Mango** by going to http://www.complex.iastate.edu/download/Mango and 
 * Linux Redhat variants - Mango.zip
 
 For a full walk through see the following videos.
-
-{% youtube %}https://www.youtube.com/watch?v=9bZkp7q19f0{% endyoutube %}
