@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Install Mango
 * [QuickStart](quickstart.md)
 * [GEL Data Structures](gel_data_structures.md)
    * [int, double, float, string](int,_double,_float,_string.md)
