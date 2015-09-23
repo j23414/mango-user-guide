@@ -43,6 +43,8 @@ All selected pathways are merged into one network where each pathway has a diffe
 <div style="width:500px">
 ![](img38.png)
 
+##Cleaning Up and Subsetting KEGG data
+
 Since KEGG contains type==ECrel or gene to gene connections as well as reactions compound to gene to compound connections. 
 
 You can get the gene to gene network using the following command:
@@ -50,5 +52,7 @@ You can get the gene to gene network using the following command:
 ```
 auto ggnet = select link from hsa_merged7 where type=="ECrel";
 ```
+
+put in picture
 
 
