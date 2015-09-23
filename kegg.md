@@ -1,5 +1,9 @@
 # KEGG
 
+* Fetch One Pathway
+* Fetch Multiple Pathways (merged and separated)
+* Clean up or subset fetched KEGG network
+
 Open **Mango** and click on **Databases/KEGG** in the menu.
 
 <!--<center> -->
