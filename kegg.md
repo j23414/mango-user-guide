@@ -76,4 +76,6 @@ Will contain compound to gene to compound links. Drop gene to gene links.
 auto rxnet = select link from hsa_merged7 where type!="ECrel";
 ```
 
+put in picture
+
 
