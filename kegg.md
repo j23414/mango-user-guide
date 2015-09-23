@@ -3,6 +3,7 @@
 * Fetch One Pathway
 * Fetch Multiple Pathways (merged and separated)
 * Clean up or subset fetched KEGG network
+* Overlay microarray expression onto KEGG network
 
 Open **Mango** and click on **Databases/KEGG** in the menu.
 
