@@ -45,6 +45,16 @@ All selected pathways are merged into one network where each pathway has a diffe
 
 ##Cleaning Up and Subsetting KEGG data
 
+* Take out pathway nodes
+* Remove Orthologs not in this species
+
+We will continue to use the hsa_merged7 network for the code examples.
+
+```
+hsa_merged7=select node from hsa_merged7 where type!="ortholog" && type!=map;
+```
+
+##Gene to Gene Network
 Since KEGG contains type==ECrel or gene to gene connections as well as reactions compound to gene to compound connections. 
 
 You can get the gene to gene network using the following command:
