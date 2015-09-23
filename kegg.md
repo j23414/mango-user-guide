@@ -55,6 +55,7 @@ We will continue to use the hsa_merged7 network for the code examples.
 hsa_merged7=select node from hsa_merged7 where type!="ortholog" && type!=map;
 hsa_merged7.-=select node from hsa_merged7 where type=="ortholog" && (in+out)<1;
 ```
+put in picture
 
 ##Gene to Gene Network
 Since KEGG contains type==ECrel or gene to gene connections as well as reactions compound to gene to compound connections. 
@@ -66,5 +67,7 @@ auto ggnet = select link from hsa_merged7 where type=="ECrel";
 ```
 
 put in picture
+
+
 
 
