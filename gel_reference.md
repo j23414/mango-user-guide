@@ -330,7 +330,11 @@ string s = tolower("Hello World"); /* s = "HELLO WORLD" */
 
 **trim**
 
+Drops spaces at the beginning and end of the string.
+
 ```
+string s = trim(" hello world "); /* s ="hello world" */
+
 ```
 
 **verb**
