@@ -312,17 +312,21 @@ time 2000; /* set to 2000 ms */
 
 **tocamel**
 
+Converts strings to camel case.
 ```
 string s = tocamel("hello world"); /* s="Hello World" */
 ```
 
 **tolower**
 
+Converts strings to lower case.
 ```
 string s = tolower("Hello World"); /* s = "hello world" */
 ```
 
 **toupper**
+
+Converts strings to upper case.
 
 ```
 string s = tolower("Hello World"); /* s = "HELLO WORLD" */
