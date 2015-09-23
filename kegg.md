@@ -68,6 +68,10 @@ auto ggnet = select link from hsa_merged7 where type=="ECrel";
 
 put in picture
 
+##Reaction Network
 
+```
+auto rxnet = select link from hsa_merged7 where type!="ECrel";
+```
 
 
