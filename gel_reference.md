@@ -328,6 +328,11 @@ string s = tolower("Hello World"); /* s = "hello world" */
 string s = tolower("Hello World"); /* s = "HELLO WORLD" */
 ```
 
+**trim**
+
+```
+```
+
 **verb**
 
 set Gel verbose level 
