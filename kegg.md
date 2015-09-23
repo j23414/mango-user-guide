@@ -1,6 +1,6 @@
 # KEGG
 
-## Outline
+**Outline**
 * Fetch Separate KEGG Pathways
 * Fetch and Merge Pathways
 * Clean up or subset fetched KEGG network
