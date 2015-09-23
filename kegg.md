@@ -52,6 +52,7 @@ We will continue to use the hsa_merged7 network for the code examples.
 
 ```
 hsa_merged7=select node from hsa_merged7 where type!="ortholog" && type!=map;
+hsa_merged7.-=select node from hsa_merged7 where type=="ortholog" && (in+out)<1;
 ```
 
 ##Gene to Gene Network
