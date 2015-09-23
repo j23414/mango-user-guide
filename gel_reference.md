@@ -312,10 +312,21 @@ time 2000; /* set to 2000 ms */
 
 **tocamel**
 
+```
+string s = tocamel("hello world"); /* s="Hello World" */
+```
+
 **tolower**
+
+```
+string s = tolower("Hello World"); /* s = "hello world" */
+```
 
 **toupper**
 
+```
+string s = tolower("Hello World"); /* s = "HELLO WORLD" */
+```
 
 **verb**
 
