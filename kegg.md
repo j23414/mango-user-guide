@@ -52,7 +52,7 @@ All selected pathways are merged into one network where each pathway has a diffe
 <div style="width:500px">
 ![](img38.png)
 
-##Clean Up and Subsetting KEGG data
+##Clean Up and Subset KEGG Pathway
 
 * Take out pathway nodes
 * Remove Orthologs not in this species
