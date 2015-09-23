@@ -310,6 +310,13 @@ time;      /* check what the current time out value is */
 time 2000; /* set to 2000 ms */
 ```
 
+**tocamel**
+
+**tolower**
+
+**toupper**
+
+
 **verb**
 
 set Gel verbose level 
