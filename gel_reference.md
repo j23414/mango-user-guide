@@ -284,6 +284,15 @@ trigonometric sin function given the angle in radians
 double s = sin(3.14);
 ```
 
+**substr**
+
+for substring function
+
+```
+string s = "hello world";
+s = substr(s,0,5); /* s="hello"*/ 
+```
+
 **tan**
 
 trigonometric tan function given the angle in radians
