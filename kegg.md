@@ -47,6 +47,7 @@ All selected pathways are merged into one network where each pathway has a diffe
 
 * Take out pathway nodes
 * Remove Orthologs not in this species
+* Remove compounds that are not involved in reactions in this species
 
 We will continue to use the hsa_merged7 network for the code examples.
 
