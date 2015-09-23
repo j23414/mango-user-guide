@@ -7,7 +7,7 @@
 * Overlay microarray expression onto KEGG network
 * Overlay metabolomics data onto KEGG network
 
-## Fetch One Pathway
+## Fetch Separate KEGG Pathway
 Open **Mango** and click on **Databases/KEGG** in the menu.
 
 <!--<center> -->
