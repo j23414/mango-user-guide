@@ -1,8 +1,8 @@
 # KEGG
 
 ## Outline
-* Fetch One Pathway
-* Fetch Multiple Pathways (merged and separated)
+* Fetch Separate Pathways
+* Fetch and Merge Pathways
 * Clean up or subset fetched KEGG network
 * Overlay microarray expression onto KEGG network
 * Overlay metabolomics data onto KEGG network
