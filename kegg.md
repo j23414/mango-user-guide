@@ -34,7 +34,7 @@ Select one pathway (click) or multiple pathways (ctrl+click, or shift+click) and
 Each will be KEGG pathway will be loaded as a separate network.
 
 <div style="width:500px">
-![](img35.png)
+![](img39.png)
 
 Double click the pathway and notice how it retains the original xy coordinates from KEGG. By default genes are colored green, compounds are colored blue, and orthologs (not within this species) are colored yellow.
 
@@ -50,7 +50,7 @@ Open the KEGG dialog window again, and this time check the box next to **Merge F
 All selected pathways are merged into one network where each pathway has a different _z value.
 
 <div style="width:500px">
-![](img38.png)
+![](img40.png)
 
 ##Clean Up and Subset KEGG Pathway
 
@@ -62,9 +62,9 @@ We will continue to use the hsa_merged7 network for the code examples.
 
 ```
 hsa_merged7=select node from hsa_merged7 where type!="ortholog" && type!=map;
-hsa_merged7.-=select node from hsa_merged7 where type=="ortholog" && (in+out)<1;
+hsa_merged7.-=select node from hsa_merged7 where type=="compound" && (in+out)<1;
 ```
-put in picture
+![](img41.png)
 
 ##Gene to Gene Network
 Since KEGG contains type==ECrel or gene to gene connections as well as reactions compound to gene to compound connections. 
@@ -75,7 +75,7 @@ You can get the gene to gene network using the following command:
 auto ggnet = select link from hsa_merged7 where type=="ECrel";
 ```
 
-put in picture
+![](img42.png)
 
 ##Reaction Network
 
@@ -85,7 +85,7 @@ Will contain compound to gene to compound links. Drop gene to gene links.
 auto rxnet = select link from hsa_merged7 where type!="ECrel";
 ```
 
-put in picture
+![](img43.png)
 
 ##Combine with Microarray Expression Data
 
