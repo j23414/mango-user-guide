@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
    * [Install Mango](install_mango.md)
-* [QuickStart](quickstart.md)
 * [GEL Data Structures](gel_data_structures.md)
    * [int, double, float, string](int,_double,_float,_string.md)
    * [Integers](integers.md)
@@ -18,5 +17,6 @@
    * [KEGG](kegg.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
+* [QuickStart](quickstart.md)
 * DemoFiles
 
