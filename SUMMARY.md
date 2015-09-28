@@ -18,5 +18,5 @@
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
 * [QuickStart](quickstart.md)
-* DemoFiles
+* [DemoFiles](demofiles.md)
 
