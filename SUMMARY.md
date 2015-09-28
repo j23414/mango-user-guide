@@ -12,11 +12,11 @@
 * [Graph Mathematics](graph_mathematics.md)
 * [Tutorials](tutorials.md)
    * [Basics](basics.md)
+* [DemoFiles](demofiles.md)
 * [Airline Fights](airline_fights.md)
 * [Databases](databases.md)
    * [KEGG](kegg.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
-* [DemoFiles](demofiles.md)
 * [QuickStart](quickstart.md)
 
