@@ -89,5 +89,9 @@ auto rxnet = select link from hsa_merged7 where type!="ECrel";
 
 ##Combine with Microarray Expression Data
 
+Fetch the demo files from the following git hub site.
+
+https://github.com/j23414/Mango_Workshop
+
 
 
