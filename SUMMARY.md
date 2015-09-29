@@ -13,7 +13,6 @@
 * [Graph Mathematics](graph_mathematics.md)
 * [Tutorials](tutorials.md)
    * [Basics](basics.md)
-* [DemoFiles](demofiles.md)
 * [Airline Fights](airline_fights.md)
 * [Databases](databases.md)
    * [KEGG](kegg.md)
