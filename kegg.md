@@ -5,7 +5,7 @@
 * Fetch and Merge Pathways
 * Clean up or subset fetched KEGG network
 * Overlay microarray expression onto KEGG network
-* Overlay metabolomics data onto KEGG network
+* Overlay metabolomics data onto KEGG network (Not done yet)
 
 ## Fetch Separate KEGG Pathway
 Open **Mango** and click on **Databases/KEGG** in the menu.
