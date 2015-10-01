@@ -12,7 +12,7 @@ This tutorial will walk you through creating a gel file and some basic network f
 
 Create a Gel File and the 4 Data Primitives
 ----
-Open **Mango** and go to **File/New** or hit **Ctrl+N** to create a gel script. Create a new folder on your Desktop called **Basic** and name the new gel script "gel.txt". 
+Open **Mango** and go to **File/New** or hit **Ctrl+N** (or Cmd+N on Mac) to create a gel script. Create a new folder on your Desktop called **Basic** and name the new gel script "gel.txt". 
 
 ![](img03.png)
 
