@@ -1,7 +1,7 @@
 Walking Through the Mango Grove
 ================
 
-**outline:**
+**Outline**
 
 * Create a Gel file and the 4 data primitives
 * Create a network file and Load it
