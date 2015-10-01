@@ -56,7 +56,7 @@ a,d
 ```
 ![](img08.png)
 
-In gel.txt:
+In **gel.txt**:
 ```
 node(string name) nt;
 link[] lt;
