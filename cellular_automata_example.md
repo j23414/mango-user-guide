@@ -81,7 +81,7 @@ graph(nt,lt) ca = import("blinker.net");
 
 /* layout */
 foreach node in ca set _x=x, _y=y, _g=0, _b=0;
-center();
+center(ca);
 foreach node in ca where state==1 set _r=1;
 ```
 
