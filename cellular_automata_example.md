@@ -71,7 +71,7 @@ Run the following to generate the network file
 perl pattern2net.pl blinker.txt > blinker.net
 ```
 
-Within Mango, create the following gel script:
+Within Mango, navigate to the folder containing the files you cloned from the github site. Open the gel.txt file:
 
 ```
 /* load cellular automata pattern */
@@ -85,7 +85,7 @@ center(ca);
 foreach node in ca where state==1 set _r=1;
 ```
 
-image here
+![](img44.png)
 
 To run one step, select and run the following lines:
 
@@ -99,7 +99,7 @@ foreach node in ca where delta==0 set state=0;
 foreach node in ca set _r=state, delta=0;
 ```
 
-image here. 
+![](img45.png) 
 
 Rerun that comand to continue to blink back and forth between the patterns. Other patterns such as  toad, beacon, pulsar, glider, growth are provided. 
 
