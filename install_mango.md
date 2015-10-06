@@ -11,3 +11,13 @@ For a full walk through see the following videos.
 * **Windows:** https://youtu.be/Y0Zpj1SyTr8
 * **Mac:** https://youtu.be/bsC462EiMu8
 * **Linux:** https://youtu.be/9_cWjHFyZDQ
+
+##Check for Updates
+
+Mango is under active development so make sure to check for updates regularly. Go to **Help/Check for updates...**. You will need an internet connection in order for Mango to query the latest version. If a newer version of Mango is available a window similar to the following will show up:
+
+![](updatecheck.png)
+
+Visit the software website to download the newest version. 
+
+Otherwise a window will pop up and tell you your current version is up to date. 
