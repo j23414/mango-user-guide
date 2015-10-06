@@ -7,6 +7,7 @@ In cellular automata, a cell is in one of a finite set of states (often either a
 
 Often you are definining an intial pattern and then run it for a few steps to notice if there is a loop or some complexity arising from a simple set of rules. 
 
+##Creating a Cellular Automata Network
 For example, there is the blinker pattern where 0 represent dead and 1 represents alive:
 
 ```
@@ -86,6 +87,8 @@ foreach node in ca where state==1 set _r=1;
 ```
 
 ![](img44.png)
+
+## Game of Life
 
 To run one step, select and run the following lines:
 
