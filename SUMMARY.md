@@ -18,5 +18,5 @@
    * [KEGG](kegg.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
-* Cellular Automata Example
+* [Cellular Automata Example](cellular_automata_example.md)
 
