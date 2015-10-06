@@ -112,5 +112,5 @@ foreach node in ca set _r=state, delta=0;
 Rerun that comand to continue to blink back and forth between the patterns. Other patterns such as  toad, beacon, pulsar, glider, growth are provided. 
 
 ## Patterns
-
-![](toad01.png)
+<div style="width:200px">
+![](toad01.png)   ![](toad02.png)
