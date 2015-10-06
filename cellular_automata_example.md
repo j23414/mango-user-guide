@@ -71,7 +71,7 @@ Run the following to generate the network file
 perl pattern2net.pl blinker.txt > blinker.net
 ```
 
-Within Mango, navigate to the folder containing the files you cloned from the github site. Open the gel.txt file:
+Within Mango, navigate to the folder containing the files you cloned from the github site. Open the gel.txt file and run the top commands to load blinker.net and set default layout:
 
 ```
 /* load cellular automata pattern */
