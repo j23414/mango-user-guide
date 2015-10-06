@@ -99,3 +99,7 @@ foreach node in ca where delta==0 set state=0;
 foreach node in ca set _r=state, delta=0;
 ```
 
+image here. 
+
+Rerun that comand to continue to blink back and forth between the patterns. Other patterns such as  toad, beacon, pulsar, glider, growth are provided. 
+
