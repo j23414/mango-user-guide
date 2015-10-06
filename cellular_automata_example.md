@@ -65,3 +65,23 @@ for(my $i=0; $i<$x; $i++){
 } 
 ```
 
+Run the following to generate the network file
+
+```
+perl pattern2net.pl blinker.txt > blinker.net
+```
+
+Within Mango, create the following gel script:
+
+```
+/* load cellular automata pattern */
+node(string name, int state, float x, float y, int delta) nt;
+link[]lt;
+graph(nt,lt) ca = import("blinker.net");
+
+/* layout */
+foreach node in ca set _x=x, _y=y, _g=0, _b=0;
+center();
+foreach node in ca where state==1 set _r=1;
+```
+
