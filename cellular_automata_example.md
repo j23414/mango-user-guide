@@ -85,3 +85,17 @@ center(ca);
 foreach node in ca where state==1 set _r=1;
 ```
 
+image here
+
+To run one step, select and run the following lines:
+
+```
+/* Game of Life */
+foreach link in ca set in.delta+=out.state, out.delta+=in.state;
+foreach node in ca where state==1 && (delta<2 || delta>3) set delta=0;
+foreach node in ca where state==0 && delta!=3 set delta=0;
+foreach node in ca where delta>0 set state=1;
+foreach node in ca where delta==0 set state=0;
+foreach node in ca set _r=state, delta=0;
+```
+
