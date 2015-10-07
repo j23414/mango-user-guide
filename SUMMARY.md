@@ -13,7 +13,7 @@
 * [Graph Mathematics](graph_mathematics.md)
 * [Tutorials](tutorials.md)
    * [Basics](basics.md)
-* [Airline Fights](airline_fights.md)
+* [Airline Fights Example](airline_fights.md)
 * [Databases](databases.md)
    * [KEGG](kegg.md)
 * [Network Databases](chapter1.md)
