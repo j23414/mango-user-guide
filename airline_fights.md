@@ -103,4 +103,14 @@ states.+=background;
 foreach node in background set _r=0.8,_g=0.8,_b=0.8;
 ```
 
+##Fetch flights going into or out of Iowa
+
+```
+graph(nt,lt) iowa = select link from airports where in.state=="IA" || out.state=="IA";
+foreach link in iowa set _r=1,_g=0,_b=0, _width=2, _text="";
+foreach node in iowa set _radius=0.5,_text=state;
+```
+
+
+
 
