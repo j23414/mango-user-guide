@@ -25,6 +25,21 @@ Since airports contains longitude and latitude values, map them to xy coordinate
 /* layout */
 foreach node in airports set _x=long, _y=lat, _z=0;
 center(airports,"DEN");
+```
+
+Add in the flights data:
+```
 airports += flights;
 foreach link in airports set _width=0.1;
+```
+
+If you zoom in on the graph, some of the airports are unconnected. Flights only contains major airlines. We could delete unconnected nodes by typing the following: Do not run this code yet.
+
+```
+airports=select node from airports where (in+out)>0;
+```
+But since we want to keep the shape of the United States, we are going to use those  unconnected nodes as a background, moving them back 3 units and setting their color to grey.
+
+```
+foreach node in airports where (in+out)<1 set _z=-3,_r=0.8,_g=0.8,_b=0.8;
 ```
