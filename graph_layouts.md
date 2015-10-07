@@ -1,2 +1,40 @@
 # Graph Layouts
 
+Each node in a graph has the following system variables for xyz coordinates.
+
+```
+_x
+_y
+_z
+```
+
+Therefore you can directly modify these node attributes to create customized layouts.
+
+## Create a Random Network
+
+```
+foreach node in graph set _x=rand(-10,10),_y=(-5,5), _z=rand(-2,2);
+```
+
+## Default Layouts
+
+```
+layout(graphname, "circle");
+layout(graphname, "random");
+layout(graphname, "cube");
+```
+
+## Hive Plot Example
+
+```
+/* hive plot */
+foreach node in flights set i=log(in+out),f=rand(1,10), _y=sin(2*3.14/5*i)*f, _x=cos(2*3.14/5*i)*f;
+foreach node in flights set i=(log(in+out)),f=rand(1,10), _y=sin(2*3.14/5*i)*10*(log(in+out)-i+0.8), _x=cos(2*3.14/5*i)*10*(log(in+out)-i+0.8);
+```
+
+## Crown Plot Example
+
+```
+layout(graphname, "circle");
+foreach node in graphname set _z=(in+out)/5.0;
+```
