@@ -38,3 +38,10 @@ foreach node in flights set i=(log(in+out)),f=rand(1,10), _y=sin(2*3.14/5*i)*10*
 layout(graphname, "circle");
 foreach node in graphname set _z=(in+out)/5.0;
 ```
+
+## Direct Map Example
+
+```
+foreach node in airports set _x=long, _y=lat, _z=0;
+center(airports,"DEN");
+```
