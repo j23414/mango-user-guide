@@ -46,3 +46,10 @@ foreach node in airports set _x=long, _y=lat, _z=0;
 center(airports,"DEN");
 ```
 
+## Bipartite Graph Example
+
+```
+foreach node in bipartite where group=="1" set _x=-5, _y=rand(-5,5),_z=0;
+foreach node in bipartite where group=="1" set _x=5, _y=rand(-5,5),_z=0;
+```
+
