@@ -14,9 +14,9 @@
 * [Tutorials](tutorials.md)
    * [Basics](basics.md)
 * [Airline Fights Example](airline_fights.md)
+* [Cellular Automata Example](cellular_automata_example.md)
 * [Databases](databases.md)
    * [KEGG](kegg.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
-* [Cellular Automata Example](cellular_automata_example.md)
 
