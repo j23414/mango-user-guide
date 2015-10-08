@@ -6,4 +6,4 @@ Currently Mango provides methods to connect to the following network databases. 
 
 ##KEGG
 
-Since it was motivated by bioligical research, we created a method to fetch bioligical pathways data from KEGG. 
+Since it was motivated by bioligical research, we created a method to fetch biological pathways data from KEGG. 
