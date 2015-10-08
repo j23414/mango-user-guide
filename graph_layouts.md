@@ -40,6 +40,7 @@ foreach node in flights where log(in+out)<2.49 || log(in+out)>4.51 set _r=1;
 foreach node in flights where log(in+out)>=1.49 && log(in+out)<3.50 set _g=1,_b=0;
 foreach node in flights where log(in+out)>=3.50 && log(in+out)<5.50 set _b=1;
 foreach link in flights set _r=(in._r+out._r)/2.0,_g=(in._g+out._g)/2.0,_b=(in._b+out._b)/2.0; 
+
 ```
 
 ## Crown Plot Example
