@@ -26,8 +26,9 @@ string s="hello world";
 print substr(s,0,5); // prints first 5 characters "hello"
 ```
 
-Case Conversion
+**Case Conversion**
 
-* **tolower(s);**
+* **tolower(s);** 
 * **toupper(s);**
 * **tocamel(s);**
+
