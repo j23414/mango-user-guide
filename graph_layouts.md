@@ -49,6 +49,11 @@ foreach link in flights set _r=(in._r+out._r)/2.0,_g=(in._g+out._g)/2.0,_b=(in._
 ```
 layout(graphname, "circle");
 foreach node in graphname set _z=(in+out)/5.0;
+
+/* coloring */
+foreach node in graphname set _r=rand(0,1),_g=rand(0,1),_b=rand(0,1);
+foreach link in graphname where in._z>out._z set _r=in._r,_g=in._g, _b=in._b;
+foreach link in graphname where in._z<out._z set _r=out._r,_g=out._g, _b=out._b;
 ```
 
 ## Direct Map Example
