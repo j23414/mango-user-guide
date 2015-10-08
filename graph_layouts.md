@@ -58,6 +58,8 @@ foreach link in graphname where in._z<out._z set _r=out._r,_g=out._g, _b=out._b;
 
 ## Direct Map Example
 
+
+
 ```
 foreach node in airports set _x=long, _y=lat, _z=0;
 center(airports,"DEN");
