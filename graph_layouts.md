@@ -45,6 +45,7 @@ foreach link in flights set _r=(in._r+out._r)/2.0,_g=(in._g+out._g)/2.0,_b=(in._
 
 ## Crown Plot Example
 
+![](crown.png)
 ```
 layout(graphname, "circle");
 foreach node in graphname set _z=(in+out)/5.0;
@@ -59,8 +60,20 @@ center(airports,"DEN");
 
 ## Bipartite Graph Example
 
+![](bipartite.png)
+
 ```
-foreach node in bipartite where group=="1" set _x=-5, _y=rand(-5,5),_z=0;
-foreach node in bipartite where group=="1" set _x=5, _y=rand(-5,5),_z=0;
+/* bipartite layout */
+foreach node in bipartite where group==1 set _x=-10, _y=rand(-12,12),_z=0;
+foreach node in bipartite where group==0 set _x=10, _y=rand(-12,12),_z=0;
+
+/* coloring */
+foreach node in bipartite where group==1 set _r=rand(),_g=rand(),_b=rand();
+foreach link in bipartite where in._x<0 set _r=in._r, _g=in._g, _b=in._b;
+foreach link in bipartite where out._x<0 set _r=out._r, _g=out._g, _b=out._b;
+foreach link in bipartite where in._x>0 set in._r+=_r,in._g+=_g,in._b+=_b;
+foreach link in bipartite where out._x>0 set out._r+=_r,out._g+=_g,out._b+=_b;
+foreach node in bipartite where group==0 set _r=_r/(in+out),_g=_g/(in+out),_b=_b/(in+out);
+
 ```
 
