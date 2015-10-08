@@ -16,3 +16,18 @@ string s = 'hello world';
 /* will work */
 string s = "hello world";
 ```
+
+##String functions
+
+**substr**
+
+```
+string s="hello world";
+print substr(s,0,5); // prints first 5 characters "hello"
+```
+
+Case Conversion
+
+* **tolower(s);**
+* **toupper(s);**
+* **tocamel(s);**
