@@ -8,7 +8,6 @@ This is the propagate example from Mango using the flights data from the blog.
 * Put github link here.
 * Folder should contain processed flights and airlines network. 
 * User opens gel.txt. Runs line by line and explore the network.
-* 
 
 ## Load airports and flights data
 ```
@@ -27,11 +26,15 @@ foreach node in airports set _x=long, _y=lat, _z=0;
 center(airports,"DEN");
 ```
 
+![](flights01.png)
+
 Add in the flights data:
 ```
 airports += flights;
 foreach link in airports set _width=0.1;
 ```
+
+![](flights02.png)
 
 If you zoom in on the graph, some of the airports are unconnected. Flights only contains major airlines. We could delete unconnected nodes by typing the following: Do not run this code yet.
 
@@ -43,6 +46,8 @@ But since we want to keep the shape of the United States, we are going to use th
 ```
 foreach node in airports where (in+out)<1 set _z=-3,_r=0.8,_g=0.8,_b=0.8;
 ```
+
+![](flights03.png)
 
 You can click on the graph and drag to tilt the visualization. Since this is already a 3D graph, we can make further use of the z dimension. For example, we can map connectivity of the airports to height.
 
@@ -62,6 +67,8 @@ foreach link in airports where in._z<=out._z set _r=out._r,_g=out._g,_b=out._b;
 
 In a "foreach link" statement, the special terms "in" and "out" represent the in node and out node of a link. In an undirected graph, the assignments have no further meaning. In a directed graph, the link is directed from the in node to the out node.
 
+![](flights04.png)
+
 We can use this layout to try to set a threshold. For example, we might want to emphasize airports that are highly connected but don't know what threshold value to set. Try the following commands and see how the visualization changes.
 
 ```
@@ -77,6 +84,8 @@ foreach node in airports where (in+out)>1 set _text="";
 foreach node in airports where (in+out)>40 set _text=city, _radius=1;
 foreach node in airports where (in+out)>0 set _z=0;
 ```
+
+![](flights05.png)
 
 ##Combine airports by state
 
