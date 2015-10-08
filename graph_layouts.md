@@ -58,6 +58,7 @@ foreach link in graphname where in._z<out._z set _r=out._r,_g=out._g, _b=out._b;
 
 ## Direct Map Example
 
+![](flights01.png)
 
 
 ```
