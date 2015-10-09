@@ -161,6 +161,8 @@ foreach link in prop set _r=1,_g=1,_b=1,_width=0.5, temp=0;
 
 Change the background color to black by going to **Window/Change Settings**. Background rgb values to 0, 0, 0. Foreground rgb to 1,1,1.
 
+![](settings.png)
+
 ![](prop01.png)
 
 Let us infect one airport ADK and see how many steps (flights) it takes to hit all airports. This is an oversimplification but gives an example of how Mango can enable simulation thorugh a network. 
