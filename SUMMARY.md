@@ -20,4 +20,5 @@
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
 * [Graph Layouts](graph_layouts.md)
+* Case Studies
 
