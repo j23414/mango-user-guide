@@ -1,5 +1,7 @@
 # Airline Flights Example
 
+
+
 http://blog.revolutionanalytics.com/2011/05/mapping-airline-flight-networks-with-r.html
 
 This is the propagate example from Mango using the flights data from the blog.
@@ -7,6 +9,13 @@ This is the propagate example from Mango using the flights data from the blog.
 * Put github link here.
 * Folder should contain processed flights and airlines network. 
 * User opens gel.txt. Runs line by line and explore the network.
+
+**Outline**
+
+* Load airports and flights data
+* Combine airports by state
+* Fetch flights going into or out of Iowa
+* Infection Simulation
 
 ## Load airports and flights data
 ```
