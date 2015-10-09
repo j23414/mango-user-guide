@@ -15,7 +15,6 @@
    * [node, link, graph](node,_link,_graph.md)
 * [foreach and select](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
-* [Tutorials](tutorials.md)
 * [Databases](databases.md)
    * [KEGG](kegg.md)
 * [Network Databases](chapter1.md)
