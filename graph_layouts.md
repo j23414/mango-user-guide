@@ -16,6 +16,8 @@ Therefore you can directly modify these node attributes to create customized lay
 foreach node in graph set _x=rand(-10,10),_y=(-5,5), _z=rand(-2,2);
 ```
 
+![](rand.png)
+
 ## Default Layouts
 
 ```
@@ -23,6 +25,10 @@ layout(graphname, "circle");
 layout(graphname, "random");
 layout(graphname, "cube");
 ```
+
+![](cube.png)
+
+![](circle.png)
 
 ## Hive Plot Example
 
