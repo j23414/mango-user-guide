@@ -161,13 +161,15 @@ foreach link in prop set _r=1,_g=1,_b=1,_width=0.5, temp=0;
 
 Change the background color to black by going to **Window/Change Settings**. Background rgb values to 0, 0, 0. Foreground rgb to 1,1,1.
 
+![](prop01.png)
+
 Let us infect one airport ADK and see how many steps (flights) it takes to hit all airports. This is an oversimplification but gives an example of how Mango can enable simulation thorugh a network. 
 
 ```
 foreach node in prop where iata=="ADK" set _g=0, _radius=0.5, _text="0", step=0;
 ```
 
-image
+![](prop02.png)
 
 Highlight the following lines and run all at once in Mango to propagate values out. I've included images at each time step.
 ```
@@ -178,7 +180,13 @@ foreach link in prop where temp>0 && out._text!="" && in._text=="" set in._g=0,i
 
 ```
 
-images
+![](prop03.png)
+
+![](prop04.png)
+
+![](prop06.png)
+
+![](prop07.png)
 
 Finally store the number of steps away from ADK into the variable step, and use that to layout the graph in 3D, almost like a flow chart of the infection.
 
@@ -191,8 +199,7 @@ foreach node in prop where (in+out)>0 set _text=iata."_".step;
 foreach node in prop where (in+out)>0 set _text=step;
 ```
 
-
-
+![](prop08.png)
 
 
 
