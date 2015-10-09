@@ -147,7 +147,7 @@ One layer is flights into and out of Iowa, the other layer is flights into and o
 
 ##Infection 
 
-So far we've been visualizing a static properties of a laoded graph. Now we're going to propagate values through a garph. Create the following propagation graph:
+So far we've been visualizing a static properties of a loaded graph. Now we're going to propagate values through a graph. Create the following propagation graph:
 
 ```
 node(string iata, int step) pnt;
