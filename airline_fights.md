@@ -122,6 +122,14 @@ foreach link in iowa set _r=1,_g=0,_b=0, _width=2, _text="";
 foreach node in iowa set _radius=0.5,_text=state;
 ```
 
+![](iowa.png)
+
+![](newyork.png)
+
+![](ia_ny.png)
+
+
+
 
 
 
