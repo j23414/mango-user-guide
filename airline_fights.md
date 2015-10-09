@@ -201,6 +201,8 @@ foreach node in prop where (in+out)>0 set _text=step;
 
 ![](prop08.png)
 
+![](prop09.png)
+
 
 
 
