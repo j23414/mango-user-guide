@@ -12,7 +12,7 @@ For a full walk through see the following videos.
 * **Mac:** https://youtu.be/bsC462EiMu8
 * **Linux:** https://youtu.be/9_cWjHFyZDQ
 
-##Check for Updates
+###Check for Updates
 
 Mango is under active development so make sure to check for updates regularly. Go to **Help/Check for updates...**. You will need an internet connection in order for Mango to query the latest version. If a newer version of Mango is available a window similar to the following will show up:
 
