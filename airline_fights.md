@@ -112,6 +112,8 @@ states.+=background;
 foreach node in background set _r=0.8,_g=0.8,_b=0.8;
 ```
 
+![](states.png)
+
 ##Fetch flights going into or out of Iowa
 
 ```
