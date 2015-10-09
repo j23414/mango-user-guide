@@ -16,8 +16,8 @@
    * [node, link, graph](node,_link,_graph.md)
 * [Altering graph and thresholding](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
-* [Databases](databases.md)
 * [Fetch Graphs from KEGG](kegg.md)
+* [Databases](databases.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
 
