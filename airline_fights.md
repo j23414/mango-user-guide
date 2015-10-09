@@ -129,7 +129,7 @@ iowa.+=background;
 graph(nt,lt) newyork = select link from airports where in.state=="NY" || out.state=="NY";
 foreach link in newyork set _r=0,_g=0,_b=1, _width=2;
 foreach node in newyork set _radius=0.5,_text=state;
-foreach node in newyork set _z=3;
+foreach node in newyork set _z=3; /* move newyork graph up 3 units */
 newyork.+=background;
 ```
 
@@ -142,6 +142,22 @@ sum.+=newyork;
 
 ![](ia_ny.png)
 
+One layer is flights into and out of Iowa, the other layer is flights into and out of New York.
+
+
+##Infection 
+
+So far we've been visualizing a static properties of a laoded graph. Now we're going to propagate values through a garph. Create the following propagation graph:
+
+```
+node(string iata, int step) pnt;
+link[int temp] plt;
+
+graph(pnt,plt) prop=airports;
+foreach node in prop where (in+out)<1 set _r=0.3, _g=0.3, _b=0.3;
+foreach node in prop where (in+out)>0 set _radius=0.2, _r=1,_g=1,_b=1,step=0,_text="";
+foreach link in prop set _r=1,_g=1,_b=1,_width=0.5, temp=0;
+```
 
 
 
