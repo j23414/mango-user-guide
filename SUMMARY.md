@@ -7,6 +7,7 @@
 * [Case Studies](case_studies.md)
    * [Case 1: Airline Fights Example](airline_fights.md)
    * [Case 2: Cellular Automata Example](cellular_automata_example.md)
+* [Graph Visualization Examples](graph_layouts.md)
 * [GEL Data Structures](gel_data_structures.md)
    * [4 Data Primitives](int,_double,_float,_string.md)
        * [Integers](integers.md)
@@ -19,5 +20,4 @@
 * [Fetch Graphs from KEGG](kegg.md)
 * [Network Databases](chapter1.md)
 * [GEL Reference](gel_reference.md)
-* [Graph Visualization Examples](graph_layouts.md)
 
