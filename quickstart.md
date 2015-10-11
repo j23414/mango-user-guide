@@ -56,7 +56,7 @@ layout(cpn, "random");
 
 Run the following command:
 
-```
+```c
 layout(cpn, "cube");
 ```
 ![](img26.png)
