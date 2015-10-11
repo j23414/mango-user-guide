@@ -11,7 +11,7 @@ https://github.com/j23414/Visual_CA.git
 
 In cellular automata, a cell is in one of a finite set of states (often either alive, or dead). At each epoch, or time step, the next state is determined the by the current state of its immediate neighbors. 
 
-Often you are definining an intial pattern and then run it for a few steps to notice if there is a loop or some complexity arising from a simple set of rules. 
+Often you are defining an initial pattern and then run it for a few steps to notice if there is a loop or some complexity arising from a simple set of rules. 
 
 ##Creating a Cellular Automata Network
 For example, there is the blinker pattern where 0 represent dead and 1 represents alive:
@@ -26,7 +26,7 @@ For example, there is the blinker pattern where 0 represent dead and 1 represent
 
 I have provided a perl script to convert this pattern to a Mango readable network:
 
-```
+```perl
 #! /usr/bin/perl
 
 use strict;
