@@ -18,7 +18,7 @@ Open **Mango** and go to **File/New** or hit **Ctrl+N** (or Cmd+N on Mac) to cre
 
 A new file should show up in the editor pane with a tab labeled "gel.txt". Type the following four lines into the gel.txt. 
 
-```
+```c
 int i=1;
 float f=2.2;
 double d=3.3;
@@ -37,7 +37,7 @@ Click inside of the gel.txt and place the cursor on the first line. Then press *
 
 You can either continue to press **Ctrl+Enter** to load the other data types or you can type the following command into the **Console** to run the entire file.
 
-```
+```c
 run "gel.txt";
 ```
 ![](img06.png)
@@ -65,7 +65,7 @@ a,d
 ![](img08.png)
 
 In **gel.txt**:
-```
+```c
 node(string name) nt;
 link[] lt;
 graph(nt,lt) net=import("net.txt");
@@ -93,7 +93,7 @@ a,d,0.2
 
 Change your gel.txt to load new type of network file.
 
-```
+```c
 node(string name,int count,string type) nt;
 link[float weight] lt;
 graph(nt,lt) net=import("net.txt");
@@ -108,18 +108,18 @@ Double click "net" and a new tab shows up in the Graph Canvases area.
 
 You only see one node because by default, all xyz coordinates are set to zero. Before we change them, run the following command five times:
 
-```
+```c
 print rand();
 ```
 This will give a random float from 0 to 1. You can give two arguments for min and max values.
 
-```
+```c
 print rand(-5,5);
 ```
 
 To change the layout let's try:
 
-```
+```c
 foreach node in net set _x=rand(-5,5),_y=rand(-5,5),_z=rand(-5,5);
 ```
 
@@ -129,7 +129,7 @@ Gel provides a few preset layouts. These are all in the **layout** function. The
 
 The following gives a circle layout and sets the color (RGB values) and turns on the text to display the node name.
 
-```
+```c
 layout(net,"circle");
 foreach node in net set _r=0, _g=0.9, _b=1;
 foreach link in net set _r=0, _g=0.9, _b=1;
@@ -156,7 +156,7 @@ a,b,2009
 
 gel.txt
 
-```
+```c
 node(string name, string price) nt2;
 link[int time] lt2;
 graph(nt2,lt2) net2=import("net2.txt");
@@ -164,7 +164,7 @@ graph(nt2,lt2) net2=import("net2.txt");
 
 Combine them
 
-```
+```c
 node(nt,nt2) nt3;
 link[lt,lt2] lt3;
 graph(nt3,lt3) sum = net;
@@ -174,7 +174,7 @@ Save or Export the Network
 ----
 
 Save if you want to store graphs and data objects to be loaded into Mango again later.
-```
+```c
 save "state.txt";
 clear;
 run "state.txt";
@@ -183,7 +183,7 @@ Open state.txt to see gel commands. This is basically a gel script.
 
 Export if you want to send graph data to another application.
 
-```
+```c
 export("sum.csv","csv",sum);
 ```
 
