@@ -208,7 +208,7 @@ perl pattern2torus.pl glider.txt > glider.net
 ```
 
 **Gel Script**
-```c
+```cpp
 /* load cellular automata pattern */
 node(string name, float x, float y, float z, int state, int delta) nt;
 link[]lt;
@@ -226,4 +226,5 @@ foreach node in ca set state = rand(0,1);
 /* Game of Life rules */
 foreach link in ca set in.delta+=out.state, out.delta+=in.state; foreach node in ca set state=state==1&&(delta<2||delta>3) ? 0 : state==0&&delta==3 ? 1 : state, _r=state, delta=0;
 ```
+
 ![](torus_ca_graph.PNG)
