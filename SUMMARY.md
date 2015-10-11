@@ -20,6 +20,6 @@
 * [Databases](databases.md)
    * [Fetch Graphs from KEGG](kegg.md)
    * [Network Databases](chapter1.md)
-* Export Graphs
+* [Export Graphs](export_graphs.md)
 * [GEL Reference](gel_reference.md)
 
