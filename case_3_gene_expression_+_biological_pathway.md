@@ -23,3 +23,5 @@ run "eco_merged9.txt";
 eco_merged9=select node from eco_merged9 where type!="ortholog" && type!="map";
 eco_merged9.-=select node from eco_merged9 where type=="compound" && (in+out)<1;
 ```
+
+
