@@ -14,7 +14,7 @@ Open **Mango** and you should be presented with the following screen. The window
 
 The **Console** (bottom right) is where you can type and execute GEL commands. All GEL commands end with a semi-colon symbol. Type the following into the **Console** and press **Enter/Return**:
 
-```c
+```
 setwd();
 ```
 
@@ -48,7 +48,7 @@ Next, **Right click** on one of the displayed graphs. The graph should start to 
 
 To explore some other graph layouts, close all tabs except graph **cpn** and type the following GEL commands into the **Console**. Try rotating, zooming, and running the force-directed layout after each command.
 
-```c
+```
 layout(cpn, "circle");
 layout(cpn, "cube");
 layout(cpn, "random");
@@ -56,7 +56,7 @@ layout(cpn, "random");
 
 Run the following command:
 
-```c
+```
 layout(cpn, "cube");
 ```
 ![](img26.png)
@@ -67,7 +67,7 @@ Right click to start the force-directed layout.
 
 Turn on node labels by typing the following:
 
-```c
+```
 foreach node in cpn set _text=name;
 ```
 
