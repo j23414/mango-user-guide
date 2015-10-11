@@ -81,7 +81,7 @@ perl pattern2net.pl blinker.txt > blinker.net
 
 Within Mango, navigate to the folder containing the files you cloned from the github site. Open the gel.txt file and run the top commands to load blinker.net and set default layout:
 
-```
+```c
 /* load cellular automata pattern */
 node(string name, int state, float x, float y, int delta) nt;
 link[]lt;
@@ -99,7 +99,7 @@ foreach node in ca where state==1 set _r=1;
 
 To run one step, select and run the following lines:
 
-```
+```c
 /* Game of Life */
 foreach link in ca set in.delta+=out.state, out.delta+=in.state;
 foreach node in ca where state==1 && (delta<2 || delta>3) set delta=0;
@@ -208,7 +208,7 @@ perl pattern2torus.pl glider.txt > glider.net
 ```
 
 **Gel Script**
-```
+```c
 /* load cellular automata pattern */
 node(string name, float x, float y, float z, int state, int delta) nt;
 link[]lt;
