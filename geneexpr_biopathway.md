@@ -54,7 +54,7 @@ foreach link in sum set _width=0.1,_r=0,_b=0,_g=0;
 
 Let's look at the difference between two treatments (pH1, and c1). For the moment it doesn't really matter what the treatments mean. This is just an example to compare expression levels between treatments. Genes that have more expression in pH1 than c1 will be colored green. Genes that have less expression in pH1 than c1 will be colored red.
 
-```
+```c
 /* color nodes based on expression */
 foreach node in sum where type=="gene" set _g=0.5,_r=0.5,_b=0.5,_z=_z+rand();
 foreach node in sum where pH1>c1 set _g=1,_r=0,_b=0;
