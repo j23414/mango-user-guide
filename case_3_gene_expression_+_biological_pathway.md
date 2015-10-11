@@ -66,8 +66,15 @@ foreach link in sum where in._g==out._g && in._g>0.5 set _g=1,_width=4;
 
 image
 
+Say we want to see the pathway names. We can either turn on pathway names on highlighted links in this graph or pull them into a separate smaller graph. (threshold)
 ```cpp
 auto dup=select link from sum where _width>1;
 foreach link in dup set _text=substr(pathway,0,4);
 ```
+
+image
+
+This smaller graph can be exported as a csv and the tabular data loaded into R or any statistical analytic tools to count number of links in certain pathways.
+
+
 
