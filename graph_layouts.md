@@ -12,7 +12,7 @@ Therefore you can directly modify these node attributes to create customized lay
 
 ## Create a Random Network
 
-```c
+```
 foreach node in graph set _x=rand(-10,10),_y=(-5,5), _z=rand(-2,2);
 ```
 
@@ -20,7 +20,7 @@ foreach node in graph set _x=rand(-10,10),_y=(-5,5), _z=rand(-2,2);
 
 ## Default Layouts
 
-```c
+```
 layout(graphname, "circle");
 layout(graphname, "random");
 layout(graphname, "cube");
@@ -34,7 +34,7 @@ layout(graphname, "cube");
 
 ![](hive2D.png)
 
-```c
+```
 /* hive plot, 5 groups */
 int i;
 float f;
@@ -66,7 +66,7 @@ foreach link in graphname where in._z<out._z set _r=out._r,_g=out._g, _b=out._b;
 
 ![](flights01.png)
 
-```c
+```
 foreach node in airports set _x=long, _y=lat, _z=0;
 center(airports,"DEN");
 ```
@@ -75,7 +75,7 @@ center(airports,"DEN");
 
 ![](bipartite.png)
 
-```c 
+```
 /* bipartite layout */
 foreach node in bipartite where group==1 set _x=-10, _y=rand(-12,12),_z=0;
 foreach node in bipartite where group==0 set _x=10, _y=rand(-12,12),_z=0;
