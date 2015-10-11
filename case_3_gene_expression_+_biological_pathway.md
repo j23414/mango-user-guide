@@ -82,5 +82,8 @@ foreach link in dup set _text=substr(pathway,0,4);
 
 This smaller graph can be exported as a csv and the tabular data loaded into R or any statistical analytic tools to count number of links in certain pathways.
 
+```cpp
+export("diff.csv","csv",dup);
+```
 
 
