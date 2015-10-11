@@ -64,7 +64,7 @@ foreach node in sum where pH1<c1 set _r=1,_g=0,_b=0;
 ![](expr06.png)
 
 Since we are interested in the pathway, we will color and highlight links that connect two upregulated genes or two downregulated genes. 
-```
+```c
 /* color links based on expression */
 foreach link in sum where in._r==out._r && in._r>0.5 set _r=1,_width=4,_text="";
 foreach link in sum where in._g==out._g && in._g>0.5 set _g=1,_width=4;
