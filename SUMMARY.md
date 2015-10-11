@@ -3,7 +3,7 @@
 * [Introduction](README.md)
    * [Install Mango](install_mango.md)
    * [QuickStart](quickstart.md)
-* [SlowStart](basics.md)
+   * [SlowStart](basics.md)
 * [Case Studies](case_studies.md)
    * [Case 1: Airline Fights Example](airline_fights.md)
    * [Case 2: Cellular Automata Example](cellular_automata_example.md)
