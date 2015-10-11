@@ -81,7 +81,7 @@ perl pattern2net.pl blinker.txt > blinker.net
 
 Within Mango, navigate to the folder containing the files you cloned from the github site. Open the gel.txt file and run the top commands to load blinker.net and set default layout:
 
-```c
+```
 /* load cellular automata pattern */
 node(string name, int state, float x, float y, int delta) nt;
 link[]lt;
@@ -208,7 +208,7 @@ perl pattern2torus.pl glider.txt > glider.net
 ```
 
 **Gel Script**
-```cpp
+```
 /* load cellular automata pattern */
 node(string name, float x, float y, float z, int state, int delta) nt;
 link[]lt;
