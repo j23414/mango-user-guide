@@ -7,8 +7,9 @@
 * [Case Studies](case_studies.md)
    * [Case 1: Airline Fights Example](airline_fights.md)
    * [Case 2: Cellular Automata Example](cellular_automata_example.md)
+   * [Case 3: Gene Expression + Biological Pathway](geneexpr_biopathway.md)
 * [Graph Visualization Examples](graph_layouts.md)
-* [Case 3: Gene Expression + Biological Pathway](geneexpr_biopathway.md)
+
 * [GEL Data Structures](gel_data_structures.md)
    * [4 Data Primitives](int,_double,_float,_string.md)
        * [Integers](integers.md)
