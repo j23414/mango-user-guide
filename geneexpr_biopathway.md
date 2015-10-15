@@ -5,10 +5,12 @@ Fetch the demo files and gel script from the following git hub site.
 
 https://github.com/j23414/Mango_Workshop
 
-Load in the example microarray data and visualize it. 
+
+
+Open "gel.txt" inside of mango and load in the example microarray data and visualize it. 
 
 ```c
-node(string id, string name, float c1, float cn1, float cs1, float hs1, float n1, float pH1, float sd1, float description) nt;
+node(string id, string name, float control, float tr1, float tr2) nt;
 link[] lt;
 graph(nt,lt) eco_expr=import("eco_expr.tsv","\t");
 layout(eco_expr,"cube");
@@ -57,8 +59,8 @@ Let's look at the difference between two treatments (pH1, and c1). For the momen
 ```c
 /* color nodes based on expression */
 foreach node in sum where type=="gene" set _g=0.5,_r=0.5,_b=0.5,_z=_z+rand();
-foreach node in sum where pH1>c1 set _g=1,_r=0,_b=0;
-foreach node in sum where pH1<c1 set _r=1,_g=0,_b=0;
+foreach node in sum where tr1>control set _g=1,_r=0,_b=0;
+foreach node in sum where tr1<control set _r=1,_g=0,_b=0;
 ```
 
 ![](expr06.png)
