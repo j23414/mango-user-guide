@@ -18,6 +18,8 @@ layout(eco_expr,"cube");
 
 ![](expr01.png)
 
+The data was originally collected by Hyejin Cho and Hui-Hsien Chou and is not yet published. therefore we are making available only the control and two treatments for this example.
+
 Either load the first 9 pathways in KEGG for e coli (see Fetch Graphs from KEGG) or run the following script.
 ```c
 /* load eco_merged9 */
