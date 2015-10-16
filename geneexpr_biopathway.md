@@ -1,6 +1,9 @@
 # Case 3: Gene Expression + Biological Pathway
 
 
+**Outline: **
+* Fetch and Load Files
+
 Fetch the demo files and gel script from the following git hub site.
 
 https://github.com/j23414/Mango_Workshop
