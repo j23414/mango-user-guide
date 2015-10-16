@@ -21,3 +21,7 @@ Mango is under active development so make sure to check for updates regularly. G
 Visit the software website to download the newest version. 
 
 Otherwise a window will pop up and tell you your current version is up to date. 
+
+### User Interface
+
+You can increase the font size for the console and the editor using Ctrl++ on Windows and Linux or Cmd++ on Mac. Use Ctrl+- or Cmd+- to decrease font. Click and drag headers of Editor and Console if you want to rearrange the panes on the screen.
