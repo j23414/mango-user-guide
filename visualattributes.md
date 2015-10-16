@@ -17,6 +17,7 @@ Nodes and links have a set of system-defined attributes. These are related to th
 
 
 **Link System Attributes **
+
 | Attr |Description |
 | -- | -- |
 | _r | Red color of the link, can be a floating point value between 0 and 1 |
