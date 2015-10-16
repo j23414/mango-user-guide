@@ -126,7 +126,15 @@ Nodes can have default values
 node(string name, int age=20, float weight=120, string birthdate="January 1, 1990") person;
 ```
 
-You can combine 
+You can combine node types
+
+```
+node(string name, string color) nt;
+node(string name, int age) nt2;
+node(nt, nt2) nt3;
+
+desc nt3; /* string name, string color, int age */
+```
 
 Link Type
 ---
