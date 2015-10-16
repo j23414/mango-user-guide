@@ -15,7 +15,7 @@
        * [Floats and Doubles](floats_and_doubles.md)
        * [Strings](strings.md)
    * [node, link, graph](node,_link,_graph.md)
-       * Visual_Attributes
+       * [Visual_Attributes](visualattributes.md)
 * [Altering graph and thresholding](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Databases](databases.md)
