@@ -12,3 +12,5 @@ Nodes and links have a set of system-defined attributes. These are related to th
 |_r | Red color of the node, Can be a floating point value between 0 and 1. |
 |_g | Green color of the node, Can be a floating point value between 0 and 1. |
 |_b | Blue color of the node, Can be a floating point value between 0 and 1. |
+|_radius | Radius of the node. If the radius is set to 0 or negative, the node will not be shown.|
+|_text | Label of the node. Can be any string value. If _text is set to "" (empty string) then no label is shown |
