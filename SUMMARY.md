@@ -9,13 +9,13 @@
    * [Case 2: Cellular Automata Example](cellular_automata_example.md)
    * [Case 3: Gene Expression + Biological Pathway](geneexpr_biopathway.md)
 * [Graph Visualization Examples](graph_layouts.md)
-
 * [GEL Data Structures](gel_data_structures.md)
    * [4 Data Primitives](int,_double,_float,_string.md)
        * [Integers](integers.md)
        * [Floats and Doubles](floats_and_doubles.md)
        * [Strings](strings.md)
    * [node, link, graph](node,_link,_graph.md)
+       * Visual_Attributes
 * [Altering graph and thresholding](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Databases](databases.md)
