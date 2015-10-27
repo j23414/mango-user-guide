@@ -41,9 +41,6 @@ Double click the pathway and notice how it retains the original xy coordinates f
 
 ![](maintainlayout.png)
 
-<div style="width:400px">
-![](http://rest.kegg.jp/get/hsa00010/image)
-
 ## Fetch Merged KEGG Pathways
 Open the KEGG dialog window again, and this time check the box next to **Merge Fetched Pathways** and hit the **Fetch Pathway Networks** button. 
 
