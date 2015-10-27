@@ -38,6 +38,9 @@ Each will be KEGG pathway will be loaded as a separate network.
 
 Double click the pathway and notice how it retains the original xy coordinates from KEGG. By default genes are colored green, compounds are colored blue, and orthologs (not within this species) are colored yellow.
 
+
+![](maintainlayout.png)
+
 <div style="width:400px">
 ![](http://rest.kegg.jp/get/hsa00010/image)
 
