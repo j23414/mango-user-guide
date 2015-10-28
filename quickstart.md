@@ -2,6 +2,17 @@
 
 ## Quick Start Demo
 
+You will need a running version of Mango and the **DemoFiles** folder that came with Mango installation. This section demonstrates loading networks, merging some those networks through graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see **SlowStart**.
+
+**Outline** 
+
+* Load 4 graphs
+* 3D interactive visualization
+* Merge graphs
+* Export/Save resulting merged graphs
+
+### Load 4 graphs
+
 Open **Mango** and you should be presented with the following screen. The window is divided into four sections. 
 
 * **Data**: displays a list of all data objects in Mango 
