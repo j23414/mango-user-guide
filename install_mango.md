@@ -1,6 +1,6 @@
-## Installation
+## Installing Mango
 
-Install **Mango** by going to http://www.complex.iastate.edu/download/Mango and registering a free account. You will receive an email shortly with your new password. Use your email and new password to log into the download area and select the installation file for your operating system. 
+Go to http://www.complex.iastate.edu/download/Mango, scroll down the page and register a free account. Soon after, you will receive an email with your new password. Use that password and your email address to log into the download area and select the installation file for your operating system.
 
 * Windows 7 and later - setup.exe
 * Mac 10 and later - Mango.dmg
@@ -12,16 +12,20 @@ For a full walk through see the following videos.
 * **Mac:** https://youtu.be/bsC462EiMu8
 * **Linux:** https://youtu.be/9_cWjHFyZDQ
 
-###Check for Updates
+### Updates
 
-Mango is under active development so make sure to check for updates regularly. Go to **Help/Check for updates...**. You will need an internet connection in order for Mango to query the latest version. If a newer version of Mango is available a window similar to the following will show up:
+Mango is under active development so it is important to check for updates regularly. In order to check, expand Mango Help menu and click **Check for updates...*** You will need to be connected to the internet. If there is a newer version of Mango, a window similar to the following will pop up:
 
 ![](updatecheck.png)
 
-Visit the software website to download the newest version. 
+Visit http://www.complex.iastate.edu/download/Mango to install the newest version. 
 
-Otherwise a window will pop up and tell you your current version is up to date. 
+### Customizing the user interface
 
-### User Interface
+**Font Size**
 
-You can increase the font size for the console and the editor using Ctrl++ on Windows and Linux or Cmd++ on Mac. Use Ctrl+- or Cmd+- to decrease font. Click and drag headers of Editor and Console if you want to rearrange the panes on the screen.
+You can increase the font size for the console and the editor using Ctrl++ on Windows and Linux or Cmd++ on Mac. Use Ctrl+- or Cmd+- to decrease font. 
+
+**Panel Layout**
+
+Click and drag headers of Editor and Console if you want to rearrange the panes on the screen.
