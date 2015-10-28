@@ -1,8 +1,6 @@
-
-
 ## Quick Start Demo
 
-You will need a running version of Mango and the **DemoFiles** folder that came with Mango installation. This section demonstrates loading networks, merging some those networks through graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see **SlowStart**.
+You will need a running version of Mango and the **DemoFiles** folder that came with Mango installation. This section demonstrates loading networks, merging some those networks through graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see Slow Start. 
 
 **Outline** 
 
@@ -22,22 +20,62 @@ Open **Mango** and you should be presented with the following screen. The window
 
 ![](start.png)
 
-Now we're going to load 4 graph files. Go to **File/Open** and select "loadnet.txt". The file should be loaded into the **Editor** panel.
+Go to **File/Open** and open the "loadnet.txt" file inside of the **DemoFiles** folder that came with Mango installation.
 
 ![](setwd.png)
 
 ![](loadnet.png)
 
-Click within the loadnet.txt, and place the cursor at the first line. Then press **Alt-Enter** if you're on Mac or **Ctrl-Enter** if you're on Windows or Linux to execute one line. Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
+"loadnet.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
+
+The script should be loaded into the **Editor** panel. Notice how key words are highlighted. Since this is a quick start, we are not going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
+
+Click on the first line in "loadnet.txt" to place the cursor. If you are on Windows or Linux, press **Ctrl+Enter**. If you are on Mac, press **Cmd+Return**. Press this key combination multiple times. Each time, Mango will execute the line. 
+
+Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
+
+```c
+/* define node and link type */
+node(string name) nt;
+link[int n1id, int n2id, string n1ex, string n2ex, float neighborhood, float fusion, float cooccurence, float homology, float coexpression, float experimental, float knowledge, float textmining, float combined_score] lt;
+
+/* import 4 graph files */
+graph(nt,lt) aldo = import("aldo.csv");
+graph(nt,lt) cpn = import("cpn.csv");
+graph(nt,lt) frh = import("frh.csv");
+graph(nt,lt) hif = import("hif.csv");
+```
 
 ![](load.png)
 
-In the **Data** panel (left), four graph objects are listed inside **Graph**. Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once.
+In the **Data** panel (left), four graph objects are listed inside **Graph**. 
+
+Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once.
 
 ![](img23.png)
 
-execute the layout commands using **ctrl-Enter** or **Alt-Enter**. 
 
+### 3D interactive visualization
+
+Execute the layout commands using **Ctrl-Enter** or **Cmd-Return**. 
+
+```
+/* layout the four graph */
+foreach node in aldo set _x=0,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in frh set _x=2,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in hif set _x=-2,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in cpn set _x=-4,_y=rand(-5,5),_z=rand(-5,5);
+
+/* color nodes and links in each graph */
+foreach node in aldo set _r=rand(0.5,1),_g=0,_b=0;
+foreach link in aldo set _r=rand(0.5,1),_g=0,_b=0;
+foreach node in cpn set _r=rand(0.5,1),_g=rand(0.5,1),_b=rand(0.5,1);
+foreach link in cpn set _r=rand(0.5,1),_g=rand(0.5,1),_b=rand(0.5,1);
+foreach node in frh set _r=0,_g=rand(0.5,1),_b=0;
+foreach link in frh set _r=0,_g=rand(0.5,1),_b=0;
+foreach node in hif set _r=0,_g=0,_b=rand(0.5,1);
+foreach link in hif set _r=0,_g=0,_b=rand(0.5,1);
+```
 The **Graph Canvas** (right center) area responds to mouse and keyboard events. **Left click and drag** across the graph. This will rotate the graph visualization. 
 
 ![](img24.png)
@@ -73,4 +111,24 @@ Turn on node labels by typing the following:
 foreach node in cpn set _text=name;
 ```
 
+### Merge graphs
+
+```
+graph(nt,lt) sum = aldo;
+sum .+=cpn;
+sum .+=frh;
+sum .+=hif;
+```
+
+```
+sum.-=cpn;
+```
+
+
+### Export/Save resulting merged graph
+
+```
+save "sum.txt", sum;
+export("sum.tsv","tsv",sum);
+```
 
