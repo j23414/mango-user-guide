@@ -20,20 +20,11 @@ Open **Mango** and you should be presented with the following screen. The window
 * **Editor**: area to edit gel scripts and run them line by line
 * **Console**: accepts gel commands and runs them in real time
 
-
 ![](start.png)
 
-The **Console** (bottom right) is where you can type and execute GEL commands. All GEL commands end with a semi-colon symbol. Type the following into the **Console** and press **Enter/Return**:
-
-```c
-setwd();
-```
-
-**setwd** pops a window to allow you to select the current working directory. This directory may contain your graph or GEL script files. Navigate and select the **DemoFiles** folder that came with Mango installation.
+Now we're going to load 4 graph files. Go to **File/Open** and select "loadnet.txt". The file should be loaded into the **Editor** panel.
 
 ![](setwd.png)
-
-Now we're going to load 4 graph files. Go to **File/Open** and select "loadnet.txt". The file should be loaded into the **Editor** panel.
 
 ![](loadnet.png)
 
