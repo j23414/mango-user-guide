@@ -1,6 +1,6 @@
 # Why learn Mango?
 
-This book introduces Mango, an environment for integrating, exploring and analyzing heterogeneous networks. Mango development started in Summer of 2014 as a response to a need for scale-able, flexible methods of integrating massive networks. 
+This book introduces Mango, an environment for integrating, exploring and analyzing heterogeneous networks. Mango development started in Summer of 2014 as a response to a need for scaleable, flexible methods of integrating massive networks. 
 
 ## Dealing with complexity...
 
