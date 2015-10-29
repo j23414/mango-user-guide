@@ -18,19 +18,19 @@ Open **Mango** and you should be presented with the following screen. The window
 * **Editor**: area to edit gel scripts and run them line by line
 * **Console**: accepts gel commands and runs them in real time
 
-![](start.png)
+![](sum01.png)
 
-Go to **File/Open** and open the "loadnet.txt" file inside of the **DemoFiles** folder that came with Mango installation.
+Go to **File/Open** and open the "gel\_sum.txt" file inside of the **DemoFiles/sum\_demo** folder that came with Mango installation.
 
-![](setwd.png)
+![](sum02.png)
 
-![](loadnet.png)
+![](sum03.png)
 
-"loadnet.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
+"gel\_sum.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
 
 The script should be loaded into the **Editor** panel. Notice how key words are highlighted. Since this is a quick start, we are not going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
 
-Click on the first line in "loadnet.txt" to place the cursor. If you are on Windows or Linux, press **Ctrl+Enter**. If you are on Mac, press **Cmd+Return**. Press this key combination multiple times. Each time, Mango will execute the line. 
+Click on the first line in "gel\_sum.txt" to place the cursor. If you are on Windows or Linux, press **Ctrl+Enter**. If you are on Mac, press **Cmd+Return**. Press this key combination multiple times. Each time, Mango will execute the line. 
 
 Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
 
@@ -46,14 +46,11 @@ graph(nt,lt) frh = import("frh.csv");
 graph(nt,lt) hif = import("hif.csv");
 ```
 
-![](load.png)
-
 In the **Data** panel (left), four graph objects are listed inside **Graph**. 
 
 Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once.
 
-![](img23.png)
-
+![](sum04.png)
 
 ### 3D interactive visualization
 
@@ -76,9 +73,10 @@ foreach link in frh set _r=0,_g=rand(0.5,1),_b=0;
 foreach node in hif set _r=0,_g=0,_b=rand(0.5,1);
 foreach link in hif set _r=0,_g=0,_b=rand(0.5,1);
 ```
-The **Graph Canvas** (right center) area responds to mouse and keyboard events. **Left click and drag** across the graph. This will rotate the graph visualization. 
 
-![](img24.png)
+![](sum05.png)
+
+The **Graph Canvas** (right center) area responds to mouse and keyboard events. **Left click and drag** across the graph. This will rotate the graph visualization. 
 
 Use the **Roller Ball** on your mouse (or two finger swipe on a trackpad) to zoom in and out of the graph. 
 
@@ -94,6 +92,8 @@ layout(cpn, "cube");
 layout(cpn, "random");
 ```
 
+![](sum06.png)![](sum07.png)
+
 Run the following command:
 
 ```c
@@ -103,7 +103,7 @@ layout(cpn, "cube");
 
 Right click to start the force-directed layout.
 
-![](img27.png)
+![](sum08.png)
 
 Turn on node labels by typing the following:
 
@@ -112,28 +112,57 @@ foreach node in cpn set _text=name; /* turns on labels */
 foreach node in cpn set _text="";   /* turns off labels */
 ```
 
+![](sum09.png)
+
 ### Merge graphs
 
-Execute the following commands in the "loadnet.txt" script. Double click on the **sum** network. 
+Rerun the layout section in "gel_sum.txt".
+
+```
+/* layout the four graph */
+foreach node in aldo set _x=0,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in frh set _x=2,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in hif set _x=-2,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in cpn set _x=-4,_y=rand(-5,5),_z=rand(-5,5);
+```
+
+Execute the following commands in the "gel_sum.txt" script. Double click on the **sum** network. 
 ```
 graph(nt,lt) sum = aldo;
 sum .+=cpn;
 sum .+=frh;
 sum .+=hif;
 ```
+
+![](sum10.png)
+
 Notice how graphs are added together. When you rotate the graph, you should notice that **cpn** is not connected to the other networks. Therefore we're going to remove **cpn** using the following command.
 
 ```
 sum.-=cpn;
 ```
 
+![](sum11.png)
+
 Right click and run the force-directed layout to spread out the graph.
 
+![](sum12.png)
 
 ### Export/Save resulting merged graph
 
+There are multiple ways to store the new graph. One command is **save**. Run the following:
+
 ```
-save "sum.txt", sum;
+save "sum.txt", sum; /* save the sum graph */
+clear();             /* clears all data objects from Mango */
+run "sum.txt";       /* reload the sum graph */
+```
+
+![](sum13.png)
+
+Another option is to export the graph as a tab delimited file. This file can be read by Excell, or sent to R and Matlab.
+
+```
 export("sum.tsv","tsv",sum);
 ```
 
