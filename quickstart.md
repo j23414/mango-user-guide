@@ -57,7 +57,7 @@ Double click on their names and visualizations of the selected graphs will appea
 
 ### 3D interactive visualization
 
-Execute the layout commands using **Ctrl-Enter** or **Cmd-Return**. 
+Execute the following layout commands using **Ctrl-Enter** or **Cmd-Return**. 
 
 ```
 /* layout the four graph */
@@ -86,7 +86,7 @@ Making sure one of the graphs is selected (the tab label will be bolded) use the
 
 Next, **Right click** on one of the displayed graphs. The graph should start to move where connected nodes moving closer together and disconnected nodes moving farther apart. This is the **force-directed layout** algorithm proposed by Eades. Right click again to stop the animating layout.
 
-To explore some other graph layouts, close all tabs except graph **cpn** and type the following GEL commands into the **Console**. Try rotating, zooming, and running the force-directed layout after each command.
+To explore some other graph layouts, close all tabs except graph **cpn** and type the following GEL commands into the **Console** (bottom right). Try rotating, zooming, and running the force-directed layout after each command.
 
 ```c
 layout(cpn, "circle");
@@ -108,21 +108,26 @@ Right click to start the force-directed layout.
 Turn on node labels by typing the following:
 
 ```c
-foreach node in cpn set _text=name;
+foreach node in cpn set _text=name; /* turns on labels */
+foreach node in cpn set _text="";   /* turns off labels */
 ```
 
 ### Merge graphs
 
+Execute the following commands in the "loadnet.txt" script. Double click on the **sum** network. 
 ```
 graph(nt,lt) sum = aldo;
 sum .+=cpn;
 sum .+=frh;
 sum .+=hif;
 ```
+Notice how graphs are added together. When you rotate the graph, you should notice that **cpn** is not connected to the other networks. Therefore we're going to remove **cpn** using the following command.
 
 ```
 sum.-=cpn;
 ```
+
+Right click and run the force-directed layout to spread out the graph.
 
 
 ### Export/Save resulting merged graph
