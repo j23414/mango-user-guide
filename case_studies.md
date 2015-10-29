@@ -14,6 +14,6 @@
 
 ## Gene Expression + KEGG Pathway
 
-**Description:**
+**Description:** Create a combined network, merging gene expression data with biological pathway data.
 
 ![](expr07.png)
