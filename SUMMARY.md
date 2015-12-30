@@ -18,7 +18,7 @@
 * [Commands: foreach and select](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Databases](databases.md)
-   * [Fetch Graphs from KEGG](kegg.md)
+   * [KEGG Connect](kegg.md)
    * [Network Databases](chapter1.md)
 * [Export Graphs](export_graphs.md)
 * [GEL Reference](gel_reference.md)
