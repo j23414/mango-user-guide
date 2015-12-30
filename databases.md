@@ -9,7 +9,7 @@ Currently Mango provides methods to connect to the following network databases. 
 Since it was motivated by bioligical research, we created a method to fetch biological pathways data from KEGG. 
 
 
-#
+#Other sources of network data
 The number of size of online databases continue to grow. This is a listing of some public network repositories to get you started.
 
 
