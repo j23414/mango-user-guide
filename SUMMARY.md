@@ -17,9 +17,9 @@
    * [Node, Link, Graph](node,_link,_graph.md)
 * [Commands: foreach and select](foreach_and_select.md)
 * [Graph Mathematics](graph_mathematics.md)
-* [Databases](databases.md)
+* [Databases](databases.md)<!- List the types of databases here -->
    * [KEGG Connect](kegg.md)
    * [Network Databases](chapter1.md)
-* [Export Graphs](export_graphs.md)
+* [Export Graphs](export_graphs.md)<!--Graph IO-->
 * [GEL Reference](gel_reference.md)
 
