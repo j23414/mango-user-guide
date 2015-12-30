@@ -11,7 +11,7 @@ print abs(3);     // returns 3
 
 **acos**
 
-Uses the cosine value to get angle in radians
+Uses the cosine value to get angle in radians.
 
 ```
 print acos(0.5); // returns 1.047198
@@ -19,9 +19,29 @@ print acos(0.5); // returns 1.047198
 
 **asin**
 
+Uses sin value to get angle in radians.
+
+```
+print sin(1);    // returns 0.841471
+```
+
 **atan**
 
+Uses tan value to get angle in radians.
+
+```
+print tan(0.3);    // returns 0.309336
+```
+
 **ceil**
+
+Round a number up to the nearest integer.
+
+```
+print ceil(3.1);    // returns 4
+print ceil(2);      // returns 2
+print ceil(1.5);    // returns 2
+```
 
 **center**
 
@@ -46,6 +66,22 @@ clear the console panel.
 
 ```
 clearconsole();
+```
+
+**clearmessage**
+
+Clear the message panel.
+
+```
+clearmessage();
+```
+
+**cos**
+
+Returns the cosine value from the angle in radians.
+
+```
+print cos(3.14/4); // returns 0.707388
 ```
 
 **delete**
@@ -96,6 +132,16 @@ node(string name) nt;
 link[] lt;
 graph(nt,lt) ran=random(10);
 export(“ran.csv”, “csv”, ran);
+```
+
+**floor**
+
+Rounds a number down to the nearest integer. 
+
+```
+print floor(3.9);   // returns 3
+print floor(2);     // returns 2
+print floor(1.1);   // returns 1
 ```
 
 **foreach**
@@ -178,6 +224,14 @@ layout(g,"random");
 layout(g,"cube");
 ```
 
+**len**
+
+Returns the number of characters in a string, length of the string.
+
+```
+print len("Hello World!");   // returns 12
+```
+
 **link**
 
 compound data type declaration, necessary for defining the graph type
@@ -208,6 +262,37 @@ double d = 315.3;
 double logd = log(d);
 ```
 
+**map**
+
+Renames node ids based on a digraph. Multiple nodes can be mapped to the same id, combiing nodes.
+
+```
+help map;
+graph = map(graph g, map_info, int keep, int loop)
+  g: graph whose nodes are to be mapped, or renamed
+  map_info: mapping information. Can be a graph or an attribute name
+    If a graph, it should be directed, and its links define the map
+    If an attribute name, it should be defined in nodes on graph a
+  keep: 0 will discard unmappped nodes or nodes whose map attribute
+    contains a null string; 1 will collect them unchanged to output
+  loop: 0 will discard self-pointing loops in output; 1 otherwise
+```
+
+**match**
+
+Compares sequence (dna/protein/other letter) data in two graphs. Creates a new graph depending on the minimal sequence match length. Can also determine DNA reverse complement matches.
+
+```
+help match;
+graph = match(graph a, graph b, string a_attr, string b_attr, int min_match, int revcomp, int in_graph)
+  a, b: graphs whose nodes are compared; in-graph comparision if a==b
+  a_attr: the node attribe name in a that contains sequence data
+  b_attr: the node attribe name in b that contains sequence data
+  min_match: minimal match length to produce a match link in output
+  revcomp: for DNA, 1 finds revese-complement matches; 0 otherwise
+  in_graph: 1 or when a==b allows in-graph matches; 0 otherwise
+```
+
 **node**
 
 compound data type declaration, necessary for defining the graph type. 
@@ -219,6 +304,23 @@ node(string name) nt;
 node(string id) nt;
 node(string id, int age) nt;
 ```
+
+**pause**
+
+Pauses a few miliseconds.Useful when used inside animation loops. If delay has value of 0, pause for user input.
+
+```
+pause(1000);   // 1000 milisecond pause
+pause(0);      // pause for user
+```
+
+**pow**
+
+Raises a number to a power.
+
+```
+print pow(4,2);  // returns 16, or 4^2 
+```
  
 **print**
 
@@ -227,6 +329,18 @@ only scalar expressions can be given to the print command
 ```
 print "The number of nodes in graph A is ", nodes(A);
 print "Sum of nodes in graph A and B is ", nodes(A)+nodes(B);
+```
+
+**r_mat**
+
+```
+help r_mat;
+graph = r_mat(int nodes, int degree, int loop, int seed, float a, float b, float c, float d)
+  nodes: number of nodes in the random graph
+  degree: average connectivity degree of nodes
+  loop: 0 no loop back to the same node; 1 otherwise
+  seed: seed to random number generator; 0 automatic
+  a, b, c, d: probabilities of falling into each quadrant
 ```
 
 **rand**
