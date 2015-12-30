@@ -1,5 +1,28 @@
 #GEL Reference
 
+**abs**
+
+Returns the absolute value of numeric data. 
+
+```
+print abs(-2.34); // returns 2.34
+print abs(3);     // returns 3
+```
+
+**acos**
+
+Uses the cosine value to get angle in radians
+
+```
+print acos(0.5); // returns 1.047198
+```
+
+**asin**
+
+**atan**
+
+**ceil**
+
 **center**
 
 Centers a given graph. This will change xyz values so the middle of the graph is at coordinates 0,0,0. If a node name is given, the entire graph will be shifted over so that node is at 0,0,0. 
