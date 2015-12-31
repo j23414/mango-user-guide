@@ -1,4 +1,4 @@
-# Visual_Attributes
+# Visual Attributes
 
 Nodes and links have a set of system-defined attributes. These are related to the visual representation of the graph. Listed below are all the system-defined attributes and their descriptions.
 
