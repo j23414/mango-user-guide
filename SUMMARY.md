@@ -9,7 +9,7 @@
    * [Case 2: Cellular Automata Example](cellular_automata_example.md)
    * [Case 3: Gene Expression + Biological Pathway](geneexpr_biopathway.md)
 * [Graph Visualization Examples](graph_layouts.md)
-   * [Visual_Attributes](visualattributes.md)
+   * [Visual Attributes](visualattributes.md)
 * [GEL Data Structures](gel_data_structures.md)
    * [Integers](integers.md)
    * [Floats and Doubles](floats_and_doubles.md)
