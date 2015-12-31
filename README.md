@@ -2,6 +2,8 @@
 
 This book introduces Mango, an environment for integrating, exploring and analyzing heterogeneous networks. Mango development started in Summer of 2014 as a response to a need for scalable, flexible methods of integrating massive networks. 
 
+![](imgs/sumhome.png)
+
 ### Dealing with complexity...
 
 Complex means "composed of many different parts". What word  describes better the state of data analysis today? From open  digital repositories to self reported personal information, companies and individuals have access to a treasure trove of information. But transforming this seemingly endless supply of data into practical applications continues to be a monolithic and many-headed beast.
