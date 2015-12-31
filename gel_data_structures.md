@@ -31,6 +31,7 @@ The major strength of Mango is that it can also deal with graph attributes. Node
 -->
 
 Nodes and links on a graph can have annotations. The following defines a graph in Gel with a nodetype a and a linktype b. 
+
 ![](img21.png)
 
 
