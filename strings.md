@@ -26,9 +26,26 @@ string s="hello world";
 print substr(s,0,5); // prints first 5 characters "hello"
 ```
 
-**Case Conversion**
+**tolower**
 
-* **tolower(s);** 
-* **toupper(s);**
-* **tocamel(s);**
 
+```
+print tolower("Hello World");    // prints "hello world"
+```
+
+**toupper**
+
+```
+print toupper("Hello World");    // prints "HELLO WORLD"
+```
+
+**tocamel**
+
+```
+print tocamel("hello world");    // prints "Hello World"
+```
+
+**len**
+```
+print len("Hello World!");       // returns 12, length of the string
+```
