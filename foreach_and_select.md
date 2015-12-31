@@ -20,4 +20,9 @@ select
 
 The general form of the select statement is as follows:
 
-**select** *node* | *link* **from** *graph* **where** *condition* **set** *expression*;
+**select** *node* | *link* **from** *graph* **where** *condition* ;
+
+```
+auto hubs = select node from airports where (in+out)>10;
+auto thresh = select node from gene_net where weight>0.5;
+```
