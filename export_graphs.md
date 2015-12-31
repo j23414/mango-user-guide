@@ -2,7 +2,7 @@
 
 You may want to export your new networks to another program, either for statistical analysis in R or a graph visualization program of your choice. Mango provides the **export** function for this purpose.
 
-```cpp
+```
 /* example graph */
 node(string name) nt;
 link[] lt;

@@ -5,7 +5,7 @@
    * [Quick Start](quickstart.md)
    * [Regular Start](basics.md)
 * [Case Studies](case_studies.md)
-   * [Case 1: Airline Fights Example](airline_fights.md)
+   * [Case 1: Airline Fights Example](airline_flights.md)
    * [Case 2: Cellular Automata Example](cellular_automata_example.md)
    * [Case 3: Gene Expression + Biological Pathway](geneexpr_biopathway.md)
 * [Graph Visualization Examples](graph_layouts.md)

@@ -34,7 +34,7 @@ Click on the first line in "gel\_sum.txt" to place the cursor. If you are on Win
 
 Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
 
-```c
+```
 /* define node and link type */
 node(string name) nt;
 link[int n1id, int n2id, string n1ex, string n2ex, float neighborhood, float fusion, float cooccurence, float homology, float coexpression, float experimental, float knowledge, float textmining, float combined_score] lt;
@@ -86,7 +86,7 @@ Next, **Right click** on one of the displayed graphs. The graph should start to 
 
 To explore some other graph layouts, close all tabs except graph **cpn** and type the following GEL commands into the **Console** (bottom right). Try rotating, zooming, and running the force-directed layout after each command.
 
-```c
+```
 layout(cpn, "circle");
 layout(cpn, "cube");
 layout(cpn, "random");
@@ -96,7 +96,7 @@ layout(cpn, "random");
 
 Run the following command:
 
-```c
+```
 layout(cpn, "cube");
 ```
 ![](imgs/img26.png)
@@ -107,7 +107,7 @@ Right click to start the force-directed layout.
 
 Turn on node labels by typing the following:
 
-```c
+```
 foreach node in cpn set _text=name; /* turns on labels */
 foreach node in cpn set _text="";   /* turns off labels */
 ```
