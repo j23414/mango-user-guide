@@ -36,16 +36,14 @@ foreach node in airports set _x=long, _y=lat, _z=0;
 center(airports,"DEN");
 ```
 
-![](flights01.png)
-
+![](imgs/flights01.png)
 Add in the flights data:
 ```c
 airports += flights;
 foreach link in airports set _width=0.1;
 ```
 
-![](flights02.png)
-
+![](imgs/flights02.png)
 If you zoom in on the graph, some of the airports are unconnected. Flights only contains major airlines. We could delete unconnected nodes by typing the following: Do not run this code yet.
 
 ```c
@@ -57,8 +55,7 @@ But since we want to keep the shape of the United States, we are going to use th
 foreach node in airports where (in+out)<1 set _z=-3,_r=0.8,_g=0.8,_b=0.8;
 ```
 
-![](flights03.png)
-
+![](imgs/flights03.png)
 You can click on the graph and drag to tilt the visualization. Since this is already a 3D graph, we can make further use of the z dimension. For example, we can map connectivity of the airports to height.
 
 ```c
@@ -77,8 +74,7 @@ foreach link in airports where in._z<=out._z set _r=out._r,_g=out._g,_b=out._b;
 
 In a "foreach link" statement, the special terms "in" and "out" represent the in node and out node of a link. In an undirected graph, the assignments have no further meaning. In a directed graph, the link is directed from the in node to the out node.
 
-![](flights04.png)
-
+![](imgs/flights04.png)
 We can use this layout to try to set a threshold. For example, we might want to emphasize airports that are highly connected but don't know what threshold value to set. Try the following commands and see how the visualization changes.
 
 ```c
@@ -95,8 +91,7 @@ foreach node in airports where (in+out)>40 set _text=city, _radius=1;
 foreach node in airports where (in+out)>0 set _z=0;
 ```
 
-![](flights05.png)
-
+![](imgs/flights05.png)
 ##Combine airports by state
 
 Sometimes you may want to group or combine nodes. This is a one way modification so we'll create a duplicate graph called states.
@@ -122,8 +117,7 @@ states.+=background;
 foreach node in background set _r=0.8,_g=0.8,_b=0.8;
 ```
 
-![](states.png)
-
+![](imgs/states.png)
 ##Fetch flights going into or out of Iowa
 
 ```c
@@ -133,8 +127,7 @@ foreach node in iowa set _radius=0.5,_text=state;
 iowa.+=background;
 ```
 
-![](iowa.png)
-
+![](imgs/iowa.png)
 ```c
 graph(nt,lt) newyork = select link from airports where in.state=="NY" || out.state=="NY";
 foreach link in newyork set _r=0,_g=0,_b=1, _width=2;
@@ -143,15 +136,13 @@ foreach node in newyork set _z=3; /* move newyork graph up 3 units */
 newyork.+=background;
 ```
 
-![](newyork.png)
-
+![](imgs/newyork.png)
 ```c
 graph(nt,lt) sum=iowa;
 sum.+=newyork;
 ```
 
-![](ia_ny.png)
-
+![](imgs/ia_ny.png)
 One layer is flights into and out of Iowa, the other layer is flights into and out of New York.
 
 
@@ -171,18 +162,15 @@ foreach link in prop set _r=1,_g=1,_b=1,_width=0.5, temp=0;
 
 Change the background color to black by going to **Window/Change Settings**. Background rgb values to 0, 0, 0. Foreground rgb to 1,1,1.
 
-![](settings.png)
-
-![](prop01.png)
-
+![](imgs/settings.png)
+![](imgs/prop01.png)
 Let us infect one airport ADK and see how many steps (flights) it takes to hit all airports. This is an oversimplification but gives an example of how Mango can enable simulation thorugh a network. 
 
 ```c
 foreach node in prop where iata=="ADK" set _g=0, _radius=0.5, _text="0", step=0;
 ```
 
-![](prop02.png)
-
+![](imgs/prop02.png)
 Highlight the following lines and run all at once in Mango to propagate values out. I've included images at each time step.
 ```c
 foreach link in prop where in._text!="" || out._text!="" set _g=0,temp=1,_width=1;
@@ -192,14 +180,10 @@ foreach link in prop where temp>0 && out._text!="" && in._text=="" set in._g=0,i
 
 ```
 
-![](prop03.png)
-
-![](prop04.png)
-
-![](prop06.png)
-
-![](prop07.png)
-
+![](imgs/prop03.png)
+![](imgs/prop04.png)
+![](imgs/prop06.png)
+![](imgs/prop07.png)
 Finally store the number of steps away from ADK into the variable step, and use that to layout the graph in 3D, almost like a flow chart of the infection.
 
 ```c
@@ -211,10 +195,8 @@ foreach node in prop where (in+out)>0 set _text=iata."_".step;
 foreach node in prop where (in+out)>0 set _text=step;
 ```
 
-![](prop08.png)
-
-![](prop09.png)
-
+![](imgs/prop08.png)
+![](imgs/prop09.png)
 
 
 

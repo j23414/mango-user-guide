@@ -16,7 +16,7 @@ Therefore you can directly modify these node attributes to create customized lay
 foreach node in graph set _x=rand(-10,10),_y=(-5,5), _z=rand(-2,2);
 ```
 
-![](rand.png)
+![](imgs/rand.png)
 
 ## Default Layouts
 
@@ -26,13 +26,13 @@ layout(graphname, "random");
 layout(graphname, "cube");
 ```
 
-![](cube.png)
+![](imgs/cube.png)
 
-![](circle.png)
+![](imgs/circle.png)
 
 ## Hive Plot Example
 
-![](hive2D.png)
+![](imgs/hive2D.png)
 
 ```
 /* hive plot, 5 groups */
@@ -51,7 +51,7 @@ foreach link in flights set _r=(in._r+out._r)/2.0,_g=(in._g+out._g)/2.0,_b=(in._
 
 ## Crown Plot Example
 
-![](crown.png)
+![](imgs/crown.png)
 ```c
 layout(graphname, "circle");
 foreach node in graphname set _z=(in+out)/5.0;
@@ -64,7 +64,7 @@ foreach link in graphname where in._z<out._z set _r=out._r,_g=out._g, _b=out._b;
 
 ## Direct Map Example
 
-![](flights01.png)
+![](imgs/flights01.png)
 
 ```
 foreach node in airports set _x=long, _y=lat, _z=0;
@@ -73,7 +73,7 @@ center(airports,"DEN");
 
 ## Bipartite Graph Example
 
-![](bipartite.png)
+![](imgs/bipartite.png)
 
 ```
 /* bipartite layout */

@@ -18,13 +18,13 @@ Open **Mango** and you should be presented with the following screen. The window
 * **Editor**: area to edit gel scripts and run them line by line
 * **Console**: accepts gel commands and runs them in real time
 
-![](sum01.png)
+![](imgs/sum01.png)
 
 Go to **File/Open** and open the "gel\_sum.txt" file inside of the **DemoFiles/sum\_demo** folder that came with Mango installation.
 
-![](sum02.png)
+![](imgs/sum02.png)
 
-![](sum03.png)
+![](imgs/sum03.png)
 
 "gel\_sum.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
 
@@ -50,7 +50,7 @@ In the **Data** panel (left), four graph objects are listed inside **Graph**.
 
 Double click on their names and visualizations of the selected graphs will appear in the Graph Canvas (right center) on separate tabs. Tabs are labeled with the graph names, you can drag and rearrange the tabs or show multiple graphs at once.
 
-![](sum04.png)
+![](imgs/sum04.png)
 
 ### 3D interactive visualization
 
@@ -74,7 +74,7 @@ foreach node in hif set _r=0,_g=0,_b=rand(0.5,1);
 foreach link in hif set _r=0,_g=0,_b=rand(0.5,1);
 ```
 
-![](sum05.png)
+![](imgs/sum05.png)
 
 The **Graph Canvas** (right center) area responds to mouse and keyboard events. **Left click and drag** across the graph. This will rotate the graph visualization. 
 
@@ -92,18 +92,18 @@ layout(cpn, "cube");
 layout(cpn, "random");
 ```
 
-![](sum06.png)![](sum07.png)
+![](imgs/sum06.png)![](imgs/sum07.png)
 
 Run the following command:
 
 ```c
 layout(cpn, "cube");
 ```
-![](img26.png)
+![](imgs/img26.png)
 
 Right click to start the force-directed layout.
 
-![](sum08.png)
+![](imgs/sum08.png)
 
 Turn on node labels by typing the following:
 
@@ -112,7 +112,7 @@ foreach node in cpn set _text=name; /* turns on labels */
 foreach node in cpn set _text="";   /* turns off labels */
 ```
 
-![](sum09.png)
+![](imgs/sum09.png)
 
 ### Merge graphs
 
@@ -134,7 +134,7 @@ sum .+=frh;
 sum .+=hif;
 ```
 
-![](sum10.png)
+![](imgs/sum10.png)
 
 Notice how graphs are added together. When you rotate the graph, you should notice that **cpn** is not connected to the other networks. Therefore we're going to remove **cpn** using the following command.
 
@@ -142,11 +142,11 @@ Notice how graphs are added together. When you rotate the graph, you should noti
 sum.-=cpn;
 ```
 
-![](sum11.png)
+![](imgs/sum11.png)
 
 Right click and run the force-directed layout to spread out the graph.
 
-![](sum12.png)
+![](imgs/sum12.png)
 
 ### Export/Save resulting merged graph
 
@@ -158,7 +158,7 @@ clear();             /* clears all data objects from Mango */
 run "sum.txt";       /* reload the sum graph */
 ```
 
-![](sum13.png)
+![](imgs/sum13.png)
 
 Another option is to export the graph as a tab delimited file. This file can be read by Excell, or sent to R and Matlab.
 

@@ -15,12 +15,12 @@ From **graph theory**, a graph is defined as a set of nodes and links.
 For example, the following graph is represented by the set of nodes **\{a, b, c, d\}** and the set of links **\{ab, bc, ac, ad\}**
 
 <center>
-![](g01net.png)
+![](imgs/g01net.png)
 
 Since the graph is only defined as the node and connections, the graph can have multiple visualizations.
 
 <center>
-![](g01net.png) ![](g02net.png)
+![](imgs/g01net.png) ![](imgs/g02net.png)
 
 <!--
 A graph is defined as a set of nodes and edges. A set of people and their friend network. Or a set of towns and the interconnected highway system. Therefore, when designing a graph data type, we must have a way to identify nodes and links.  Nodes can be identified by unique names. Gel uses string ids, unlike other programs which uses a unique number id. This reduces the mapping from name to number that is required when comparing nodes in multiple graphs. 
@@ -32,7 +32,7 @@ The major strength of Mango is that it can also deal with graph attributes. Node
 
 Nodes and links on a graph can have annotations. The following defines a graph in Gel with a nodetype a and a linktype b. 
 
-![](img21.png)
+![](imgs/img21.png)
 
 
 

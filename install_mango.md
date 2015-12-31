@@ -16,7 +16,7 @@ For a full walk through see the following videos.
 
 Mango is under active development so it is important to check for updates regularly. In order to check, expand Mango **Help** menu and click **Check for updates...** You will need to be connected to the internet. If there is a newer version of Mango, a window similar to the following will pop up:
 
-![](updatecheck.png)
+![](imgs/updatecheck.png)
 
 Visit http://www.complex.iastate.edu/download/Mango to install the newest version. 
 

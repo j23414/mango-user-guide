@@ -14,7 +14,7 @@ node(string id, int count=3) nt3; // contains a default value for count
 
 Notice how each one is shown in the Data panel. Expand each one to see the list of attributes.
 
-![](img22.png)
+![](imgs/img22.png)
 
 From the figure, the ones in purple are user defined attributes. The ones in blue, with an underscore prefix, are system defined attributes. 
 

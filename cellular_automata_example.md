@@ -93,7 +93,7 @@ center(ca);
 foreach node in ca where state==1 set _r=1;
 ```
 
-![](img44.png)
+![](imgs/img44.png)
 
 ## Game of Life
 
@@ -109,7 +109,7 @@ foreach node in ca where delta==0 set state=0;
 foreach node in ca set _r=state, delta=0;
 ```
 
-![](img45.png) 
+![](imgs/img45.png) 
 
 Rerun that comand to continue to blink back and forth between the patterns. Other patterns such as  toad, beacon, pulsar, glider, growth are provided. 
 
@@ -117,23 +117,23 @@ Rerun that comand to continue to blink back and forth between the patterns. Othe
 
 ###toad.net
 <div style="width:200px">
-![](toad01.png)   
+![](imgs/toad01.png)   
 <div style="width:200px">
-![](toad02.png)
+![](imgs/toad02.png)
 
 ###beacon.net
 <div style="width:200px">
-![](beacon01.png)
+![](imgs/beacon01.png)
 <div style="width:200px">
-![](beacon02.png)
+![](imgs/beacon02.png)
 
 ###pulsar.net
 <div style="width:400px">
-![](pulsar01.png)
+![](imgs/pulsar01.png)
 <div style="width:400px">
-![](pulsar02.png)
+![](imgs/pulsar02.png)
 <div style="width:400px">
-![](pulsar03.png)
+![](imgs/pulsar03.png)
 
 ## Cellular Automata on a Torus
 

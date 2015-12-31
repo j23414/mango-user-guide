@@ -20,6 +20,6 @@ graph(nt,lt) C = A.-A;
 
 This results in the empty graph.
 
-![](img20.png)
+![](imgs/img20.png)
 
 Graph mathematics allow graph level operations. When two graphs are combined, node and link attributes must be combined in an intuitive manner. What happens when node and link attribute conflict occurs. The graph on the left (left operand) values take precedence. The exception to this is if the left operand has default values. Then the new data from the right will be incorporated into the new resulting graph.

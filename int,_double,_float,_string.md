@@ -16,7 +16,7 @@ string s = "Hello World";
 ```
 Notice how each data primitive is displayed in the Data pane listing type and value. 
 
-![](img02.png)
+![](imgs/img02.png)
 
 **Watch Out!**
 
