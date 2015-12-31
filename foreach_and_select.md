@@ -1,4 +1,4 @@
-Changing graph attributes and Thresh-holding
+Changing graph attributes and Thresholding
 ===
 
 GEL's method of propagating values through a network relies on foreach and select. These are simple but powerful methods for mapping data attributes to visual attributes, for updating attributes, and for propagating computation through a network. Therefore it is best to have a solid foundation on what these two statements are.
