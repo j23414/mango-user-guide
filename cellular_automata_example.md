@@ -227,4 +227,4 @@ foreach node in ca set state = rand(0,1);
 foreach link in ca set in.delta+=out.state, out.delta+=in.state; foreach node in ca set state=state==1&&(delta<2||delta>3) ? 0 : state==0&&delta==3 ? 1 : state, _r=state, delta=0;
 ```
 
-![](torus_ca_graph.PNG)
+![](imgs/torus_ca_graph.png)
