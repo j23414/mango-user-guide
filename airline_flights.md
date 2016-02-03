@@ -178,11 +178,10 @@ foreach link in prop where temp>0 && in._text!="" && out._text=="" set out._g=0,
 foreach link in prop where temp>0 && out._text!="" && in._text=="" set in._g=0,in._radius=0.5,in._text=out._text+1;
 
 ```
-
 ![](imgs/prop03.png)
-![](imgs/prop04.png)
-![](imgs/prop06.png)
-![](imgs/prop07.png)
+
+![](imgs/prop.gif)
+
 Finally store the number of steps away from ADK into the variable step, and use that to layout the graph in 3D, almost like a flow chart of the infection.
 
 ```
