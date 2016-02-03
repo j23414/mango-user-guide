@@ -28,7 +28,7 @@ Go to **File/Open** and open the "gel\_sum.txt" file inside of the **DemoFiles/s
 
 "gel\_sum.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
 
-The script should be loaded into the **Editor** panel. Notice how key words are highlighted. Since this is a quick start, we are not going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
+The script should be loaded into the **Editor** panel. Notice how key words are highlighted. Since this is a quick start, we are going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
 
 Click on the first line in "gel\_sum.txt" to place the cursor. If you are on Windows or Linux, press **Ctrl+Enter**. If you are on Mac, press **Cmd+Return**. Press this key combination multiple times. Each time, Mango will execute the line. 
 
@@ -54,7 +54,7 @@ Double click on their names and visualizations of the selected graphs will appea
 
 ### 3D interactive visualization
 
-Execute the following layout commands using **Ctrl-Enter** or **Cmd-Return**. 
+Execute the following layout commands using **Ctrl-Enter** (Windows/Linux)or **Cmd-Return** (Mac). 
 
 ```
 /* layout the four graph */
@@ -101,7 +101,7 @@ layout(cpn, "cube");
 ```
 ![](imgs/img26.png)
 
-Right click to start the force-directed layout.
+Right click to start the force-directed layout. Notice that the background will dim. Right click again to stop the force-directed layout and the background will revert to normal.
 
 ![](imgs/sum08.png)
 
