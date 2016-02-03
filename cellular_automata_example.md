@@ -115,6 +115,8 @@ Rerun that comand to continue to blink back and forth between the patterns. Othe
 
 ## Patterns
 
+![Alt Text](imgs/blinker.gif)
+
 ###toad.net
 <div style="width:200px">
 ![](imgs/toad01.png)   
