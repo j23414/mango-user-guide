@@ -21,8 +21,7 @@ This is the propagate example from Mango using the flights data from the blog.
 
 ## Load airports and flights data
 ```
-node(string iata, string airport, string city, string state, string country, 
-float lat, float long) nt;
+node(string iata, string airport, string city, string state, string country, float lat, float long) nt;
 link[int cnt, string airline] lt;
 
 graph(nt,lt) airports=import("airports.net");
