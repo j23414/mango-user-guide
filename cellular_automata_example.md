@@ -118,24 +118,16 @@ Rerun that comand to continue to blink back and forth between the patterns. Othe
 ![Alt Text](imgs/blinker.gif)
 
 ###toad.net
-<div style="width:200px">
-![](imgs/toad01.png)   
-<div style="width:200px">
-![](imgs/toad02.png)
+<div style="width:400px">
+![](imgs/toad.gif)   
 
 ###beacon.net
-<div style="width:200px">
-![](imgs/beacon01.png)
-<div style="width:200px">
-![](imgs/beacon02.png)
+<div style="width:400px">
+![](imgs/beacon.gif)
 
 ###pulsar.net
 <div style="width:400px">
-![](imgs/pulsar01.png)
-<div style="width:400px">
-![](imgs/pulsar02.png)
-<div style="width:400px">
-![](imgs/pulsar03.png)
+![](imgs/pulsar.gif)
 
 ## Cellular Automata on a Torus
 
