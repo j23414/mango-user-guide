@@ -6,7 +6,7 @@ Currently Mango provides methods to connect to the following network databases. 
 
 ##KEGG
 
-Since it was motivated by bioligical research, we created a method to fetch biological pathways data from KEGG. KEGG contains biological pathways data manual curated and integrated in a way to compare across organisms. KEGG stands for Kyoto Encyclopedia of Genes and Genomes.
+Since it was motivated by biological research, we created a method to fetch biological pathways data from KEGG. KEGG contains biological pathways data manual curated and integrated in a way to compare across organisms. KEGG stands for Kyoto Encyclopedia of Genes and Genomes.
 
 
 #Other sources of network data
