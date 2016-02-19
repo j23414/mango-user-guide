@@ -4,8 +4,6 @@ One of the strengths of Gel is its set of graph mathematics. Graph mathematics a
 
 What might you want to do with two graphs? You may want to combine them together. 
 
-$$x \in y$$
-
 ```
 graph(nt,lt) A;
 graph(nt,lt) B;
@@ -25,3 +23,11 @@ This results in the empty graph.
 ![](imgs/img20.png)
 
 Graph mathematics allow graph level operations. When two graphs are combined, node and link attributes must be combined in an intuitive manner. What happens when node and link attribute conflict occurs. The graph on the left (left operand) values take precedence. The exception to this is if the left operand has default values. Then the new data from the right will be incorporated into the new resulting graph.
+
+$$G=\{V,E\}$$
+
+$$V=\{v_1,v_2,v_3,...,v_n\}$$
+
+$$E \subset \{(v_i,v_j)|v_i,v_j \in V\}$$
+
+Hello world
