@@ -4,6 +4,8 @@ One of the strengths of Gel is its set of graph mathematics. Graph mathematics a
 
 What might you want to do with two graphs? You may want to combine them together. 
 
+$$x \in y$$
+
 ```
 graph(nt,lt) A;
 graph(nt,lt) B;
