@@ -30,4 +30,19 @@ $$V=\{v_1,v_2,v_3,...,v_n\}$$
 
 $$E \subset \{(v_i,v_j)|v_i,v_j \in V\}$$
 
-Hello world
+Suppose you have two graphs $$G_A$$ and $$G_B$$:
+
+$$G_A=\{V_A,E_A\}$$
+
+$$G_B=\{V_B,E_B\}$$
+
+Part of the confusion of combining and subsetting multiple graphs is what to do with the nodes and links. Gel provides dotted and non-dotted mathematics to specify node-centric or link-centric operations.
+
+$$G_A\ .+G_B=\{V_A \cup V_B, E_A \cup V_B\}$$
+
+$$G_A +G_B=\{V_A, E_A \cup \{(v_i,v_j)|v_i,v_j \in V_A, (v_i,v_j) \in E_B\}\}$$
+
+$$G_A\ .-G_B=\{V_A \setminus V_B, E_A \setminus V_B\}$$
+
+$$G_A -G_B=\{V_A, E_A \setminus V_B\}$$
+
