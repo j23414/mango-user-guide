@@ -16,6 +16,7 @@
    * [Strings](strings.md)
    * [Node, Link, Graph](node,_link,_graph.md)
 * [Commands: foreach and select](foreach_and_select.md)
+* [Commands: match](match.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Databases](databases.md)
    * [KEGG Connect](kegg.md)
