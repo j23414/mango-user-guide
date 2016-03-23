@@ -66,18 +66,18 @@ a,d
 
 In **gel.txt**:
 ```
-node(string name) nt;
-link[] lt;
+node(string name) nt; /* this is the node type (nt) of the network */
+link[] lt;            /* this is the link type (lt) of the network */
 graph(nt,lt) net=import("net.txt");
 ```
 
-Run the gel script and the object "net" shows up under Graphs in the Data panel. The "4|4" means net has 4 nodes and 4 links. Two other objects are created: nt, and lt. Click and expand the two.
+Save both files by using **Ctrl+S** and make sure the asterix disappears. Run the gel script and the object "net" shows up under Graphs in the Data panel. The "4|4" means net has 4 nodes and 4 links. Two other objects are created: **nt**, and **lt** and are node type and link type objects. The node type and link type objects list node and link attributes.  Click and expand the two.
 
 ![](imgs/img11.png)
 
 Notice **nt** has string name with a bunch of other things listed with an underscore prefix. The prefixed attributes are called **system-defined attributes**. These are usually associated with the 3D layout or visualization of the network. Expand **lt** and take a look at the attributes. 
 
-Change your net.txt file to look like the following:
+Delete the text in net.txt and replace it with the following:
 
 ```
 a,10,red
@@ -91,7 +91,7 @@ c,d,0.8
 a,d,0.2
 ```
 
-Change your gel.txt to load new type of network file.
+Replace the text in gel.txt with the following to load new type of network file.
 
 ```
 node(string name,int count,string type) nt;
