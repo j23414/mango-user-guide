@@ -1,0 +1,43 @@
+/* define node and link type */
+node(string name) nt;
+link[int n1id, int n2id, string n1ex, string n2ex, float neighborhood, float fusion, float cooccurence, float homology, float coexpression, float experimental, float knowledge, float textmining, float combined_score] lt;
+
+/* import 4 graph files */
+graph(nt,lt) aldo = import("aldo.csv");
+graph(nt,lt) cpn = import("cpn.csv");
+graph(nt,lt) frh = import("frh.csv");
+graph(nt,lt) hif = import("hif.csv");
+
+/* PAUSE HERE FOR QUICK START TUTORIAL */
+
+/* layout the four graph */
+foreach node in aldo set _x=0,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in frh set _x=2,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in hif set _x=-2,_y=rand(-5,5),_z=rand(-5,5);
+foreach node in cpn set _x=-4,_y=rand(-5,5),_z=rand(-5,5);
+
+/* color nodes and links in each graph */
+foreach node in aldo set _r=rand(0.5,1),_g=0,_b=0;
+foreach link in aldo set _r=rand(0.5,1),_g=0,_b=0;
+foreach node in cpn set _r=rand(0.5,1),_g=rand(0.5,1),_b=rand(0.5,1);
+foreach link in cpn set _r=rand(0.5,1),_g=rand(0.5,1),_b=rand(0.5,1);
+foreach node in frh set _r=0,_g=rand(0.5,1),_b=0;
+foreach link in frh set _r=0,_g=rand(0.5,1),_b=0;
+foreach node in hif set _r=0,_g=0,_b=rand(0.5,1);
+foreach link in hif set _r=0,_g=0,_b=rand(0.5,1);
+
+/* add graphs together */
+graph(nt,lt) sum = aldo;
+sum.+=cpn;
+sum.+=hif;
+sum.+=frh;
+
+/* subtract unconnected network */
+sum.-=cpn;
+
+/* save new network */
+save "sum.txt", sum;
+
+/* clear all data and reload sum network */
+clear();
+run "sum.txt";

@@ -28,11 +28,11 @@ Go to **File/Open** and open the "gel\_sum.txt" file inside of the **DemoFiles/s
 
 "gel\_sum.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
 
-The script should be loaded into the **Editor** panel. Notice how key words are highlighted. Since this is a quick start, we are going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
+The script should be loaded into the **Editor** panel. Since this is a quick start, we are going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
 
 Click on the first line in "gel\_sum.txt" to place the cursor. If you are on Windows or Linux, press **Ctrl+Enter**. If you are on Mac, press **Cmd+Return**. Press this key combination multiple times. Each time, Mango will execute the line. 
 
-Repeat this until all four graphs have been loaded into Mango. They will be listed in the **Data** panel. 
+Repeat this until all four graphs have been loaded into Mango or when you see a comment that says "PAUSE HERE FOR QUICK START TUTORIAL". Loaded graphs will be listed in the **Data** panel. 
 
 ```
 /* define node and link type */
@@ -44,6 +44,8 @@ graph(nt,lt) aldo = import("aldo.csv");
 graph(nt,lt) cpn = import("cpn.csv");
 graph(nt,lt) frh = import("frh.csv");
 graph(nt,lt) hif = import("hif.csv");
+
+/* PAUSE HERE FOR QUICK START TUTORIAL */
 ```
 
 In the **Data** panel (left), four graph objects are listed inside **Graph**. 

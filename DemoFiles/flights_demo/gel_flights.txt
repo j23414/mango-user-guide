@@ -1,0 +1,96 @@
+/* Following lines to load airports into Mango */
+node(string iata, string airport, string city, string state, string country, 
+float lat, float long) nt;
+link[int cnt, string airline] lt;
+
+graph(nt,lt) airports=import("airports.net");
+graph(nt,lt) flights=import("flights.net");
+
+/* layout, double click airports to show */
+foreach node in airports set _x=long, _y=lat, _z=0;
+center(airports,"DEN");
+airports += flights;
+foreach link in airports set _width=0.1;
+
+/* Background */
+foreach node in airports where (in+out)<1 set _z=-3,_r=0.8,_g=0.8,_b=0.8;
+
+/* layer by connectivity */
+foreach node in airports where (in+out)>1 set _z=(in+out)/7.0;
+
+/* Color down */
+foreach node in airports where (in+out)>0 set _r=rand(0.1,1),_g=rand(0.1,1),_b=rand(0.1,1);
+foreach link in airports where in._z>out._z set _r=in._r,_g=in._g, _b=in._b;
+foreach link in airports where in._z<out._z set _r=out._r,_g=out._g, _b=out._b;
+
+/* Threshold */
+foreach node in airports where (in+out)>1 set _text=airport;
+foreach node in airports where (in+out)>1 set _text=city;
+foreach node in airports where (in+out)>1 set _text=city."_".(in+out);
+foreach node in airports where (in+out)>1 set _text="";
+foreach node in airports where (in+out)>40 set _text=city, _radius=1;
+foreach node in airports where (in+out)>0 set _z=0;
+
+/* states */
+graph(nt,lt) states=select node from airports where (in+out)>0;
+foreach node in states set _radius=0.2;
+foreach node in states set _text=state;
+foreach node in states set iata=state;
+
+states=map(states,"state"); /* alternative */
+
+/* fetch background */
+graph(nt,lt) background=select node from airports where (in+out)<1;
+states.+=background;
+foreach node in background set _r=0.8,_g=0.8,_b=0.8;
+
+/* Select */
+graph(nt,lt) iowa = select link from airports where in.state=="IA" || out.state=="IA";
+foreach link in iowa set _r=1,_g=0,_b=0, _width=2, _text="";
+foreach node in iowa set _radius=0.5,_text=state;
+
+/* Select */
+graph(nt,lt) newyork = select link from airports where in.state=="NY" || out.state=="NY";
+foreach link in newyork set _r=0,_g=0,_b=1, _width=2;
+foreach node in newyork set _radius=0.5,_text=state;
+foreach node in newyork set _z=3;
+
+graph(nt,lt) sum=iowa;
+sum.+=newyork;
+
+sum.+=background;
+
+/* layered */
+foreach node in newyork set iata="ny_".iata;
+sum=iowa;
+sum.+=newyork;
+sum.+=background;
+
+/* Run propagate */
+node(string iata, int step) pnt;
+link[int temp] plt;
+
+graph(pnt,plt) prop=airports;
+foreach node in prop where (in+out)<1 set _r=0.3, _g=0.3, _b=0.3;
+foreach node in prop where (in+out)>0 set _radius=0.2, _r=1,_g=1,_b=1,step=0,_text="";
+foreach link in prop set _r=1,_g=1,_b=1,_width=0.5, temp=0;
+
+foreach node in prop where (in+out)>0 set _text=iata;
+foreach node in prop where (in+out)>0 set _text="";
+
+/* Infect one airport */
+foreach node in prop where iata=="ADK" set _g=0, _radius=0.5, _text="0", step=0;
+
+/* propagate */
+foreach link in prop where in._text!="" || out._text!="" set _g=0,temp=1,_width=1;
+
+foreach link in prop where temp>0 && in._text!="" && out._text=="" set out._g=0,out._radius=0.5,out._text=in._text+1;
+foreach link in prop where temp>0 && out._text!="" && in._text=="" set in._g=0,in._radius=0.5,in._text=out._text+1;
+
+/* store in step */
+foreach node in prop set step=_text;
+
+foreach node in prop where (in+out)>0 set _z=25-step*5-4;
+foreach node in prop set _text="";
+foreach node in prop where (in+out)>0 set _text=iata."_".step;
+foreach node in prop where (in+out)>0 set _text=step;
