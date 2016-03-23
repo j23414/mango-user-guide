@@ -125,7 +125,7 @@ foreach node in net set _x=rand(-5,5),_y=rand(-5,5),_z=rand(-5,5);
 
 Run a few times. Any of the attributes can be changed using the **foreach node** or **foreach link** command.
 
-Gel provides a few preset layouts. These are all in the **layout** function. The first argument is the graph. The second argument is layout type "circle","random",or "cube". 
+Gel provides a few preset layouts. These are all in the **layout** function. The first argument is the graph. The second argument is layout type "circle","random", or "cube". 
 
 The following gives a circle layout and sets the color (RGB values) and turns on the text to display the node name.
 
