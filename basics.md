@@ -140,6 +140,7 @@ foreach node in net set _text=name;
 
 Loading multiple networks
 ---
+Right click and download a second network file: [net2.txt](files/net2.txt)
 net2.txt
 ```
 # name,price
