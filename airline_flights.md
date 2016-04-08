@@ -19,6 +19,11 @@ This is the propagate example from Mango using the flights data from the blog.
 * Infection Simulation
 
 ## Load airports and flights data
+
+The flights data is in the DemoFiles folder, included with your Mango installation. Go to **File/Open/** and open the **DemoFiles/flights_demo/gel_flights.txt** script file.
+
+The script file should show up in the editor panel. Place the cursor on the first line of the file and press Cmd+Return (on Mac) or Ctrl+Enter (on Windows or Linux) to execute each command. Run the following 4 commands to load the network data into Mango.
+
 ```
 node(string iata, string airport, string city, string state, string country, float lat, float long) nt;
 link[int cnt, string airline] lt;
@@ -60,7 +65,7 @@ You can click on the graph and drag to tilt the visualization. Since this is alr
 foreach node in airports where (in+out)>1 set _z=(in+out)/7.0;
 ```
 
-In a "foreach node" statement, the special terms "in" and "out" represent the number of in degrees for a node and out degrees for a node. I've scaled connectivity by 7.0, so it doesn't jump too far out of the screen. Feel free to adjust as you need.
+In a "foreach node" statement, the special terms "in" and "out" represent the number of in degrees for a node and out degrees for a node. I've divided connectivity by 7.0, so nodes stay within the screen. Otherwise the range of _z values results in some nodes located behind the camera. Feel free to adjust as you need.
 
 Next we are going to randomly color the airports and bleed those colors down the links. This will emphasize flights from highly connected airports to less highly connected airports.
 
