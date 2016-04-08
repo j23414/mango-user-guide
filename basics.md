@@ -71,7 +71,7 @@ link[] lt;            /* this is the link type (lt) of the network */
 graph(nt,lt) net=import("net.txt");
 ```
 
-Save both files by using **Ctrl+S** and make sure the asterix disappears. Run the gel script and the object "net" shows up under Graphs in the Data panel. The "4|4" means net has 4 nodes and 4 links. Two other objects are created: **nt**, and **lt** and are node type and link type objects. The node type and link type objects list node and link attributes.  Click and expand the two.
+Save both files by using **Ctrl+S** and make sure the asterix disappears. Run the gel script by typing $$run "gel.txt"$$ in the console and the object "net" shows up under Graphs in the Data panel. The "4|4" means net has 4 nodes and 4 links. Two other objects are created: **nt**, and **lt** and are node type and link type objects. The node type and link type objects list node and link attributes.  Click and expand the two.
 
 ![](imgs/img11.png)
 

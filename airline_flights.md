@@ -1,7 +1,6 @@
 # Airline Flights Example
 
-
-
+This case study was inspired by Nathan Yau's visualization of flight connections using R. This case study works with the same dataset initially recreating the original static visualizations but then exploring the data using subsetting and propagation of values.
 http://blog.revolutionanalytics.com/2011/05/mapping-airline-flight-networks-with-r.html
 
 <!--
