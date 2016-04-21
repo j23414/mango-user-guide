@@ -38,27 +38,51 @@ This results in the empty graph.
 
 ## A theoretical explaination of graph mathematics
 
+A graph is defined as a set of nodes ($$V$$) and links ($$E$$) where a node represents an entity and a link represents a relationship between a pair of entities.
+
+$$
+G=\{V,E\} \quad \text{where} \quad V=\{v_1,v_2,v_3,...,v_n\} \quad \text{and} \quad \quad E\subset \{(v_i,v_j)|v_i,v_j \in V\}
+$$
+
+In practice, graphs have additional annotations called **attributes**. Currently, Gel provides four basic data primitives string, int, float and double as well as aggregate data types node ($$V_{attr}$$), link ($$E_{attr}$$) and graph.
+
+$$
+V_{attr}=\{a_1,a_2,a_3,...,a_{m1}|type(a_i)\in \{int, float, double, string\}\}
+$$
+
+$$
+E_{attr}=\{a_1,a_2,a_3,...,a_{m2}|type(a_i)\in \{int, float, double, string\}\}
+$$
+
 Graph mathematics allow graph level operations. When two graphs are combined, node and link attributes must be combined in an intuitive manner. What happens when node and link attribute conflict occurs. The graph on the left (left operand) values take precedence. The exception to this is if the left operand has default values. Then the new data from the right will be incorporated into the new resulting graph.
-
-$$G=\{V,E\}$$
-
-$$V=\{v_1,v_2,v_3,...,v_n\}$$
-
-$$E \subset \{(v_i,v_j)|v_i,v_j \in V\}$$
 
 Suppose you have two graphs $$G_A$$ and $$G_B$$:
 
-$$G_A=\{V_A,E_A\}$$
-
-$$G_B=\{V_B,E_B\}$$
+$$
+G_A=\{V_A,E_A\} \quad \text{and} \quad G_B=\{V_B,E_B\}
+$$
 
 Part of the confusion of combining and subsetting multiple graphs is what to do with the nodes and links. Gel provides dotted and non-dotted mathematics to specify node-centric or link-centric operations.
 
-$$G_A\ .+G_B=\{V_A \cup V_B, E_A \cup V_B\}$$
+In order to merge links and nodes in two graphs use the dotted addition operator.
 
-$$G_A +G_B=\{V_A, E_A \cup \{(v_i,v_j)|v_i,v_j \in V_A, (v_i,v_j) \in E_B\}\}$$
+$$
+G_A\ .+G_B=\{V_A \cup V_B, E_A \cup V_B\}
+$$
 
-$$G_A\ .-G_B=\{V_A \setminus V_B, E_A \setminus V_B\}$$
+However, if you are only concerned with nodes in $$G_A$$ such as a set of important genes or locations and only want to overlay new links from $$G_B$$, use the non-dotted addition operator.
 
-$$G_A -G_B=\{V_A, E_A \setminus V_B\}$$
+$$
+G_A +G_B=\{V_A, E_A \cup \{(v_i,v_j)|v_i,v_j \in V_A, (v_i,v_j) \in E_B\}\}
+$$
+
+In a similar fashion, the subtraction operator has a dotted and non-dottted version.
+
+$$
+G_A\ .-G_B=\{V_A \setminus V_B, E_A \setminus V_B\}
+$$
+
+$$
+G_A -G_B=\{V_A, E_A \setminus V_B\}
+$$
 
