@@ -1,6 +1,21 @@
 # Graph Mathematics
 
-One of the strengths of Gel is its set of graph mathematics. Graph mathematics allow you to combine and compare many heterogeneous graphs. Each graph is treated as a unit that can be added, subtracted, or otherwise combined with each other. Gel takes care of the complications of graph attribute conflicts and merging. 
+One of the strengths of Gel is its set of graph mathematics. Each graph is treated as a unit that can be added, subtracted, or otherwise combined with each other. Gel takes care of attribute conflict and merging. 
+
+For a more intuitive introduction, take a look at the visual summary of graph mathematics section below. To understand graph mathematics from a tutorial, see section two. For the rigorous theoreticians among you, see section three.
+
+**Topics**
+* A visual summary of graph mathematics
+* A gel tutorial demonstrating graph mathematics
+* A theoretical explaination of graph mathematics
+
+##A visual summary of graph mathematics
+
+The following figure provides a visual of graph mathematics on two starting graphs: $$G_A$$ and $$G_B$$. New nodes and links from the right operand are shown in bold. Graph operations have dotted and non-dotted versions depending on node-centric or link-centric operations.
+
+![](imgs/img20.png)
+
+## A Gel tutorial demonstrating graph mathematics
 
 What might you want to do with two graphs? You may want to combine them together. 
 
@@ -20,7 +35,8 @@ graph(nt,lt) C = A.-A;
 
 This results in the empty graph.
 
-![](imgs/img20.png)
+
+## A theoretical explaination of graph mathematics
 
 Graph mathematics allow graph level operations. When two graphs are combined, node and link attributes must be combined in an intuitive manner. What happens when node and link attribute conflict occurs. The graph on the left (left operand) values take precedence. The exception to this is if the left operand has default values. Then the new data from the right will be incorporated into the new resulting graph.
 
