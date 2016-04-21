@@ -22,4 +22,6 @@
    * [KEGG Connect](kegg.md)
 * [Export Graphs](export_graphs.md)
 * [GEL Reference](gel_reference.md)
+* [Drafts]
+   * [Neural Networks](neuralnet.md)
 
