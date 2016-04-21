@@ -4,7 +4,7 @@ One of the strengths of Gel is its set of graph mathematics. Each graph is treat
 
 For a more intuitive introduction, take a look at the visual summary of graph mathematics section below. To understand graph mathematics from a tutorial, see section two. For the rigorous theoreticians among you, see section three.
 
-**Topics**
+**Outline**
 * A visual summary of graph mathematics
 * A gel tutorial demonstrating graph mathematics
 * A theoretical explaination of graph mathematics
@@ -17,24 +17,56 @@ The following figure provides a visual of graph mathematics on two starting grap
 
 ## A Gel tutorial demonstrating graph mathematics
 
-What might you want to do with two graphs? You may want to combine them together. 
+Run the following to create two graphs.
 
 ```
-graph(nt,lt) A;
-graph(nt,lt) B;
+node(string id, int count) ntA;
+link[float weight] ltA;
+graph(ntA,ltA) A = {("a",1)[0.4]("b",2)[0.4]("d",4), a[0.8]("c",3)};
 
-graph(nt,lt) C = A-A;
-```
-What do you expect to happen? Try the code. Your results should be similar to those below.
-
-Notice how *A-A* resulted in graph *A* with no links. That is because '-' and '+' results in subtraction and addition of links. To subtract and add nodes put a dot '.' in front of the operators. 
-
-```
-graph(nt,lt) C = A.-A;
+node(string id, string tag) ntB;
+link[float weight] ltB;
+graph(ntB,ltB) B={("b","g")[0.3]("d","m")[0.3]("e","c"), b[0.2]("c","g")[0.2]d};
 ```
 
-This results in the empty graph.
+Layout the graphs. *Switch to the red and blue graph example*
 
+```
+layout(A,"circle");
+layout(B,"circle");
+/* right click each panel to run force-directed and then right click to stop */
+
+foreach node in A set _r=1,_text=name;
+foreach link in A set _r=1,_text=weight;
+foreach node in B set _b=1,_text=name;
+foreach link in B set _b=1,_text=weight;
+```
+
+Try some graph mathematics.
+
+```
+/* This will save the results */
+node(ntA,ntB) ntC;
+link[ltA,ltB] ltC;
+graph(ntC,ltC) result;
+
+/* Double click result in Data Panel and show in Graph Canvas panel */
+/* Then try the following graph mathematics
+result=A+B;
+result=A.+B;
+result=A-B;
+result=A.-B;
+
+/* Intersection of two graphs */
+result=A & B;
+result=A .& B;
+
+/* Complete graph */
+result=A * A;
+
+/* Inverse graph */
+result=A*A-A;
+```
 
 ## A theoretical explaination of graph mathematics
 
@@ -85,4 +117,5 @@ $$
 $$
 G_A -G_B=\{V_A, E_A \setminus V_B\}
 $$
+
 
