@@ -48,3 +48,47 @@ node(string id, int layer, float threshold, float sum, float temp) nt;
 link<float weight> lt;  
 graph(nt,lt) nn=import("neuralnet.txt",",");
 ```
+
+In order to visualize the network, double click on **nn** in the data panel. A new panel should show up in the graph canvas area. First we are going to layout the network in 2D having earlier neural nodes on the left and later layers on the right.
+
+```
+foreach node in nn set _x=-2+layer,_y=rand(-4,4),_z=0;
+```
+
+We may want to turn on the names and change the colors of the network.
+
+```
+foreach node in nn set _r=0.5,_text=name.":".sum;
+foreach link in nn set _text=weight;
+```
+
+For now we are going to randomly assign weights to the edges.
+
+```
+foreach link in nn set weight=rand(0,1), _text=weight;
+```
+
+In order to start the input, we are going to randomly assign the input sum values.
+
+```
+foreach node in nn where layer==1 set sum=floor(rand(0,2));
+```
+
+Now we can start to propagate the neural network signal.
+
+```
+foreach node in nn set temp=0;
+foreach link in nn set temp+=weight*in.sum;
+foreach link in nn where temp>=threshold set sum=1;
+foreach link in nn where temp<threshold set sum=0;
+```
+
+Now we can color the nodes by which ones propagated a signal and which one did not.
+
+```
+foreach node in nn set _r=0,_g=sum,_b=0,_text=name.":".sum;
+```
+
+
+
+
