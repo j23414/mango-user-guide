@@ -118,4 +118,15 @@ $$
 G_A -G_B=\{V_A, E_A \setminus V_B\}
 $$
 
+The intersection of two graphs also have dotted and non-dotted versions.
+
+$$
+G_A .& G_B=\{\V_A \cap V_B, E_A \cap E_B \}
+$$
+
+$$
+G_A & G_B=\{\V_A, E_A \cap E_B \}
+$$
+
+
 

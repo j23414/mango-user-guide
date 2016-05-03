@@ -1,24 +1,31 @@
 ## Installing Mango
 
-Go to http://www.complex.iastate.edu/download/Mango, scroll down the page and register a free account. Soon after, you will receive an email with your new password. Use that password and your email address to log into the download area and select the installation file for your operating system.
+Mango is a stand-alone c++ application and installers can be downloaded for Windows, Mac, and Linux. **You DO NOT have to compile anything.**
 
-* Windows 7 and later - setup.exe
-* Mac 10 and later - Mango.dmg
-* Linux Redhat variants - Mango.zip
+1. Visit http://www.complex.iastate.edu/download/Mango.
+2. Scroll down the page, and register a free account by entering an email address.
+3. Soon after, you will receive an email with your new password.
+4. Use your password and the email address to log into the the Download area and select the instalation for your operating system. 
+  * Windows 7 and later - setup.exe
+  * Mac 10 and later - Mango.dmg
+  * Linux Redhat variants - Mango.zip
 
-For a full walk through see the following videos.
+A full walk-through of Mango installation steps is posted to YouTube:
 
 * **Windows:** https://youtu.be/Y0Zpj1SyTr8
 * **Mac:** https://youtu.be/bsC462EiMu8
 * **Linux:** https://youtu.be/9_cWjHFyZDQ
 
-### Updates
+### Version Updates
 
-Mango is under active development so it is important to check for updates regularly. In order to check, expand Mango **Help** menu and click **Check for updates...** You will need to be connected to the internet. If there is a newer version of Mango, a window similar to the following will pop up:
+Mango is under active development so it is important to check for updates regularly. 
 
-![](imgs/updatecheck.png)
+1. Open Mango
+2. On the menu bar, open **Help/Check for updates...**
+3. You will need to be connected to the internet. If a new version of Mango is available, a message box will pop up:
 
-Visit http://www.complex.iastate.edu/download/Mango to install the newest version. 
+  ![](imgs/updatecheck.png)
+4. Visit http://www.complex.iastate.edu/download/Mango and repeat installation steps above. 
 
 ### Customizing the user interface
 
