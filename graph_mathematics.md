@@ -68,7 +68,7 @@ result=A * A;
 result=A*A-A;
 ```
 
-## A theoretical explaination of graph mathematics
+## A theoretical explanation of graph mathematics
 
 A graph is defined as a set of nodes ($$V$$) and links ($$E$$) where a node represents an entity and a link represents a relationship between a pair of entities.
 
@@ -121,11 +121,11 @@ $$
 The intersection of two graphs also have dotted and non-dotted versions.
 
 $$
-G_A .& G_B=\{\V_A \cap V_B, E_A \cap E_B \}
+G_A .\& G_B=\{V_A \cap V_B, E_A \cap E_B \}
 $$
 
 $$
-G_A & G_B=\{\V_A, E_A \cap E_B \}
+G_A \& G_B=\{V_A, E_A \cap E_B \}
 $$
 
 
