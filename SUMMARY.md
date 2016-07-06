@@ -24,4 +24,4 @@
 * [GEL Reference](gel_reference.md)
 * [Drafts]
    * [Neural Networks](neuralnet.md)
-
+   * [Lattice Function](lattice.md)
