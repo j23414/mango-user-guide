@@ -25,7 +25,7 @@ graph = lattice(graph seed, int max_nodes, float w, float h, float d)
 
 One of the bounding box size parameter can be negative, which defines a circular warping along that dimension. It’s best to illustrate the warping effect with the following examples, so stay tuned.
 
-The seed graph is the most important parameter to the lattice function. Since nodes in the seed graph will be replicated repetitively according to their relative positions to each other, it is important to set seed graph node positions (i.e., their _x, _y and _z values) correctly before given the seed graph to the lattice function, otherwise the lattice graph constructed by the lattice function may not be what you wanted. In most of the following examples, graph g is a seed graph given as argument and graph r is the returned lattice graph, so pay attention to how the g graph is defined and how the r graph is constructed from it; this will help you understand the usage of the lattice function better.
+The seed graph is the most important parameter to the lattice function. Since nodes in the seed graph will be replicated repetitively according to their relative positions to each other, it is important to set seed graph node positions (i.e., their _x, _y and _z values) correctly before given the seed graph to the lattice function, otherwise the lattice graph constructed by the lattice function may not be what you wanted. In most of the following examples, graph **g** is a seed graph given as argument and graph **r** is the returned lattice graph, so pay attention to how the **g** graph is defined and how the **r** graph is constructed from it; this will help you understand the usage of the lattice function better.
 
 In all the following examples we make use of the same basic node and link type defined as follows:
 
@@ -130,7 +130,7 @@ graph(nt, lt) r = lattice(g, 2000, -20, 10, 20);
 
 The pyramid slope degree along each of its four sides is 51.8539761° from the base according to the following website information, thus we first build a seed graph with one anchor node and 4 tile nodes one level down from the anchor at the right angle. After the seed graph is correctly defined, the lattice function easily creates a pyramid:
 
-http://www.handylore.com/a/math-facts-about-the-great-pyramid 
+[http://www.handylore.com/a/math-facts-about-the-great-pyramid](http://www.handylore.com/a/math-facts-about-the-great-pyramid)
 
 | g graph | r graph |
 | -- | -- |
@@ -156,10 +156,6 @@ graph(nt, lt) s = lattice(g, 1000, 100, 10, 100);
 
 The two pyramids can now be combined to form an octahedron. To do this, note that the lattice function have named each node in each pyramid in the same location with the same name, albeit the nodes are inverted along the y-axis. Realizing that, we can use simple Gel commands to rename nodes to some other names other than those in the base with a y-axis value of zero, so they become distinct. After that, a simple Gel add graph command easily combines the two pyramids to form an octahedron:
 
-| r graph |
-| -- |
-|![](imgs/Picture18.png)|
-
 ```
 // to merge the two pyramids to form an octahedron
 // first rename all nodes other than the connecting nodes
@@ -169,16 +165,16 @@ foreach node in s where _y<0.0 set id="lower".id;
 graph(nt, lt) c = r.+s;
 ```
 
-Finally, we can carve out the interior of the octahedron with a select command based on node degree:
+![](imgs/Picture18.png)
 
-| r graph |
-| -- |
-|![](imgs/Picture19.png)|
+Finally, we can carve out the interior of the octahedron with a select command based on node degree:
 
 ```
 // carve out the interior of the octahedron with a select command
 graph(nt, lt) b = select node from c where in+out<10;
 ```
+
+![](imgs/Picture19.png)
 
 ##Build a torus graph
 
@@ -269,6 +265,7 @@ graph(nt, lt) a = s.+t;
 // because the seam between the two halves are not quite symmetry, we
 // will get a football rather than a basketball.
 ```
+
 
 ![](imgs/Picture26.png)
 
