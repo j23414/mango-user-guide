@@ -193,3 +193,84 @@ graph(nt, lt) r = lattice(g, 2000, 40, 100, -40);
 ```
 
 ![](imgs/Picture20.png)
+
+Nodes on this cylinder are already wrapping along the z-axis (i.e., around the x-axis). To form a torus, this cylinder must be wrapped along the x-axis (i.e., around the y-axis). First, we need to merge its left-most nodes to its right-most nodes to form a consecutive circular path as required for a torus. This can be accomplished with the map function that renames nodes — If two nodes are renamed to the same name, they will be merged by the map function. Basically, we want the left-most nodes on the cylinder to be renamed to their corresponding right-most node names. A mapping graph d is constructed as follows:
+
+```
+// the left- and right-most nodes should be merged by using the map function
+graph(nt, lt) a = select node from r where _x==0;  // left-most ring
+graph(nt, lt) b = select node from r where _x==40; // right-most ring
+graph(nt, lt) c = a*b; // link them, and then keep only horizontal links
+graph(nt, lt) d = select link from c where in._y==out._y && in._z==out._z;
+// now merge the left- and right-most nodes
+graph(nt, lt) e = map(r, d);
+```
+
+![](imgs/Picture21.png)
+
+It’s hard to see the difference between the resulted e graph and the original r graph, but if you care to count the number of rings on the e graph, you can see it has one fewer ring and nodes on its left-most ring now also link to nodes the right-most ring. You can zoom in to see this in Mango.
+
+We can right-click on this e graph in Mango graph canvas to let force-directed layout try to form the torus layout for us, but it will take a very long time. Feel free to try this, but please regenerate the e graph before using the following Gel code to directly map the e graph nodes to a torus.
+
+```
+float radius = 15.0;
+float two_pi = 3.1415926535897932384626433*2;
+float length;
+foreach node in e set length=radius+_z, _z=length*sin(_x/40*two_pi), _x=length*cos(_x/40*two_pi);
+```
+
+![](imgs/Picture22.png)
+
+Note that the order of coordinate settings in the foreach command above is important; changing the order will ruin the torus shape.
+
+##Create a ball
+
+The simplest way to create a ball is to carve it out from a cube, but this ball will have rough surface as the cube grid does not provide the best match to a ball shape:
+
+```
+graph(nt, lt) g = { ("anchor", 0, 0)[]("tile1", 0, 1), "anchor"[]("tile2", 1, 0), "anchor"[]("tile3", 0, 0, 1), "tile1"[]"tile2"[]"tile3"[]"tile1"};
+graph(nt, lt) r = lattice(g, 2000, 9.5, 9.5, 9.5);
+center(r);
+float radius_s = 25;
+graph(nt, lt) b = select node from r where _x*_x+_y*_y+_z*_z<=radius_s;
+```
+
+![](imgs/Picture23.png)
+
+To build a better looking ball, we will start with a hexagonal seed graph, and use it to create a 2-D mesh. From the 2-D mesh, we carve out a mesh circle, which will make half of the ball. We then duplicate the mesh circle, connect the two halves, and finally let Mango’s force-directed layout inflate the ball for us!
+
+
+```
+float angle=3.1415926535897932384626433*2.0*60/360;
+graph(nt, lt) g = { ("anchor")[]("tile1", 1, 0), "anchor"[]("tile2", cos(angle), sin(angle)), "anchor"[]("tile3", -cos(angle), sin(angle)), "anchor"[]("tile4", -1, 0), "anchor"[]("tile5", -cos(angle), -sin(angle)), "anchor"[]("tile6", cos(angle), -sin(angle)),"tile1"[]"tile2"[]"tile3"[]"tile4"[]"tile5"[]"tile6"[]"tile1" };
+```
+
+![](imgs/Picture24.png)
+
+----
+
+```
+graph(nt, lt) r = lattice(g, 2000, 22, 22, 22);
+// cut a circle out
+graph(nt, lt) s = select node from r where _x*_x+_y*_y<=101;
+```
+
+![](imgs/Picture25.png)
+
+------
+
+```
+// duplicate the circle and rename interior nodes
+graph(nt, lt) t = s;
+foreach node in t where in+out>=6 set id="n".id, _z=1;
+// now add the two halves together
+graph(nt, lt) a = s.+t;
+// finally, right-clock to let force-directed layout inflate the ball 
+// because the seam between the two halves are not quite symmetry, we
+// will get a football rather than a basketball.
+```
+
+![](imgs/Picture26.png)
+
+The mesh circle still has rough edges, thus the ball built from it was inflated to a football, not a perfect basketball. One can investigate other seed graph designs to smooth out the mesh circle edge and make a perfect ball. This will be left as an exercise to you.
+
