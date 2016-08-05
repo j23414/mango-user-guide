@@ -25,4 +25,5 @@
 * [GEL Reference](gel_reference.md)
 * [Drafts]
    * [Neural Networks](neuralnet.md)
+   * [PageRank](pagerank.md)
 
