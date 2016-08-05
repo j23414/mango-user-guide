@@ -80,7 +80,7 @@ foreach link in hif set _r=0,_g=0,_b=rand(0.5,1);
 
 The **Graph Canvas** (right center) area responds to mouse and keyboard events. **Left click and drag** across the graph. This will rotate the graph visualization. 
 
-Use the **Roller Ball** on your mouse (or two finger swipe on a trackpad) to zoom in and out of the graph. 
+Use the **Roller Ball** on your mouse (or two finger swipe up or down on a trackpad or touch screen) to zoom in and out of the graph. 
 
 Making sure one of the graphs is selected (the tab label will be bolded) use the **arrow keys** on your keyboard to move the graph left, right, up and down. 
 
