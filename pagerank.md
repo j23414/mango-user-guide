@@ -3,7 +3,7 @@
 The PageRank algorithm outputs a probability distribution used to represent a likelihood that a person randomly clicking on links will arrive at any particular page. The algorithm requires several iterations, where all nodes start at an equal probability. One function for computing the pagerank of a particular node V at one iteration is given below, although there are certainly others:
 
 $$
-PR(v_i) = \Sum(PR(v_j)I_{ij})
+PR(v_i) = \sum(PR(v_j)I_{ij})
 $$
 
 Where $$I_{ij}$$ is an indicator variable equal to 1 if $$v_i$$ and $$v_j$$ are connected and 0 otherwise.
