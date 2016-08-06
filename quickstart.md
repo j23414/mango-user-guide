@@ -1,6 +1,6 @@
 ## Quick Start Demo
 
-You will need a running version of Mango and the **DemoFiles** folder that came with Mango installation. This section demonstrates loading networks, merging some those networks through graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see Slow Start. 
+You will need a running version of Mango and the **DemoFiles** folder that came with Mango installation. This section demonstrates loading networks, merging some those networks through graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see Regular Start. 
 
 **Outline** 
 
