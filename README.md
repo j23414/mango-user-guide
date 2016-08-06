@@ -12,6 +12,8 @@ The analysis of data is defined as the process of inspecting, cleaning, transfor
 
 Mango grew out of the belief that complex does not have to mean difficult and overwhelming. Using a set of starting principles, complexity can be managed, integrated, and interpreted. We wanted to make serendipitous discoveries more accessible and user friendly. From this goal, we developed the Mango system and this book will introduce you, the reader, to the playground of network analysis. 
 
+**A paper on Mango has been published online in BioData Mining on August 2016:**
 
+[Chang, J., Cho, H., and Chou, H., "Mango: combining and analyzing heterogeneous biological networks", *BioData Mining*, August 2016](http://biodatamining.biomedcentral.com/articles/10.1186/s13040-016-0105-5)
 
 
