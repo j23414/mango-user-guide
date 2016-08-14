@@ -18,6 +18,7 @@
 * [Commands: foreach and select](foreach_and_select.md)
 * [Commands: match](match.md)
 * [Commands: lattice](lattice.md)
+* [Commands: for and while loops](loops.md)
 * [Graph Mathematics](graph_mathematics.md)
 * [Databases](databases.md)
    * [KEGG Connect](kegg.md)
