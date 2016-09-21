@@ -31,11 +31,17 @@ while(stop!="yes"){
 }
 ```
 
+# Graph Animation
+
 This allows animation of the graphs. The following code generates a random graph and then randomly assigns colors ever 500 milliseconds.
 
 ```
-auto g=random(100);
+node(string id, float value, float temp) nt;
+link<> lt;
+graph(nt,dlt) dg=random(50);
+
 layout(g,"random");
+foreach link in g set _width=0.5;
 /* double click on g in Data Panel to show in graph canvas */
 
 string stop="no";
@@ -45,14 +51,17 @@ while(stop!="yes"){
 }
 ```
 
+![](imgs/ranloop.gif)
+
 Remember to click on the Editor or Console and press ESC key to stop the animation. 
 
+# Graph Simulation
 Then you can do more complicated stuff like propagation of values.
 
 ```
 node(string id, float value,float temp) nt;
 link<> dlt;
-graph(nt,dlt) dg=random(100);
+graph(nt,dlt) dg=random(50);
 
 /* double click on dg in data panel to show in graph canvas */
 
@@ -72,3 +81,5 @@ while(stop!="yes"){
   stop=pause(500);
 }
 ```
+
+![](imgs/proploop.gif)
