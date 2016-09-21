@@ -83,3 +83,26 @@ while(stop!="yes"){
 ```
 
 ![](imgs/proploop.gif)
+
+A visualally more simple example of a value propagating around a 4 node directed graph is coded below. The graph is defined in Gel code instead of importing from an external file.
+
+```
+node(string id,int value,int temp) nt;
+link<> dlt;
+graph(nt,dlt) dg={("a")[>("b")[>("c")[>("d")[>"a"};
+foreach node in dg where id=="a" || id=="b" set _y=3;
+foreach node in dg where id=="c" || id=="d" set _y=-3;
+foreach node in dg where id=="a" || id=="d" set _x=-3;
+foreach node in dg where id=="b" || id=="c" set _x=3;
+foreach node in dg set _b=1,_g=0.5,value=0,temp=0,_text="";
+foreach node in dg where id=="a" set value=1,_text="Here: ".value;
+
+while(stop!="yes"){
+  foreach link in dg where in.value!=0 set out.temp=in.value+1;
+  foreach node in dg set value=temp,temp=0,_text="";
+  foreach node in dg where value>0 set _text="HERE:".value;
+  stop=pause(500);
+}
+```
+
+![](imgs/squareloop.gif)
