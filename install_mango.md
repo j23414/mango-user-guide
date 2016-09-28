@@ -16,6 +16,16 @@ A full walk-through of Mango installation steps is posted to YouTube:
 * **Mac:** https://youtu.be/bsC462EiMu8
 * **Linux:** https://youtu.be/9_cWjHFyZDQ
 
+###Mango v1.24 and later
+
+Since August 2016, Mango has been licensed for continued development to Complex Computation, LLC. A free community version will always be made available.
+
+1. Visit http://www.complexcomputation.com
+2. Go to Mango/Download Mango from the Menu
+3. Add Mango v#.## Community Edition to your cart
+4. Register a FREE account using your email and address as billing information
+5. Wait for confirmation email and download installer for your particular operating system
+
 ### Version Updates
 
 Mango is under active development so it is important to check for updates regularly. 
@@ -31,7 +41,7 @@ Mango is under active development so it is important to check for updates regula
 
 **Font Size**
 
-You can increase the font size for the console and the editor using Ctrl++ on Windows and Linux or Cmd++ on Mac. Use Ctrl+- or Cmd+- to decrease font. 
+You can increase the font size for the console and the editor using Ctrl++ on Windows and Linux or Cmd++ on Mac. Use Ctrl+- or Cmd+- to decrease font. This will not increase the font size of node or link labels.
 
 **Panel Layout**
 
