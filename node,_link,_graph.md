@@ -4,30 +4,35 @@ A graph is defined as a set of nodes and edges. Think of the nodes as the circle
 
 Continuing with the social graph example, what type of information might each node contain? Since the node represents an individual, let's call him "Bob", it can contain any information about that individual. Bob might have an age, height, birthdate, favorite color, and home address, just to name a few. 
 
+## Node Types and Link Types
 Defining graphs in GEL requires first defining a **nodetype** and **linktype**. Enter the following GEL commands into the GEL console (bottom right) to define different nodetypes.
 
 ```
-node(string name) nt;            // most basic nodetype
-node(string name, int count) nt2; // also contains node attribute count
-node(string id, int count=3) nt3; // contains a default value for count
+node(string name) nt;             /* basic nodetype */
+node(string name, int count) nt2; /* also contains node attribute count */
+node(string id, int count=3) nt3; /* contains a default value for count */
+
+node() nt;    /* will NOT work, must have at least ONE node attribute */
 ```
 
 Notice how each one is shown in the Data panel. Expand each one to see the list of attributes.
 
 ![](imgs/img22.png)
 
-From the figure, the ones in purple are user defined attributes. The ones in blue, with an underscore prefix, are system defined attributes. 
+From the figure, the ones in purple are user defined attributes. The ones in blue, with an underscore prefix, are system defined attributes. The system defined attributes are the visual attributes for each node. 
 
 In the same way, you can define a **linktype** with its associated link attributes.
 
 ```
-link[] lt;
-link<> lt;
+link[] lt;  /* undirected links */
+link<> lt;  /* directed links */
+
+/* With link attributes */
 link[float weight, string type="undirected"] lt;
 link<float weight, string type="directed"> lt;
 ```
 
-There are some system-defined attributes appended to nodes and links. The **desc** command will display the contents of a node and link type. You can also expand the nt and lt in the **Data** panel
+Expand the linktypes in the data panel. You can also use the **desc** to display the contents of a node and link type in the console.
 
 ```
 desc nt;
@@ -40,26 +45,58 @@ desc lt;
 node(string name,float _x) nt; //Will throw a syntax error
 ```
 
-Defining a Graph in GEL with the following commands:
+## Define a graph in GEL: 
+
+Graphs are defined within { }. Nodes are defined within ( ) and links are defined within [ ] or [ > depending on if links are undirected or directed. Defining a Graph in GEL with the following commands:
 
 ```
 node(string name) nt;
 link[float weight,int count]lt;
-graph(nt,lt)simple={("node1")[0.1,1]("node2")[0.2,2]("node3"),
-node1[0.3,3]node3};
-desc simple; //show node and link types
-dump simple; //show graph contents
+graph(nt,lt)simple={("node1")[0.1,1]("node2")[0.2,2]("node3"), node1[0.3,3]node3};
 ```
 
-Importing a Graph from a file with the following commands:
+Print the contents of the graph using **desc** (just the attribute names) or **dump** (all nodes and links) commands. 
 
 ```
-node(stringname)in_nt;
-link[floatweight]in_lt;
-graph(in_nt,in_lt)the40=import("the40.csv");
+desc simple;   /* show node and link types */
+dump simple;   /* show graph contents */
 ```
 
-Creating a Random Graph with 64 nodes.
+## Import a graph file
+
+By default, the **import** command reads in a graph as a node list, a hyphen, and a link list. An example is shown below:
+```
+a
+b
+c
+-
+a,b,10.0
+b,c,5.1
+c,d,6.0
+```
+The Gel script to read in the above graph would be:
+```
+node(string id) nt;
+link[float weight] lt;
+graph(nt,lt)the40=import("filename.csv",","); 
+```
+
+To read in a link list (edge list) file:
+
+```
+a,b,10.0
+b,c,5.1
+c,d,6.0
+```
+hello
+
+```
+node(string id) nt;
+link[float weight] lt;
+graph(nt,lt)the40=import("filename.csv",",",1); /* 1 means, no node list */ 
+```
+
+## Creating random graphs
 
 ```
 graph(nt,lt) ran64=random(64);    //50% connectivity, default
@@ -82,11 +119,7 @@ foreach node in simple set_r=rand(),_g=rand(),_b=rand();
 foreach link in simple set_r=rand(),_g=rand(),_b=rand();
 ```
 
-Export graphs
-```
-export("simplenew.tsv","tsv",simple); //saves simple as a tab delimited file
-save "state.txt"; //saves all graphs as GEL commands
-```
+## Saving graphs to be reloaded into Mango
 
 Reload graphs
 
@@ -95,7 +128,15 @@ clear;           //clears all graph data
 run "state.txt"; //reload saved graph data
 ```
 
+## Export graphs to be loaded into other programs
+
+```
+export("simplenew.tsv","tsv",simple); //saves simple as a tab delimited file
+save "state.txt"; //saves all graphs as GEL commands
+```
+
 You can access specific attributes in a graph using the following:
+
 ```
 node(string name) nt;
 link[float weight] lt;
@@ -105,9 +146,10 @@ g.node."node1"._x=10;
 g.link."node1":"node2".weight=10;
 ```
 
-Node Type
----
-Gel is different from many other graph analysis scripts in that it takes into account node and link attributes. However this means you have to define a node type or a link type. Since nodes are identified by unique strings, the basic node type is defined with one string attribute. Node is defined with the keyword **node**, list of attributes in parenthesis, and node type name. The list of attributes are a list of any of the primitive 4 data types (string, int, float, double). 
+## Even more node type and link type details
+
+###Node Type
+Since nodes are identified by unique strings, the basic node type is defined with one string attribute. Node is defined with the keyword **node**, list of attributes in parenthesis, and node type name. The list of attributes are a list of any of the primitive 4 data types (string, int, float, double). 
 
 ```
 node(string name) nt; /* most basic node type */
@@ -136,10 +178,6 @@ node(nt, nt2) nt3;
 desc nt3; /* string name, string color, int age */
 ```
 
-Link Type
----
-
-##Importing a graph from a file
 
 
 
