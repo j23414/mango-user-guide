@@ -17,7 +17,7 @@ For example, the following graph is represented by the set of nodes **\{a, b, c,
 <center>
 ![](imgs/g01net.png)
 
-Since the graph is only defined as the node and connections, the graph can have multiple visualizations.
+Since the graph is defined as the set of nodes and edges, the graph can have multiple visualizations.
 
 <center>
 ![](imgs/g01net.png) ![](imgs/g02net.png)
@@ -30,10 +30,20 @@ Since links connect pairs of nodes, links are identified by the pair of node nam
 The major strength of Mango is that it can also deal with graph attributes. Nodes and links may have a set of attributes associated with them. For example, in a social network, an individual named "Bob" may have an age, birth date, home address, height and weight. 
 -->
 
-Nodes and links on a graph can have annotations. The following defines a graph in Gel with a nodetype a and a linktype b. 
+Nodes and links on a graph can have annotations. In the following graph, nodes have an an annotation "count" and links have an annotation "weight". In order to define a node and its annotation we have a structure called a node type. In order to define a link and its annotation we have a structure called a link type. The following defines a graph in Gel with a nodetype **a** and a linktype **b**. 
 
 ![](imgs/img21.png)
 
+Node types must start with the string node id, however can be named id, pmd, or another name. A node with no attributes will return an error. 
+
+```
+node(string id) nt;
+node(string name) nt;
+node(string human) nt;
+node(string pubmedid) nt;
+
+node() nt;   /* will not work, needs some type of way to identify a node */
+```
 
 
 
