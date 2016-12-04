@@ -28,7 +28,7 @@ c,d
 ##Separate the exported graph file into node list and link list files.
 Anything above the single - is the node list. You can either copy and paste the items above it into a new file or use the following perl script to generate the node list.
 ```perl
-#! /opt/local/bin/perl
+#! /usr/bin/env perl
 
 use strict;
 use warnings;
@@ -58,7 +58,7 @@ perl export2nodelist.pl ran.csv > ran_nodes.csv
 The following perl script generates the link list.
 
 ```perl
-#! /opt/local/bin/perl
+#! /usr/bin/env perl
 
 use strict;
 use warnings;
