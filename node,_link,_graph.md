@@ -146,7 +146,7 @@ g.node."node1"._x=10;
 g.link."node1":"node2".weight=10;
 ```
 
-## Even more node type and link type details
+## Even more node type and link type wizardry
 
 ###Node Type
 Since nodes are identified by unique strings, the basic node type is defined with one string attribute. Node is defined with the keyword **node**, list of attributes in parenthesis, and node type name. The list of attributes are a list of any of the primitive 4 data types (string, int, float, double). 

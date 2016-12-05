@@ -5,7 +5,7 @@ GEL's method of propagating values through a network relies on foreach and selec
 
 foreach 
 ---
-The general form of the foreach statement is as follows:
+Use **foreach** to query and map node and link attributes. The general form of the foreach statement is as follows:
 
 **foreach** *node* | *link* **in** *graph* **where** *condition* **set** *expression* **;**
 
@@ -17,8 +17,7 @@ foreach node in airports where (in+out)>10 set _text=name;
 
 select 
 ---
-
-The general form of the select statement is as follows:
+Use **select** to pull out a subgraph. The general form of the select statement is as follows:
 
 **select** *node* | *link* **from** *graph* **where** *condition* ;
 
