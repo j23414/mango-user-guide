@@ -124,14 +124,17 @@ foreach link in simple set_r=rand(),_g=rand(),_b=rand();
 Reload graphs
 
 ```
-clear;           //clears all graph data
-run "state.txt"; //reload saved graph data
+save "state.txt"; /* save all graphs and variables */
+clear;            /* clears all graph data */
+run "state.txt";  /* reload saved graph data */
+
+save "state.txt",simple; /* saves the simple graph instead of all graphs */
 ```
 
 ## Export graphs to be loaded into other programs
 
 ```
-export("simplenew.tsv","tsv",simple); //saves simple as a tab delimited file
+export("simplenew.tsv","tsv",simple); /* saves simple as a tab delimited file */
 save "state.txt"; //saves all graphs as GEL commands
 ```
 
@@ -176,6 +179,45 @@ node(string name, int age) nt2;
 node(nt, nt2) nt3;
 
 desc nt3; /* string name, string color, int age */
+```
+
+This allows combining graphs:
+
+```
+/* Graph 1 */
+node(string id, int count) nt1;
+link[float pearson] lt1;
+graph(nt1,lt1) g1=random(10);
+
+/* Graph 2 */
+node(string id, string type) nt2;
+link[float spearman] lt2;
+graph(nt2,lt2) g2=random(10);
+
+/* Combined Graph */
+node(g1:node, g2:node) nt3;
+link[g1:link, g2:link] lt3;
+graph(nt3,lt3) g3=g1;
+g3.+=g2;
+```
+
+## Modifying a single node's attribute
+
+```
+/* create a basic 10 node random graph */
+node(string id) nt;
+link[] lt;
+graph(nt,lt) g=random(10);
+
+/* layout randomly */
+layout(g,"random");
+
+/* change one node attribute */
+g.node."n_1"._r=1;  /* change to red */
+g.node."n_1"._text="hi!";
+g.node."n_1"._text=g.node."n_1".id;
+
+
 ```
 
 
