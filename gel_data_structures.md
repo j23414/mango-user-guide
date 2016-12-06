@@ -32,18 +32,11 @@ The major strength of Mango is that it can also deal with graph attributes. Node
 
 Nodes and links on a graph can have annotations. In the following graph, nodes have an an annotation "count" and links have an annotation "weight". In order to define a node and its annotation we have a structure called a node type. In order to define a link and its annotation we have a structure called a link type. The following defines a graph in Gel with a nodetype **a** and a linktype **b**. 
 
+<center>
 ![](imgs/img21.png)
 
-Node types must start with the string node id, however can be named id, pmd, or another name. A node with no attributes will return an error. 
+The following subsections will first describe basic attribute types (int, float, double, string) and their behaviors during type conversion. The last subsection will describe node, link, and graph types and methods to combine and subset. 
 
-```
-node(string id) nt;
-node(string name) nt;
-node(string human) nt;
-node(string pubmedid) nt;
-
-node() nt;   /* will not work, needs some type of way to identify a node */
-```
 
 
 
