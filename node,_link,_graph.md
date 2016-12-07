@@ -203,6 +203,9 @@ g3.+=g2;
 
 ## Modifying a single node's attribute
 
+Assigning a value to a single node's attribute has the following syntax.
+
+*graphname*.*node*|*link*.*nodeid*.*node_attribute*=*value*;
 ```
 /* create a basic 10 node random graph */
 node(string id) nt;
@@ -216,8 +219,6 @@ layout(g,"random");
 g.node."n_1"._r=1;  /* change to red */
 g.node."n_1"._text="hi!";
 g.node."n_1"._text=g.node."n_1".id;
-
-
 ```
 
 
