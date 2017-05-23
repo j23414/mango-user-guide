@@ -1,7 +1,5 @@
 #Building graphs that resemble geometry objects using the lattice function and Gel commands
 
-* **Will be available in version after Mango 1.23**
-
 ##The lattice function introduction
 
 The new lattice() function takes a seed graph and tries to replicate the seed graph repetitively to obtain a lattice graph. The lattice graph size is controlled by both the maximum number of nodes that can be added and a maximum bounding box size; both are specified by the users:
