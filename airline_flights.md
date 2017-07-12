@@ -170,9 +170,9 @@ foreach node in prop where (in+out)>0 set _radius=0.2, _r=1,_g=1,_b=1,step=0,_te
 foreach link in prop set _r=1,_g=1,_b=1,_width=0.5, temp=0;
 ```
 
-Change the background color to black by going to **Window/Change Settings**. Background rgb values to 0, 0, 0. Foreground rgb to 1,1,1.
+Change the background color to black by going to the menubar: **Window -> Change Settings**. Background rgb values to 0, 0, 0. Foreground rgb to 1,1,1.
 
-![](imgs/settings.png)  
+![](imgs/settingsflights.png)  
 ![](imgs/prop01.png)  
 Let us infect one airport ADK and see how many steps \(flights\) it takes to hit all airports. This is an oversimplification but gives an example of how Mango can enable simulation thorugh a network.
 
