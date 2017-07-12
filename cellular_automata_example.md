@@ -1,6 +1,7 @@
 # Cellular Automata Example
 
 **Outline**
+
 * Creating a Cellular Automata Network
 * Game of Life
 * Patterns
@@ -8,7 +9,7 @@
 
 Mango can be used to visualize Cellular Automata where each cell is a node and neighbors are linked together. This is an example using scripts and patterns at the following github page:
 
-https://github.com/j23414/Visual_CA.git
+[https://github.com/j23414/Visual_CA.git](https://github.com/j23414/Visual_CA.git)
 
 In cellular automata, a cell is in one of a finite set of states (often either alive, or dead). At each epoch, or time step, the next state is determined the by the current state of its immediate neighbors. 
 
@@ -76,7 +77,7 @@ for(my $i=0; $i<$x; $i++){
 Run the following to generate the network file
 
 ```
-perl pattern2net.pl blinker.txt > blinker.net
+$ perl pattern2net.pl blinker.txt > blinker.net
 ```
 
 Within Mango, navigate to the folder containing the files you cloned from the github site. Open the gel.txt file and run the top commands to load blinker.net and set default layout:
@@ -132,6 +133,7 @@ Rerun that comand to continue to blink back and forth between the patterns. Othe
 ## Cellular Automata on a Torus
 
 **Perl script converting pattern to a torus network**
+
 ```perl
 #! /usr/bin/perl
 
@@ -197,11 +199,13 @@ for (my $j=0; $j<$height; ++$j) {
 ```
 
 **Command line**
+
 ```
-perl pattern2torus.pl glider.txt > glider.net
+$ perl pattern2torus.pl glider.txt > glider.net
 ```
 
 **Gel Script**
+
 ```
 /* load cellular automata pattern */
 node(string name, float x, float y, float z, int state, int delta) nt;
@@ -222,3 +226,5 @@ foreach link in ca set in.delta+=out.state, out.delta+=in.state; foreach node in
 ```
 
 ![](imgs/torus_ca_graph.png)
+
+Video: [Running Torus Simulation on YouTube](https://youtu.be/2KEEJvEYRpU)
