@@ -1,5 +1,7 @@
 #GEL Reference
 
+Some commands require parenthesis and some commands do not. This is because some of the commands are statement commands while others are functions.
+
 **abs**
 
 Returns the absolute value of numeric data. 
@@ -11,7 +13,7 @@ print abs(3);     // returns 3
 
 **acos**
 
-Uses the cosine value to get angle in radians.
+Converts cosine value to angle value in radians.
 
 ```
 print acos(0.5); // returns 1.047198
@@ -19,7 +21,7 @@ print acos(0.5); // returns 1.047198
 
 **asin**
 
-Uses sin value to get angle in radians.
+Converts sine value to angle value in radians.
 
 ```
 print sin(1);    // returns 0.841471
@@ -27,7 +29,7 @@ print sin(1);    // returns 0.841471
 
 **atan**
 
-Uses tan value to get angle in radians.
+Converts tangent value to angle value in radians.
 
 ```
 print tan(0.3);    // returns 0.309336
@@ -35,7 +37,7 @@ print tan(0.3);    // returns 0.309336
 
 **ceil**
 
-Round a number up to the nearest integer.
+Rounds a given value up to its ceiling integer. 
 
 ```
 print ceil(3.1);    // returns 4
@@ -45,11 +47,11 @@ print ceil(1.5);    // returns 2
 
 **center**
 
-Centers a given graph. This will change xyz values so the middle of the graph is at coordinates 0,0,0. If a node name is given, the entire graph will be shifted over so that node is at 0,0,0. 
+Centers a given graph on the xyz coordinates (0,0,0). If a node name is also given, the entire graph will be shifed so that the given node's xyz coordinates is at (0,0,0).
 
 ```
 center(graph); 
-center(graph,"jack");
+center(graph,"jack"); // we focus on "jack" node
 ```
 
 **clear**
@@ -62,7 +64,7 @@ clear;
 
 **clearconsole**
 
-clear the console panel. 
+Clears any text from the console panel. 
 
 ```
 clearconsole();
@@ -70,7 +72,7 @@ clearconsole();
 
 **clearmessage**
 
-Clear the message panel.
+Clears any text from the message panel.
 
 ```
 clearmessage();
@@ -78,7 +80,7 @@ clearmessage();
 
 **cos**
 
-Returns the cosine value from the angle in radians.
+Converts the angle in radians to the cosine value.
 
 ```
 print cos(3.14/4); // returns 0.707388
@@ -86,19 +88,22 @@ print cos(3.14/4); // returns 0.707388
 
 **delete**
 
-delete variables, graphs, node or link types
+Deletes variables, graphs, node or link types. See **clear** to delete all variables.
 
 ```
-delete var1,graph2,node3,link4;
+delete var1;
+delete var1, graph2, node3, link4;
 ```
 
 **desc**
 
-Describes the named data objects. Prints out data type as well as data value.
+Describes the named data objects by printing out data type as well as data value in the messages pane.
 If no data objects are given, describes all data objects in memory.
 
 ```
+desc var1;
 desc var1, graph2, node3, link4;
+desc;   // describes all data objects
 ```
 
 **exec**

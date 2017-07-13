@@ -19,9 +19,9 @@ for(i=0; i<20; i++){
 }
 ```
 
-## Loops that wait for ESC
+## Loops that wait for ```ESC```
 
-The following code iterates a variable *i* until the user presses the **ESC** key. Try it. You should see the i variable update within the data panel. The cursor must be in the Console or Editor. (If the graph canvas has the focus, the ESC key will be ignored). Click on the Console or Editor an then press the **ESC** key to stop. 
+The following code iterates a variable *i* until the user presses the ```ESC``` key. Try it. You should see the i variable update within the data panel. The cursor must be in the Console or Editor. (If the graph canvas has the focus, the ```ESC``` key will be ignored). Click on the Console or Editor an then press the ```ESC``` key to stop. 
 
 ```
 int i=0;
@@ -54,7 +54,7 @@ while(stop!="yes"){
 
 ![](imgs/ranloop.gif)
 
-Remember to click on the Editor or Console and press ESC key to stop the animation. 
+Remember to click on the Editor or Console and press ```ESC``` key to stop the animation. 
 
 # Graph Simulation
 Then you can do more complicated stuff like propagation of values.

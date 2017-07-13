@@ -62,7 +62,7 @@ The **Editor** allows the user to edit and run the Graph Exploration Language (G
 
 **Font Size**
 
-You can increase the font size for the **console** and the **editor** using Ctrl+= on Windows and Linux or Cmd+= on Mac. Use Ctrl+- or Cmd+- to decrease font. 
+You can increase the font size for the **console** and the **editor** using ```control```+```=``` on Windows and Linux or ```command```+```=``` on Mac. Use ```control```+```-``` or ```command```+```-``` to decrease font. 
 
 Note that the code font will increase while the text in the data panel and the graph canvas will remain the same. This will not increase the font size of node or link labels.
 
