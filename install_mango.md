@@ -76,7 +76,7 @@ You can customize the visualization in the Graph Canvases by going to the menuba
 
 Window -> Change Settings
 
-![](imgs/Settings.png)
+![](imgs/settings.png)
 
 **Background color** changes the RGB (Red, Green, Blue) values of the background. 
 

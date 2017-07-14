@@ -1,6 +1,11 @@
 ## Quick Start Demo
 
-You will need a running version of Mango and the **DemoFiles** folder that came with Mango installation. This section demonstrates loading networks, merging some those networks through graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see Regular Start. 
+This section demonstrates loading 4 networks, merging those networks via graph mathematics, and exporting the new graphs. The purpose of this section is to give a quick example. For a more complete walk-through with explanations see Regular Start. 
+
+**Things you will need:**
+
+* Mango Graph Studio
+* DemoFiles folder--should come with the Mango installation
 
 **Outline** 
 
@@ -15,8 +20,8 @@ Open **Mango** and you should be presented with the following screen. The window
 
 * **Data**: displays a list of all data objects in Mango 
 * **Canvas**: displays the graph visualizations
-* **Editor**: area to edit gel scripts and run them line by line
-* **Console**: accepts gel commands and runs them in real time
+* **Editor**: area to edit Gel (Graph Exploration Language) scripts and run them line by line. 
+* **Console**: accepts Gel commands and runs them in real time
 
 ![](imgs/sum01.png)
 
@@ -26,11 +31,11 @@ Go to **File/Open** and open the "gel\_sum.txt" file inside of the **DemoFiles/s
 
 ![](imgs/sum03.png)
 
-"gel\_sum.txt" contains GEL commands. **GEL** stands for **Graph Exploration Language**. GEL allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed to address graph analysis.
+"gel\_sum.txt" contains Gel commands. **Gel** stands for the **Graph Exploration Language**. Gel allows reproducible multi-graph analysis. It's a flexible powerful language that will continue to be developed. Functions are designed for multi-graph analysis.
 
 The script should be loaded into the **Editor** panel. Since this is a quick start, we are going to avoid explaining the meaning of each line. Instead we will show you how to run commands line by line.
 
-Click on the first line in "gel\_sum.txt" to place the cursor. If you are on Windows or Linux, press **Ctrl+Enter**. If you are on Mac, press **Cmd+Return**. Press this key combination multiple times. Each time, Mango will execute the line. 
+Click on the first line in "gel\_sum.txt" to place the cursor. If you are on Windows or Linux, press `Ctrl`+`Enter`. If you are on Mac, press `Cmd`+`Return`. Press this key combination multiple times. Each time, Mango will execute the line. 
 
 Repeat this until all four graphs have been loaded into Mango or when you see a comment that says "PAUSE HERE FOR QUICK START TUTORIAL". Loaded graphs will be listed in the **Data** panel. 
 
@@ -56,7 +61,7 @@ Double click on their names and visualizations of the selected graphs will appea
 
 ### 3D interactive visualization
 
-Execute the following layout commands using **Ctrl-Enter** (Windows/Linux)or **Cmd-Return** (Mac). 
+Execute the following layout commands using ```control```-```enter``` (Windows/Linux)or ```command```-```return``` (Mac). 
 
 ```
 /* layout the four graph */
@@ -86,7 +91,7 @@ Making sure one of the graphs is selected (the tab label will be bolded) use the
 
 Next, **Right click** on one of the displayed graphs. The graph should start to move where connected nodes moving closer together and disconnected nodes moving farther apart. This is the **force-directed layout** algorithm proposed by Eades. Right click again to stop the animating layout.
 
-To explore some other graph layouts, close all tabs except graph **cpn** and type the following GEL commands (capitalization matters) into the **Console** (bottom right). Try rotating, zooming, and running the force-directed layout after each command.
+To explore some other graph layouts, close all tabs except graph **cpn** and type the following Gel commands (capitalization matters) into the **Console** (bottom right). Try rotating, zooming, and running the force-directed layout after each command.
 
 ```
 layout(cpn, "circle");
@@ -150,9 +155,11 @@ Right click and run the force-directed layout to spread out the graph.
 
 ![](imgs/sum12.png)
 
-### Export/Save resulting merged graph
+## Export/Save resulting merged graph
 
-There are multiple ways to store the new graph. One command is **save**. Run the following:
+There are multiple ways to store the new graph. The new graph file is saved to the current directory, shown on the bottom of the window.
+
+If you want to reload the 3D visualization into Mango, use **save**. Since the graph is saved as a Gel script, run the script to reload the graph. 
 
 ```
 save "sum.txt", sum; /* save the sum graph */
@@ -162,9 +169,15 @@ run "sum.txt";       /* reload the sum graph */
 
 ![](imgs/sum13.png)
 
-Another option is to export the graph as a tab delimited file. This file can be read by Excell, or sent to R and Matlab.
+If you want to save the network as a tab or csv file, use **export**. This file can be opened in Excell, or sent to R and Matlab.
 
 ```
 export("sum.tsv","tsv",sum);
+```
+
+For those who prefer GraphViz, graphs can be exported in the dot language.
+
+```
+export("sum.dot","dot",sum);
 ```
 
