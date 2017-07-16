@@ -4,8 +4,8 @@ This section demonstrates loading 4 networks, merging those networks via graph m
 
 **Things you will need:**
 
-* Mango Graph Studio
-* DemoFiles folder--should come with the Mango installation
+* [Mango Graph Studio](https://www.complexcomputation.com/en/download-mango/)
+* [DemoFiles folder](files/DemoFiles.zip)--should come with the Mango installation
 
 **Outline** 
 
