@@ -3,14 +3,6 @@
 This case study was inspired by Nathan Yau's visualization of flight connections using R. This case study works with the same dataset initially recreating the original static visualizations but then exploring the data using subsetting and propagation of values.  
 [http://blog.revolutionanalytics.com/2011/05/mapping-airline-flight-networks-with-r.html](http://blog.revolutionanalytics.com/2011/05/mapping-airline-flight-networks-with-r.html)
 
-&lt;!--  
-This is the propagate example from Mango using the flights data from the blog.
-
-* Put github link here.
-* Folder should contain processed flights and airlines network. 
-* User opens gel.txt. Runs line by line and explore the network.
-  --&gt;
-
 **Outline**
 
 * Load airports and flights data
